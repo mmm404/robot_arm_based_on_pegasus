@@ -1,0 +1,61 @@
+[0.015s] Invoking command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config
+[1.485s] -- The C compiler identification is GNU 11.4.0
+[2.262s] -- The CXX compiler identification is GNU 11.4.0
+[2.327s] -- Detecting C compiler ABI info
+[2.651s] -- Detecting C compiler ABI info - done
+[2.663s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.664s] -- Detecting C compile features
+[2.701s] -- Detecting C compile features - done
+[2.713s] -- Detecting CXX compiler ABI info
+[2.934s] -- Detecting CXX compiler ABI info - done
+[2.948s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.948s] -- Detecting CXX compile features
+[2.949s] -- Detecting CXX compile features - done
+[2.980s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.242s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.349s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.526s] -- Configuring done
+[3.531s] -- Generating done
+[3.534s] -- Build files have been written to: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config
+[3.542s] Invoked command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config
+[3.545s] Invoking command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config -- -j4 -l4
+[3.601s] Invoked command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config -- -j4 -l4
+[3.618s] Invoking command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config
+[3.629s] -- Install configuration: ""
+[3.630s] -- Execute custom install script
+[3.631s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_moveit_config
+[3.643s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_moveit_config
+[3.656s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/ament_prefix_path.sh
+[3.669s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/ament_prefix_path.dsv
+[3.682s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/path.sh
+[3.695s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/path.dsv
+[3.710s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.bash
+[3.724s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.sh
+[3.737s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.zsh
+[3.756s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.dsv
+[3.770s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/package.dsv
+[3.785s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/ament_index/resource_index/packages/pegasus_arm_moveit_config
+[3.797s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/cmake/pegasus_arm_moveit_configConfig.cmake
+[3.809s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/cmake/pegasus_arm_moveit_configConfig-version.cmake
+[3.821s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/package.xml
+[3.835s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/demo.launch.py
+[3.848s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/move_group.launch.py
+[3.862s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/moveit_rviz.launch.py
+[3.874s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/rsp.launch.py
+[3.887s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/setup_assistant.launch.py
+[3.899s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/spawn_controllers.launch.py
+[3.912s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[3.924s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/warehouse_db.launch.py
+[3.937s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/controllers.yaml
+[3.953s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/initial_positions.yaml
+[3.968s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/joint_limits.yaml
+[3.983s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/kinematics.yaml
+[3.996s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/moveit.rviz
+[4.010s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.ros2_control.xacro
+[4.024s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.srdf
+[4.036s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.urdf.xacro
+[4.052s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pilz_cartesian_limits.yaml
+[4.065s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/ros2_controllers.yaml
+[4.081s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/sensors_3d.yaml
+[4.094s] -- Symlinking: /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/.setup_assistant
+[4.113s] Invoked command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/src/pegasus_arm_moveit_config/build/pegasus_arm_moveit_config

@@ -1,0 +1,1 @@
+joint_state_publisher:moveit_kinematics:moveit_planners:moveit_ros_move_group:moveit_simple_controller_manager:robot_state_publisher:rviz2:tf2_ros

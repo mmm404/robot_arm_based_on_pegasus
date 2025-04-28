@@ -1,0 +1,8 @@
+source;share/pegasus_arm_moveit/hook/cmake_prefix_path.ps1
+source;share/pegasus_arm_moveit/hook/cmake_prefix_path.dsv
+source;share/pegasus_arm_moveit/hook/cmake_prefix_path.sh
+source;share/pegasus_arm_moveit/local_setup.bash
+source;share/pegasus_arm_moveit/local_setup.dsv
+source;share/pegasus_arm_moveit/local_setup.ps1
+source;share/pegasus_arm_moveit/local_setup.sh
+source;share/pegasus_arm_moveit/local_setup.zsh

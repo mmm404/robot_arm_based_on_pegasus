@@ -1,0 +1,20 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    pegasus_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+      joints:
+        - joint1_base
+        - joint2_shoulder
+        - joint3_elbow
+        - joint4
+        - joint5_wrist
+      command_interfaces:
+        - position
+      state_interfaces:
+        - position
+        - velocity

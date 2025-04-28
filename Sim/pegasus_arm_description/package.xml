@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>pegasus_arm_description</name>
+  <version>0.0.0</version>
+  <description>Description package for the Pegasus robotic arm</description>
+  <maintainer email="mmms@todo.todo">mmms</maintainer>
+  <license>TODO: License declaration</license>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <depend>urdf</depend>
+  <depend>rviz2</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>tf2_ros</depend>
+  <depend>moveit_ros_move_group</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_configs_utils</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

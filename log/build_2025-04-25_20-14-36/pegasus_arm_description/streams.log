@@ -1,0 +1,61 @@
+[0.025s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/Sim/pegasus_arm_description -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_description
+[0.125s] -- The C compiler identification is GNU 11.4.0
+[0.219s] -- The CXX compiler identification is GNU 11.4.0
+[0.234s] -- Detecting C compiler ABI info
+[0.347s] -- Detecting C compiler ABI info - done
+[0.363s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.363s] -- Detecting C compile features
+[0.364s] -- Detecting C compile features - done
+[0.368s] -- Detecting CXX compiler ABI info
+[0.497s] -- Detecting CXX compiler ABI info - done
+[0.511s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.512s] -- Detecting CXX compile features
+[0.514s] -- Detecting CXX compile features - done
+[0.517s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.797s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.952s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.050s] -- Found rviz2: 11.2.16 (/opt/ros/humble/share/rviz2/cmake)
+[1.052s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.188s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.205s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.207s] -- Added test 'lint_cmake' to check CMake code style
+[1.209s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.220s] -- Added test 'xmllint' to check XML markup files
+[1.221s] -- Configuring done
+[1.226s] -- Generating done
+[1.228s] -- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_arm_description
+[1.238s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/Sim/pegasus_arm_description -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_description
+[1.240s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_description -- -j4 -l4
+[1.298s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_description -- -j4 -l4
+[1.301s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_description
+[1.311s] -- Install configuration: ""
+[1.311s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF
+[1.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode
+[1.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/c_cpp_properties.json
+[1.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/settings.json
+[1.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/my_robot.urdf
+[1.328s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch
+[1.328s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display.launch.py
+[1.329s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode
+[1.329s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/c_cpp_properties.json
+[1.329s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/settings.json
+[1.330s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/display.launch.py
+[1.330s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz
+[1.330s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/display.rviz
+[1.330s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/lib/pegasus_arm_description/pegasus_commander.py
+[1.331s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_description
+[1.332s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_description
+[1.332s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.sh
+[1.333s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.dsv
+[1.333s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.sh
+[1.333s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.dsv
+[1.333s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.bash
+[1.333s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.sh
+[1.334s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.zsh
+[1.334s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.dsv
+[1.334s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.dsv
+[1.334s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/packages/pegasus_arm_description
+[1.334s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig.cmake
+[1.335s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig-version.cmake
+[1.335s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.xml
+[1.339s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_description

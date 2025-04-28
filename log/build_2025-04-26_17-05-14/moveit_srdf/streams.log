@@ -1,0 +1,39 @@
+[0.124s] Invoking command in '/home/mmms/ros2-ws/build/moveit_srdf': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_moveit:/home/mmms/ros2-ws/install/moveit_srdf:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/moveit_srdf -- -j4 -l4
+[0.363s] Invoked command in '/home/mmms/ros2-ws/build/moveit_srdf' returned '0': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_moveit:/home/mmms/ros2-ws/install/moveit_srdf:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/moveit_srdf -- -j4 -l4
+[0.368s] Invoking command in '/home/mmms/ros2-ws/build/moveit_srdf': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_moveit:/home/mmms/ros2-ws/install/moveit_srdf:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/moveit_srdf
+[0.383s] -- Install configuration: ""
+[0.446s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch
+[0.458s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/moveit_rviz.launch.py
+[0.458s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/.vscode
+[0.525s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/.vscode/c_cpp_properties.json
+[0.529s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/.vscode/settings.json
+[0.530s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/move_group.launch.py
+[0.530s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/rsp.launch.py
+[0.531s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/spawn_controllers.launch.py
+[0.531s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/static_virtual_joint_tfs.launch.py
+[0.531s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/warehouse_db.launch.py
+[0.531s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/setup_assistant.launch.py
+[0.532s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/launch/demo.launch.py
+[0.532s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config
+[0.534s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/pegasus_arm.urdf
+[0.535s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/moveit.rviz
+[0.535s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/pilz_cartesian_limits.yaml
+[0.535s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/kinematics.yaml
+[0.536s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/joint_limits.yaml
+[0.536s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/config/pegasus_arm.srdf
+[0.536s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/ament_index/resource_index/package_run_dependencies/moveit_srdf
+[0.536s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/ament_index/resource_index/parent_prefix_path/moveit_srdf
+[0.538s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/environment/ament_prefix_path.sh
+[0.538s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/environment/ament_prefix_path.dsv
+[0.538s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/environment/path.sh
+[0.539s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/environment/path.dsv
+[0.539s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/local_setup.bash
+[0.539s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/local_setup.sh
+[0.539s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/local_setup.zsh
+[0.540s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/local_setup.dsv
+[0.540s] -- Installing: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/package.dsv
+[0.540s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/ament_index/resource_index/packages/moveit_srdf
+[0.540s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/cmake/moveit_srdfConfig.cmake
+[0.541s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/cmake/moveit_srdfConfig-version.cmake
+[0.541s] -- Up-to-date: /home/mmms/ros2-ws/install/moveit_srdf/share/moveit_srdf/package.xml
+[0.545s] Invoked command in '/home/mmms/ros2-ws/build/moveit_srdf' returned '0': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_moveit:/home/mmms/ros2-ws/install/moveit_srdf:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/moveit_srdf

@@ -1,0 +1,4 @@
+Invoking command in '/home/mmms/ros2-ws/Sim/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/Sim/build/pegasus_arm_description -- -j4 -l4
+Invoked command in '/home/mmms/ros2-ws/Sim/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/Sim/build/pegasus_arm_description -- -j4 -l4
+Invoking command in '/home/mmms/ros2-ws/Sim/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/Sim/build/pegasus_arm_description
+Invoked command in '/home/mmms/ros2-ws/Sim/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/Sim/build/pegasus_arm_description

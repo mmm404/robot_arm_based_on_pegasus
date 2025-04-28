@@ -1,0 +1,8 @@
+# Default initial positions for pegasus_arm's ros2_control fake system
+
+initial_positions:
+  joint1_base: 0
+  joint2_shoulder: 0
+  joint3_elbow: 0
+  joint4: 0
+  joint5_wrist: 0

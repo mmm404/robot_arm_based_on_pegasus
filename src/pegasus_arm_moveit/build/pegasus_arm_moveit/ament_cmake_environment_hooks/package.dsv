@@ -1,0 +1,4 @@
+source;share/pegasus_arm_moveit/local_setup.bash
+source;share/pegasus_arm_moveit/local_setup.dsv
+source;share/pegasus_arm_moveit/local_setup.sh
+source;share/pegasus_arm_moveit/local_setup.zsh
