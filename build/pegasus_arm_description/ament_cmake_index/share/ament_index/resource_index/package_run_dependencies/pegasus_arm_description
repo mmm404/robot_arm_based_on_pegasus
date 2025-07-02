@@ -1,1 +1,1 @@
-urdf;rviz2;robot_state_publisher;joint_state_publisher_gui;tf2_ros;moveit_ros_move_group;moveit_ros_planning_interface;moveit_configs_utils;launch;launch_ros;ament_lint_auto;ament_lint_common
+rclcpp;moveit_ros_planning_interface;robot_state_publisher;tf2_ros;controller_manager

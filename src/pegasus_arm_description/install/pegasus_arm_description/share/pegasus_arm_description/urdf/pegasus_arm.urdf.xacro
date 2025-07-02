@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<robot name="pegasus_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="pegasus_arm.ros2_control.xacro"/>
+  <xacro:macro name="pegasus_arm" params="prefix">
+    <link name="${prefix}dummy_link"/>
+    <joint name="${prefix}dummy_joint" type="fixed">
+      <parent link="${prefix}dummy_link"/>
+      <child link="${prefix}base_link"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <link name="${prefix}base_link">
+      <visual>
+        <geometry>
+          <cylinder radius="0.1" length="0.2"/>
+        </geometry>
+        <material name="silver">
+          <color rgba="0.75 0.75 0.75 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.1" length="0.2"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="1.0"/>
+        <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint1" type="revolute">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link1"/>
+      <origin xyz="0 0 0.2" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-3.14" upper="3.14" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link1">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+        <material name="blue">
+          <color rgba="0 0 1 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint2" type="revolute">
+      <parent link="${prefix}link1"/>
+      <child link="${prefix}link2"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link2">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint3" type="revolute">
+      <parent link="${prefix}link2"/>
+      <child link="${prefix}link3"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link3">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint4" type="revolute">
+      <parent link="${prefix}link3"/>
+      <child link="${prefix}link4"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link4">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint5" type="revolute">
+      <parent link="${prefix}link4"/>
+      <child link="${prefix}link5"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link5">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.3"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <joint name="${prefix}joint6" type="revolute">
+      <parent link="${prefix}link5"/>
+      <child link="${prefix}link6"/>
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+    </joint>
+    <link name="${prefix}link6">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.1"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.05" length="0.1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.5"/>
+        <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+      </inertial>
+    </link>
+    <gazebo reference="${prefix}base_link">
+      <material>Gazebo/Silver</material>
+    </gazebo>
+    <gazebo reference="${prefix}link1">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="${prefix}link2">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="${prefix}link3">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="${prefix}link4">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="${prefix}link5">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="${prefix}link6">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    <transmission name="${prefix}joint1_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint1_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <transmission name="${prefix}joint2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint2_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <transmission name="${prefix}joint3_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint3">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint3_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <transmission name="${prefix}joint4_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint4">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint4_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <transmission name="${prefix}joint5_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint5">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint5_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <transmission name="${prefix}joint6_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}joint6">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}joint6_motor">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    <xacro:pegasus_arm_ros2_control prefix="${prefix}"/>
+  </xacro:macro>
+  <xacro:pegasus_arm prefix=""/>
+</robot>

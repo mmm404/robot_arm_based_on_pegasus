@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000412] (-) JobUnselected: {'identifier': 'moveit_srdf'}
-[0.000477] (-) JobUnselected: {'identifier': 'pegasus_arm_description'}
-[0.000542] (-) JobUnselected: {'identifier': 'pegasus_arm_moveit'}
-[0.000585] (-) JobUnselected: {'identifier': 'pegasus_arm_moveit_config'}
-[0.000859] (-) EventReactorShutdown: {}

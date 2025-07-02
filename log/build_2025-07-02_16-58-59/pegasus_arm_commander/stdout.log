@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/PKG-INFO
+writing dependency_links to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/dependency_links.txt
+writing entry points to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/entry_points.txt
+writing requirements to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/requires.txt
+writing top-level names to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/top_level.txt
+reading manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'
+writing manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'
+running build
+running build_py
+copying pegasus_arm_commander/__init__.py -> /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander
+copying pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander
+running install
+running install_lib
+copying /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander/__init__.py -> /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander
+copying /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander
+byte-compiling /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander/pegasus_commander.py to pegasus_commander.cpython-312.pyc
+running install_data
+copying resource/pegasus_arm_commander -> /home/mmms/ros2-ws/install/pegasus_arm_commander/share/ament_index/resource_index/packages
+copying package.xml -> /home/mmms/ros2-ws/install/pegasus_arm_commander/share/pegasus_arm_commander
+running install_egg_info
+removing '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander-0.0.1-py3.12.egg-info' (and everything under it)
+Copying ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info to /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander-0.0.1-py3.12.egg-info
+running install_scripts
+Installing pegasus_commander script to /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/pegasus_arm_commander
+writing list of installed files to '/home/mmms/ros2-ws/build/pegasus_arm_commander/install.log'

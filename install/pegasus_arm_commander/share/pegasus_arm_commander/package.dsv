@@ -1,0 +1,12 @@
+source;share/pegasus_arm_commander/hook/path.ps1
+source;share/pegasus_arm_commander/hook/path.dsv
+source;share/pegasus_arm_commander/hook/path.sh
+source;share/pegasus_arm_commander/hook/pythonpath.ps1
+source;share/pegasus_arm_commander/hook/pythonpath.dsv
+source;share/pegasus_arm_commander/hook/pythonpath.sh
+source;share/pegasus_arm_commander/hook/pythonscriptspath.ps1
+source;share/pegasus_arm_commander/hook/pythonscriptspath.dsv
+source;share/pegasus_arm_commander/hook/pythonscriptspath.sh
+source;share/pegasus_arm_commander/hook/ament_prefix_path.ps1
+source;share/pegasus_arm_commander/hook/ament_prefix_path.dsv
+source;share/pegasus_arm_commander/hook/ament_prefix_path.sh

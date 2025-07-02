@@ -1,16 +1,25 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.8)
 project(pegasus_arm_moveit_config)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 find_package(ament_cmake REQUIRED)
 
-ament_package()
+install(
+  DIRECTORY config launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/launch")
-  install(
-    DIRECTORY launch
-    DESTINATION share/${PROJECT_NAME}
-    PATTERN "setup_assistant.launch" EXCLUDE)
+install(
+  FILES .setup_assistant
+  DESTINATION share/${PROJECT_NAME}
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
-install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
+ament_package()

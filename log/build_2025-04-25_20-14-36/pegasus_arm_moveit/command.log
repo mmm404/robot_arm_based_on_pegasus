@@ -1,6 +1,0 @@
-Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_moveit
-Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_moveit
-Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_moveit -- -j4 -l4
-Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_moveit -- -j4 -l4
-Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_moveit
-Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_moveit

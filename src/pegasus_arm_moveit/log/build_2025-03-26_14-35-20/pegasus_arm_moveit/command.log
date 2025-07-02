@@ -1,2 +1,0 @@
-Invoking command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit/build/pegasus_arm_moveit': /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/src/pegasus_arm_moveit/install/pegasus_arm_moveit
-Invoked command in '/home/mmms/ros2-ws/src/pegasus_arm_moveit/build/pegasus_arm_moveit' returned '1': /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/src/pegasus_arm_moveit/install/pegasus_arm_moveit

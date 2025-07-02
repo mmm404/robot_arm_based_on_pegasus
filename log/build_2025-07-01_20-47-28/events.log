@@ -1,0 +1,29 @@
+[0.000000] (-) TimerEvent: {}
+[0.001079] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.001187] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.001238] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.001300] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.001349] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.001394] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.001438] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.001485] (-) JobUnselected: {'identifier': 'gpio_controllers'}
+[0.001532] (-) JobUnselected: {'identifier': 'gps_sensor_broadcaster'}
+[0.001580] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.001624] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.001670] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.001715] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.001759] (-) JobUnselected: {'identifier': 'mecanum_drive_controller'}
+[0.001801] (-) JobUnselected: {'identifier': 'parallel_gripper_controller'}
+[0.001843] (-) JobUnselected: {'identifier': 'pegasus_arm_description'}
+[0.001885] (-) JobUnselected: {'identifier': 'pid_controller'}
+[0.001928] (-) JobUnselected: {'identifier': 'pose_broadcaster'}
+[0.001969] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.002033] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.002076] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.002119] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.002162] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.002206] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.002250] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.002359] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.002408] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.002454] (-) EventReactorShutdown: {}

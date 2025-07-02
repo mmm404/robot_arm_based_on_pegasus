@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000551] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000606] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.000655] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.000702] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.000748] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.000793] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.000838] (-) JobUnselected: {'identifier': 'gpio_controllers'}
+[0.000882] (-) JobUnselected: {'identifier': 'gps_sensor_broadcaster'}
+[0.000927] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.000972] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.001018] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.001062] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.001107] (-) JobUnselected: {'identifier': 'mecanum_drive_controller'}
+[0.001160] (-) JobUnselected: {'identifier': 'parallel_gripper_controller'}
+[0.001215] (-) JobUnselected: {'identifier': 'pegasus_arm_description'}
+[0.001257] (-) JobUnselected: {'identifier': 'pid_controller'}
+[0.001315] (-) JobUnselected: {'identifier': 'pose_broadcaster'}
+[0.001369] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.001426] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.001470] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.001513] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.001558] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.001601] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.001643] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.001687] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.001729] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.001781] (pegasus_arm_commander) JobQueued: {'identifier': 'pegasus_arm_commander', 'dependencies': OrderedDict()}
+[0.002543] (pegasus_arm_commander) JobStarted: {'identifier': 'pegasus_arm_commander'}
+[0.099602] (-) TimerEvent: {}
+[0.200137] (-) TimerEvent: {}
+[0.300618] (-) TimerEvent: {}
+[0.400919] (-) TimerEvent: {}
+[0.501224] (-) TimerEvent: {}
+[0.601542] (-) TimerEvent: {}
+[0.701839] (-) TimerEvent: {}
+[0.802127] (-) TimerEvent: {}
+[0.902552] (-) TimerEvent: {}
+[1.003391] (-) TimerEvent: {}
+[1.104194] (-) TimerEvent: {}
+[1.204667] (-) TimerEvent: {}
+[1.305070] (-) TimerEvent: {}
+[1.405804] (-) TimerEvent: {}
+[1.506358] (-) TimerEvent: {}
+[1.606680] (-) TimerEvent: {}
+[1.707095] (-) TimerEvent: {}
+[1.807965] (-) TimerEvent: {}
+[1.908779] (-) TimerEvent: {}
+[2.009592] (-) TimerEvent: {}
+[2.110513] (-) TimerEvent: {}
+[2.211322] (-) TimerEvent: {}
+[2.311782] (-) TimerEvent: {}
+[2.412554] (-) TimerEvent: {}
+[2.513384] (-) TimerEvent: {}
+[2.614217] (-) TimerEvent: {}
+[2.715123] (-) TimerEvent: {}
+[2.815934] (-) TimerEvent: {}
+[2.916748] (-) TimerEvent: {}
+[3.017488] (-) TimerEvent: {}
+[3.118243] (-) TimerEvent: {}
+[3.219186] (-) TimerEvent: {}
+[3.319994] (-) TimerEvent: {}
+[3.420465] (-) TimerEvent: {}
+[3.521339] (-) TimerEvent: {}
+[3.622128] (-) TimerEvent: {}
+[3.722583] (-) TimerEvent: {}
+[3.823371] (-) TimerEvent: {}
+[3.924139] (-) TimerEvent: {}
+[4.025061] (-) TimerEvent: {}
+[4.125492] (-) TimerEvent: {}
+[4.226382] (-) TimerEvent: {}
+[4.327157] (-) TimerEvent: {}
+[4.427959] (-) TimerEvent: {}
+[4.528524] (-) TimerEvent: {}
+[4.629230] (-) TimerEvent: {}
+[4.729977] (-) TimerEvent: {}
+[4.830407] (-) TimerEvent: {}
+[4.931250] (-) TimerEvent: {}
+[5.032220] (-) TimerEvent: {}
+[5.132940] (-) TimerEvent: {}
+[5.233418] (-) TimerEvent: {}
+[5.334155] (-) TimerEvent: {}
+[5.434963] (-) TimerEvent: {}
+[5.535606] (-) TimerEvent: {}
+[5.636094] (-) TimerEvent: {}
+[5.736997] (-) TimerEvent: {}
+[5.837794] (-) TimerEvent: {}
+[5.938341] (-) TimerEvent: {}
+[6.038695] (-) TimerEvent: {}
+[6.139030] (-) TimerEvent: {}
+[6.239358] (-) TimerEvent: {}
+[6.339840] (-) TimerEvent: {}
+[6.440602] (-) TimerEvent: {}
+[6.508867] (pegasus_arm_commander) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pegasus_arm_commander', 'build', '--build-base', '/home/mmms/ros2-ws/build/pegasus_arm_commander/build', 'install', '--record', '/home/mmms/ros2-ws/build/pegasus_arm_commander/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mmms/ros2-ws/src/pegasus_arm_commander', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms/ros2-ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '110733', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/110600,unix/mmms:/tmp/.ICE-unix/110600', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/78a915de_ecc4_476f_8172_f826fb0b9bf6', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.251', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/pegasus_arm_commander', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/build/pegasus_arm_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.540729] (-) TimerEvent: {}
+[6.641037] (-) TimerEvent: {}
+[6.741342] (-) TimerEvent: {}
+[6.841638] (-) TimerEvent: {}
+[6.941941] (-) TimerEvent: {}
+[7.001740] (pegasus_arm_commander) StdoutLine: {'line': b'running egg_info\n'}
+[7.002170] (pegasus_arm_commander) StdoutLine: {'line': b'creating ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info\n'}
+[7.037412] (pegasus_arm_commander) StdoutLine: {'line': b'writing ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/PKG-INFO\n'}
+[7.037711] (pegasus_arm_commander) StdoutLine: {'line': b'writing dependency_links to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/dependency_links.txt\n'}
+[7.037927] (pegasus_arm_commander) StdoutLine: {'line': b'writing entry points to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/entry_points.txt\n'}
+[7.038151] (pegasus_arm_commander) StdoutLine: {'line': b'writing requirements to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/requires.txt\n'}
+[7.038468] (pegasus_arm_commander) StdoutLine: {'line': b'writing top-level names to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/top_level.txt\n'}
+[7.038733] (pegasus_arm_commander) StdoutLine: {'line': b"writing manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'\n"}
+[7.042034] (-) TimerEvent: {}
+[7.113686] (pegasus_arm_commander) StdoutLine: {'line': b"reading manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'\n"}
+[7.114801] (pegasus_arm_commander) StdoutLine: {'line': b"writing manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'\n"}
+[7.115124] (pegasus_arm_commander) StdoutLine: {'line': b'running build\n'}
+[7.115410] (pegasus_arm_commander) StdoutLine: {'line': b'running build_py\n'}
+[7.115703] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/build/pegasus_arm_commander/build\n'}
+[7.115979] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib\n'}
+[7.116273] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander\n'}
+[7.116653] (pegasus_arm_commander) StdoutLine: {'line': b'copying pegasus_arm_commander/__init__.py -> /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander\n'}
+[7.116872] (pegasus_arm_commander) StdoutLine: {'line': b'copying pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander\n'}
+[7.117157] (pegasus_arm_commander) StdoutLine: {'line': b'running install\n'}
+[7.126340] (pegasus_arm_commander) StdoutLine: {'line': b'running install_lib\n'}
+[7.142144] (-) TimerEvent: {}
+[7.164974] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander\n'}
+[7.165395] (pegasus_arm_commander) StdoutLine: {'line': b'copying /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander/__init__.py -> /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander\n'}
+[7.165656] (pegasus_arm_commander) StdoutLine: {'line': b'copying /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander\n'}
+[7.166489] (pegasus_arm_commander) StdoutLine: {'line': b'byte-compiling /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander/__init__.py to __init__.cpython-312.pyc\n'}
+[7.166917] (pegasus_arm_commander) StdoutLine: {'line': b'byte-compiling /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander/pegasus_commander.py to pegasus_commander.cpython-312.pyc\n'}
+[7.185989] (pegasus_arm_commander) StdoutLine: {'line': b'running install_data\n'}
+[7.186406] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/share\n'}
+[7.186717] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/share/ament_index\n'}
+[7.186977] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/share/ament_index/resource_index\n'}
+[7.187219] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/share/ament_index/resource_index/packages\n'}
+[7.187509] (pegasus_arm_commander) StdoutLine: {'line': b'copying resource/pegasus_arm_commander -> /home/mmms/ros2-ws/install/pegasus_arm_commander/share/ament_index/resource_index/packages\n'}
+[7.187725] (pegasus_arm_commander) StdoutLine: {'line': b'creating /home/mmms/ros2-ws/install/pegasus_arm_commander/share/pegasus_arm_commander\n'}
+[7.187946] (pegasus_arm_commander) StdoutLine: {'line': b'copying package.xml -> /home/mmms/ros2-ws/install/pegasus_arm_commander/share/pegasus_arm_commander\n'}
+[7.188160] (pegasus_arm_commander) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.225156] (pegasus_arm_commander) StdoutLine: {'line': b'Copying ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info to /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander-0.0.1-py3.12.egg-info\n'}
+[7.226582] (pegasus_arm_commander) StdoutLine: {'line': b'running install_scripts\n'}
+[7.242247] (-) TimerEvent: {}
+[7.342564] (-) TimerEvent: {}
+[7.442948] (-) TimerEvent: {}
+[7.459842] (pegasus_arm_commander) StdoutLine: {'line': b'Installing pegasus_commander script to /home/mmms/ros2-ws/install/pegasus_arm_commander/bin\n'}
+[7.460330] (pegasus_arm_commander) StdoutLine: {'line': b"writing list of installed files to '/home/mmms/ros2-ws/build/pegasus_arm_commander/install.log'\n"}
+[7.513487] (pegasus_arm_commander) CommandEnded: {'returncode': 0}
+[7.543064] (-) TimerEvent: {}
+[7.643870] (-) TimerEvent: {}
+[7.670513] (pegasus_arm_commander) JobEnded: {'identifier': 'pegasus_arm_commander', 'rc': 0}
+[7.672819] (-) EventReactorShutdown: {}

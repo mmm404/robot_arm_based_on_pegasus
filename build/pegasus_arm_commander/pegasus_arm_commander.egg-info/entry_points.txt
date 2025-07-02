@@ -1,0 +1,2 @@
+[console_scripts]
+pegasus_commander = pegasus_arm_commander.pegasus_commander:main

@@ -1,0 +1,15 @@
+planner_configs:
+  RRTConnect:
+    type: geometric::RRTConnect
+    range: 0.0
+    goal_bias: 0.05
+  RRTstar:
+    type: geometric::RRTstar
+    range: 0.0
+    goal_bias: 0.05
+    delay_collision_checking: 1
+
+arm:
+  planner_configs: [RRTConnect, RRTstar]
+  projection_evaluator: joints(joint1_base,joint2_shoulder)
+  longest_valid_segment_fraction: 0.05

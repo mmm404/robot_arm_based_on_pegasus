@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/PKG-INFO
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/dependency_links.txt
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/entry_points.txt
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/requires.txt
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/top_level.txt
+../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/zip-safe
+pegasus_arm_commander/__init__.py
+pegasus_arm_commander/pegasus_commander.py
+resource/pegasus_arm_commander
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

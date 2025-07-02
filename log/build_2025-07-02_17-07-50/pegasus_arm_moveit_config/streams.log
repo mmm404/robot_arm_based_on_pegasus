@@ -1,0 +1,104 @@
+[0.058s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit_config -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_moveit_config
+[1.928s] -- The C compiler identification is GNU 13.3.0
+[2.601s] -- The CXX compiler identification is GNU 13.3.0
+[2.816s] -- Detecting C compiler ABI info
+[3.184s] -- Detecting C compiler ABI info - done
+[3.201s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.203s] -- Detecting C compile features
+[3.205s] -- Detecting C compile features - done
+[3.278s] -- Detecting CXX compiler ABI info
+[3.487s] -- Detecting CXX compiler ABI info - done
+[3.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.509s] -- Detecting CXX compile features
+[3.510s] -- Detecting CXX compile features - done
+[3.693s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.121s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.601s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.975s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.028s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.028s] -- Configured cppcheck include dirs: 
+[5.029s] -- Configured cppcheck exclude dirs and/or files: 
+[5.080s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.080s] -- Configured cpplint exclude dirs and/or files: 
+[5.086s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.086s] -- Configured 'flake8' exclude dirs and/or files: 
+[5.095s] -- Added test 'lint_cmake' to check CMake code style
+[5.100s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.127s] -- Added test 'uncrustify' to check C / C++ code style
+[5.127s] -- Configured uncrustify additional arguments: 
+[5.151s] -- Added test 'xmllint' to check XML markup files
+[5.161s] -- Configuring done (4.7s)
+[5.183s] -- Generating done (0.0s)
+[5.200s] -- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_arm_moveit_config
+[5.214s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_arm_moveit_config -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_arm_moveit_config
+[5.218s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_moveit_config -- -j4 -l4
+[5.280s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_moveit_config -- -j4 -l4
+[5.299s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_moveit_config
+[5.312s] -- Install configuration: ""
+[5.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config
+[5.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/ros2_controllers.yaml
+[5.312s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/ompl_planning.yaml
+[5.313s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.urdf.xacro
+[5.313s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pilz_cartesian_limits.yaml
+[5.313s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/initial_positions.yaml
+[5.314s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.ros2_control.xacro
+[5.314s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/pegasus_arm.srdf
+[5.314s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/.vscode
+[5.314s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/.vscode/c_cpp_properties.json
+[5.315s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/.vscode/settings.json
+[5.315s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/controllers.yaml
+[5.315s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/kinematics.yaml
+[5.315s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/moveit.rviz
+[5.315s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/config/sensors_3d.yaml
+[5.316s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch
+[5.316s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/demo.launch.py
+[5.316s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install
+[5.316s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/local_setup.bash
+[5.316s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/setup.sh
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/local_setup.ps1
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/_local_setup_util_sh.py
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/setup.bash
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/.colcon_install_layout
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/local_setup.sh
+[5.317s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/COLCON_IGNORE
+[5.318s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/setup.ps1
+[5.318s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/setup.zsh
+[5.318s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/local_setup.zsh
+[5.318s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/install/_local_setup_util_ps1.py
+[5.319s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/rsp.launch.py
+[5.319s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/move_group.launch.py
+[5.319s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[5.319s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/.vscode
+[5.319s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/.vscode/c_cpp_properties.json
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/.vscode/settings.json
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/COLCON_IGNORE
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/latest
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/build_2025-05-07_15-53-01
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/build_2025-05-07_15-53-01/events.log
+[5.320s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/build_2025-05-07_15-53-01/logger_all.log
+[5.321s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/log/latest_build
+[5.321s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/spawn_controllers.launch.py
+[5.321s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/warehouse_db.launch.py
+[5.321s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/moveit_rviz.launch.py
+[5.321s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/setup_assistant.launch.py
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/build
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/build/COLCON_IGNORE
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/launch/build/.built_by
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/.setup_assistant
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_moveit_config
+[5.322s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_moveit_config
+[5.323s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/ament_prefix_path.sh
+[5.323s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/ament_prefix_path.dsv
+[5.323s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/path.sh
+[5.323s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/environment/path.dsv
+[5.323s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.bash
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.sh
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.zsh
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/local_setup.dsv
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/package.dsv
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/ament_index/resource_index/packages/pegasus_arm_moveit_config
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/cmake/pegasus_arm_moveit_configConfig.cmake
+[5.324s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/cmake/pegasus_arm_moveit_configConfig-version.cmake
+[5.325s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_moveit_config/share/pegasus_arm_moveit_config/package.xml
+[5.327s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_moveit_config
