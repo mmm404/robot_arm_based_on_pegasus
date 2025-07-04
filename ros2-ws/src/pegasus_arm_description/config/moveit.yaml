@@ -1,0 +1,10 @@
+move_group:
+  moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+  planning_plugins:
+    - ompl_interface/OMPLPlanner
+  request_adapters:
+    - default_planner_request_adapters/AddTimeParameterization
+    - default_planner_request_adapters/FixWorkspaceBounds
+    - default_planner_request_adapters/FixStartStateBounds
+    - default_planner_request_adapters/FixStartStateCollision
+    - default_planner_request_adapters/FixStartStatePathConstraints

@@ -1,0 +1,28 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    pegasus_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+      joints:
+        - joint1_base
+        - joint2_shoulder
+        - joint3_elbow
+        - joint4
+        - joint5_wrist
+      command_interfaces:
+        - velocity  # Changed for joint1_base
+        - position
+        - position
+        - position
+        - position
+      state_interfaces:
+        - position
+        - velocity
+      allow_partial_joints_goal: true
+      constraints:
+        stopped_velocity_tolerance: 0.01
+        goal_time: 2.0

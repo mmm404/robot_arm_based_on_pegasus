@@ -1,0 +1,22 @@
+move_group:
+  planning_plugin: ompl_interface/OMPLPlanner
+  request_adapters:
+    - default_planner_request_adapters/AddTimeParameterization
+    - default_planner_request_adapters/FixWorkspaceBounds
+    - default_planner_request_adapters/FixStartStateBounds
+    - default_planner_request_adapters/FixStartStateCollision
+    - default_planner_request_adapters/FixStartStatePathConstraints
+  start_state_max_bounds_error: 0.1
+
+planning_pipelines:
+  pipeline_names: ['ompl']
+  
+  ompl:
+    planner_configs:
+      RRTConnectkConfigDefault:
+        type: geometric::RRTConnect
+    manipulator:
+      planner_configs:
+        - RRTConnectkConfigDefault
+      projection_evaluator: joints(joint1, joint2)
+      longest_valid_segment_fraction: 0.005

@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: pegasus_arm_description
+    relative_path: URDF/pegasus_arm.urdf.xacro
+  srdf:
+    relative_path: config/pegasus.srdf
+  package_settings:
+    author_name: ""
+    author_email: ""
+    generated_timestamp: 1751529548
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

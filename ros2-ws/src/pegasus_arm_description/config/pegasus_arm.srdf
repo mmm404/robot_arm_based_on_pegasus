@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="pegasus_arm">
+  <group name="arm">
+    <chain base_link="base_link" tip_link="link6"/>
+  </group>
+  <end_effector name="ee" parent_link="link6" group="arm"/>
+  <virtual_joint name="world_to_base" type="fixed" parent_frame="world" child_link="dummy_link"/>
+  <disable_collisions link1="dummy_link" link2="base_link" reason="Adjacent"/>
+  <disable_collisions link1="base_link" link2="link1" reason="Adjacent"/>
+  <disable_collisions link1="link1" link2="link2" reason="Adjacent"/>
+  <disable_collisions link1="link2" link2="link3" reason="Adjacent"/>
+  <disable_collisions link1="link3" link2="link4" reason="Adjacent"/>
+  <disable_collisions link1="link4" link2="link5" reason="Adjacent"/>
+  <disable_collisions link1="link5" link2="link6" reason="Adjacent"/>
+</robot>

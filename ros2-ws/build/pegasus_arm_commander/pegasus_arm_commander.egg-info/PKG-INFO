@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pegasus-arm-commander
+Version: 0.0.1
+Summary: Command interface for Pegasus robot arm
+Maintainer: Sam
+Maintainer-email: sam@example.com
+License: MIT

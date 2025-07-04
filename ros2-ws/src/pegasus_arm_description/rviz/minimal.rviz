@@ -1,0 +1,34 @@
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Name: Visualization Manager
+  Value: true
+  Displays:
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Visual Enabled: true
+      Collision Enabled: false
+      Robot Description: robot_description
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+      Marker Scale: 0.1
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/ThirdPersonFollow
+      Distance: 5.0
+      Focal Point: {X: 0.0, Y: 0.0, Z: 0.0}
+      Pitch: 0.785
+      Yaw: 0.0
+    Saved: []
+Global Options:
+  Background Color: [0.0, 0.0, 0.0]
+  Fixed Frame: world
+  Frame Rate: 30
