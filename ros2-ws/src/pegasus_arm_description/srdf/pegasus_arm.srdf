@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="pegasus">
+  <!-- Virtual Joint -->
+  <virtual_joint name="world_to_base_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+
+  <!-- Planning Groups -->
+  <group name="arm">
+    <joint name="joint1"/>
+    <joint name="joint2"/>
+    <joint name="joint3"/>
+    <joint name="joint4"/>
+    <joint name="joint5"/>
+  </group>
+
+  <!-- Disable Self-Collisions -->
+  <disable_collisions link1="base_link" link2="link1" reason="Adjacent"/>
+  <disable_collisions link1="link1" link2="link2" reason="Adjacent"/>
+  <disable_collisions link1="link2" link2="link3" reason="Adjacent"/>
+  <disable_collisions link1="link3" link2="link4" reason="Adjacent"/>
+  <disable_collisions link1="link4" link2="link5" reason="Adjacent"/>
+  <disable_collisions link1="link5" link2="link6" reason="Adjacent"/>
+  <disable_collisions link1="link6" link2="end_effector_link" reason="Adjacent"/>
+</robot>
+

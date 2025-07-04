@@ -1,0 +1,770 @@
+[INFO] [launch]: All log files can be found below /home/mmms/.ros/log/2025-06-13-17-13-54-893273-mmms-56515
+[INFO] [launch]: Default logging verbosity is set to INFO
+SRDF Path: /home/mmms/ros2-ws/src/pegasus_arm_description/install/pegasus_arm_description/share/pegasus_arm_description/srdf/pegasus_arm.srdf
+Controllers YAML Path: /home/mmms/ros2-ws/src/pegasus_arm_description/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers.yaml
+RViz Config Path: /home/mmms/ros2-ws/src/pegasus_arm_description/install/pegasus_arm_description/share/pegasus_arm_description/rviz/moveit.rviz
+Successfully loaded SRDF content
+[INFO] [launch.user]: Starting Pegasus Arm MoveIt Launch...
+[INFO] [robot_state_publisher-1]: process started with pid [56521]
+[INFO] [static_transform_publisher-2]: process started with pid [56522]
+[INFO] [launch.user]: Robot State Publisher started, waiting for TF tree...
+[static_transform_publisher-2] [WARN] [1749824035.263597290] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-2] [INFO] [1749824035.293525278] [static_transform_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-2] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-2] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-2] from 'world' to 'base_link'
+[robot_state_publisher-1] [WARN] [1749824035.298023786] [kdl_parser]: The root link dummy_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-1] [INFO] [1749824035.298202579] [robot_state_publisher]: Robot initialized
+[INFO] [launch.user]: Starting Controller Manager...
+[WARNING] [launch_ros.actions.node]: Parameter file path is not a file: ~/ros2-ws/src/pegasus_arm_description/config/ros2_controllers.yaml
+[INFO] [ros2_control_node-3]: process started with pid [56613]
+[INFO] [launch.user]: Controller Manager started, waiting for services...
+[ros2_control_node-3] [INFO] [1749824040.692528785] [controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[ros2_control_node-3] [INFO] [1749824040.701374678] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[ros2_control_node-3] [INFO] [1749824040.716013858] [controller_manager]: update rate is 100 Hz
+[ros2_control_node-3] [INFO] [1749824040.716083814] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-3] [WARN] [1749824040.716232421] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-3] [INFO] [1749824040.716727015] [controller_manager]: Received robot description from topic.
+[ros2_control_node-3] [INFO] [1749824040.720134646] [controller_manager]: Loading hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824040.722148554] [controller_manager]: Loaded hardware 'PegasusArm' from plugin 'mock_components/GenericSystem'
+[ros2_control_node-3] [INFO] [1749824040.722447306] [controller_manager]: Initialize hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824040.722878948] [controller_manager]: Successful initialization of hardware 'PegasusArm'
+[ros2_control_node-3] [INFO] [1749824040.723349425] [resource_manager]: 'configure' hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824040.723368547] [resource_manager]: Successful 'configure' of hardware 'PegasusArm'
+[ros2_control_node-3] [INFO] [1749824040.723382095] [resource_manager]: 'activate' hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824040.723396333] [resource_manager]: Successful 'activate' of hardware 'PegasusArm'
+[ros2_control_node-3] [INFO] [1749824040.723503045] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[INFO] [spawner-4]: process started with pid [56635]
+[ros2_control_node-3] [ERROR] [1749824055.956541756] [controller_manager]: The 'type' param was not defined for 'joint_state_broadcaster'.
+[spawner-4] [FATAL] [1749824055.990663923] [spawner_joint_state_broadcaster]: [91mFailed loading controller [1mjoint_state_broadcaster[0m
+[ERROR] [spawner-4]: process has died [pid 56635, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /controller_manager --controller-manager-timeout 30 --ros-args --params-file /tmp/launch_params_6bzxjza6'].
+[INFO] [launch.user]: Joint State Broadcaster started, spawning Pegasus Arm Controller...
+[INFO] [spawner-5]: process started with pid [56650]
+[ros2_control_node-3] [ERROR] [1749824056.846307840] [controller_manager]: The 'type' param was not defined for 'pegasus_arm_controller'.
+[spawner-5] [FATAL] [1749824056.879047208] [spawner_pegasus_arm_controller]: [91mFailed loading controller [1mpegasus_arm_controller[0m
+[ERROR] [spawner-5]: process has died [pid 56650, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner pegasus_arm_controller --controller-manager /controller_manager --controller-manager-timeout 30 --ros-args --params-file /tmp/launch_params_5rf2j9uj'].
+[INFO] [launch.user]: Pegasus Arm Controller spawned, starting MoveIt MoveGroup...
+[INFO] [move_group-6]: process started with pid [56665]
+[INFO] [launch.user]: MoveIt MoveGroup started, launching RViz and checking topics...
+[move_group-6] [DEBUG] [1749824062.230039664] [rclcpp]: signal handler installed
+[move_group-6] [DEBUG] [1749824062.230079667] [rclcpp]: deferred_signal_handler(): waiting for SIGINT/SIGTERM or uninstall
+[move_group-6] [DEBUG] [1749824062.230174251] [rcl]: Initializing node 'move_group' in namespace ''
+[move_group-6] [DEBUG] [1749824062.230203563] [rcl]: Using domain ID of '0'
+[move_group-6] [DEBUG] [1749824062.257279803] [rcl]: Node initialized
+[move_group-6] [DEBUG] [1749824062.257353810] [rcl]: Initializing publisher for topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.257389362] [rcl]: Expanded and remapped topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.261149388] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.261628499] [rcl]: Initializing service for service name 'move_group/get_parameters'
+[move_group-6] [DEBUG] [1749824062.261647807] [rcl]: Expanded and remapped service name '/move_group/get_parameters'
+[move_group-6] [DEBUG] [1749824062.264097405] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.264137708] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/get_parametersRequest
+[move_group-6] [DEBUG] [1749824062.264145282] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/get_parametersReply
+[move_group-6] [DEBUG] [1749824062.264151536] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.264487574] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.264545399] [rcl]: Initializing service for service name 'move_group/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.264564982] [rcl]: Expanded and remapped service name '/move_group/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.265509399] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.265534216] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/get_parameter_typesRequest
+[move_group-6] [DEBUG] [1749824062.265541515] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/get_parameter_typesReply
+[move_group-6] [DEBUG] [1749824062.265547564] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.265768238] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.265805066] [rcl]: Initializing service for service name 'move_group/set_parameters'
+[move_group-6] [DEBUG] [1749824062.265824158] [rcl]: Expanded and remapped service name '/move_group/set_parameters'
+[move_group-6] [DEBUG] [1749824062.266890485] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.266915025] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/set_parametersRequest
+[move_group-6] [DEBUG] [1749824062.266922130] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/set_parametersReply
+[move_group-6] [DEBUG] [1749824062.266928125] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.267187887] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.267223690] [rcl]: Initializing service for service name 'move_group/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.267241508] [rcl]: Expanded and remapped service name '/move_group/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.268194498] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.268222147] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/set_parameters_atomicallyRequest
+[move_group-6] [DEBUG] [1749824062.268230516] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/set_parameters_atomicallyReply
+[move_group-6] [DEBUG] [1749824062.268236976] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.268504961] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.268546003] [rcl]: Initializing service for service name 'move_group/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.268564790] [rcl]: Expanded and remapped service name '/move_group/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.269953359] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.269987302] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/describe_parametersRequest
+[move_group-6] [DEBUG] [1749824062.269995023] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/describe_parametersReply
+[move_group-6] [DEBUG] [1749824062.270000854] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.270296084] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.270338238] [rcl]: Initializing service for service name 'move_group/list_parameters'
+[move_group-6] [DEBUG] [1749824062.270356985] [rcl]: Expanded and remapped service name '/move_group/list_parameters'
+[move_group-6] [DEBUG] [1749824062.271230174] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.271299481] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/list_parametersRequest
+[move_group-6] [DEBUG] [1749824062.271350191] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/list_parametersReply
+[move_group-6] [DEBUG] [1749824062.271359084] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.271586723] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.271638675] [rcl]: Initializing publisher for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.271671701] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.278244581] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.280553337] [rcl]: Initializing subscription for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.280694891] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.281691305] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.281933557] [rcl]: Initializing service for service name '/move_group/get_type_description'
+[move_group-6] [DEBUG] [1749824062.281951821] [rcl]: Expanded and remapped service name '/move_group/get_type_description'
+[move_group-6] [DEBUG] [1749824062.284115042] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.284206536] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/get_type_descriptionRequest
+[move_group-6] [DEBUG] [1749824062.284219706] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/get_type_descriptionReply
+[move_group-6] [DEBUG] [1749824062.284229961] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.285612120] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.287200336] [rcl]: Initializing node 'moveit' in namespace 'move_group'
+[move_group-6] [DEBUG] [1749824062.287280434] [rcl]: Using domain ID of '0'
+[move_group-6] [DEBUG] [1749824062.287376781] [rcl]: Node initialized
+[move_group-6] [DEBUG] [1749824062.287394035] [rcl]: Initializing publisher for topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.287407341] [rcl]: Expanded and remapped topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.288136192] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.288469886] [rcl]: Initializing service for service name 'moveit/get_parameters'
+[move_group-6] [DEBUG] [1749824062.288490582] [rcl]: Expanded and remapped service name '/move_group/moveit/get_parameters'
+[move_group-6] [DEBUG] [1749824062.289184539] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.289204618] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/get_parametersRequest
+[move_group-6] [DEBUG] [1749824062.289210449] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/get_parametersReply
+[move_group-6] [DEBUG] [1749824062.289215551] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.289405600] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.289432566] [rcl]: Initializing service for service name 'moveit/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.289445760] [rcl]: Expanded and remapped service name '/move_group/moveit/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.290114518] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.290132437] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/get_parameter_typesRequest
+[move_group-6] [DEBUG] [1749824062.290137909] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/get_parameter_typesReply
+[move_group-6] [DEBUG] [1749824062.290142662] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.290887149] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.290991730] [rcl]: Initializing service for service name 'moveit/set_parameters'
+[move_group-6] [DEBUG] [1749824062.291029143] [rcl]: Expanded and remapped service name '/move_group/moveit/set_parameters'
+[move_group-6] [DEBUG] [1749824062.292809537] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.292835250] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/set_parametersRequest
+[move_group-6] [DEBUG] [1749824062.292839237] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/set_parametersReply
+[move_group-6] [DEBUG] [1749824062.292842638] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.292976682] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.293000194] [rcl]: Initializing service for service name 'moveit/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.293011336] [rcl]: Expanded and remapped service name '/move_group/moveit/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.293820772] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.293851020] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/set_parameters_atomicallyRequest
+[move_group-6] [DEBUG] [1749824062.293896503] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/set_parameters_atomicallyReply
+[move_group-6] [DEBUG] [1749824062.293905860] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.294131161] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.294155896] [rcl]: Initializing service for service name 'moveit/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.294168054] [rcl]: Expanded and remapped service name '/move_group/moveit/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.294977456] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.295003054] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/describe_parametersRequest
+[move_group-6] [DEBUG] [1749824062.295010459] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/describe_parametersReply
+[move_group-6] [DEBUG] [1749824062.295017632] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.295195748] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.295224878] [rcl]: Initializing service for service name 'moveit/list_parameters'
+[move_group-6] [DEBUG] [1749824062.295241246] [rcl]: Expanded and remapped service name '/move_group/moveit/list_parameters'
+[move_group-6] [DEBUG] [1749824062.296005605] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.296032245] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/list_parametersRequest
+[move_group-6] [DEBUG] [1749824062.296040258] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/list_parametersReply
+[move_group-6] [DEBUG] [1749824062.296045834] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.296198115] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.296230125] [rcl]: Initializing publisher for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.296244613] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.296992841] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.297423555] [rcl]: Initializing subscription for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.297452057] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.298310771] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.298488720] [rcl]: Initializing service for service name '/move_group/moveit/get_type_description'
+[move_group-6] [DEBUG] [1749824062.298505749] [rcl]: Expanded and remapped service name '/move_group/moveit/get_type_description'
+[move_group-6] [DEBUG] [1749824062.299380611] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.299405750] [rmw_fastrtps_cpp]: Sub Topic rq/move_group/moveit/get_type_descriptionRequest
+[move_group-6] [DEBUG] [1749824062.299413757] [rmw_fastrtps_cpp]: Pub Topic rr/move_group/moveit/get_type_descriptionReply
+[move_group-6] [DEBUG] [1749824062.299420210] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.299606610] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.300704833] [rcl]: Initializing node 'moveit_647919998' in namespace ''
+[move_group-6] [DEBUG] [1749824062.300737772] [rcl]: Using domain ID of '0'
+[move_group-6] [DEBUG] [1749824062.300884557] [rcl]: Node initialized
+[move_group-6] [DEBUG] [1749824062.300902742] [rcl]: Initializing publisher for topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.300916846] [rcl]: Expanded and remapped topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.303096060] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.303487946] [rcl]: Initializing service for service name 'moveit_647919998/get_parameters'
+[move_group-6] [DEBUG] [1749824062.303569604] [rcl]: Expanded and remapped service name '/moveit_647919998/get_parameters'
+[move_group-6] [DEBUG] [1749824062.305878886] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.306014225] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/get_parametersRequest
+[move_group-6] [DEBUG] [1749824062.306084460] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/get_parametersReply
+[move_group-6] [DEBUG] [1749824062.306092766] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.306951104] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.307021205] [rcl]: Initializing service for service name 'moveit_647919998/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.307042205] [rcl]: Expanded and remapped service name '/moveit_647919998/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.308235817] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.308329785] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/get_parameter_typesRequest
+[move_group-6] [DEBUG] [1749824062.308338839] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/get_parameter_typesReply
+[move_group-6] [DEBUG] [1749824062.308344604] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.308595661] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.308631635] [rcl]: Initializing service for service name 'moveit_647919998/set_parameters'
+[move_group-6] [DEBUG] [1749824062.308649089] [rcl]: Expanded and remapped service name '/moveit_647919998/set_parameters'
+[move_group-6] [DEBUG] [1749824062.310010639] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.310037403] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/set_parametersRequest
+[move_group-6] [DEBUG] [1749824062.310044996] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/set_parametersReply
+[move_group-6] [DEBUG] [1749824062.310050899] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.310236147] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.310283344] [rcl]: Initializing service for service name 'moveit_647919998/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.310305295] [rcl]: Expanded and remapped service name '/moveit_647919998/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.311232503] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.311399152] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/set_parameters_atomicallyRequest
+[move_group-6] [DEBUG] [1749824062.311465481] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/set_parameters_atomicallyReply
+[move_group-6] [DEBUG] [1749824062.311473966] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.311665609] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.311696885] [rcl]: Initializing service for service name 'moveit_647919998/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.311716199] [rcl]: Expanded and remapped service name '/moveit_647919998/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.312839657] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.312908914] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/describe_parametersRequest
+[move_group-6] [DEBUG] [1749824062.312918295] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/describe_parametersReply
+[move_group-6] [DEBUG] [1749824062.312929335] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.313428026] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.313479467] [rcl]: Initializing service for service name 'moveit_647919998/list_parameters'
+[move_group-6] [DEBUG] [1749824062.313497309] [rcl]: Expanded and remapped service name '/moveit_647919998/list_parameters'
+[move_group-6] [DEBUG] [1749824062.315132978] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.315161376] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/list_parametersRequest
+[move_group-6] [DEBUG] [1749824062.315168452] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/list_parametersReply
+[move_group-6] [DEBUG] [1749824062.315175473] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.315355831] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.315391675] [rcl]: Initializing publisher for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.315675926] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.317668177] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.318207941] [rcl]: Initializing subscription for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.318312791] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.320765063] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.321485513] [rcl]: Initializing service for service name '/moveit_647919998/get_type_description'
+[move_group-6] [DEBUG] [1749824062.321593742] [rcl]: Expanded and remapped service name '/moveit_647919998/get_type_description'
+[move_group-6] [DEBUG] [1749824062.324930965] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.324969150] [rmw_fastrtps_cpp]: Sub Topic rq/moveit_647919998/get_type_descriptionRequest
+[move_group-6] [DEBUG] [1749824062.324977298] [rmw_fastrtps_cpp]: Pub Topic rr/moveit_647919998/get_type_descriptionReply
+[move_group-6] [DEBUG] [1749824062.324983252] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.325578411] [rcl]: Service initialized
+[move_group-6] [WARN] [1749824062.326686245] [move_group]: Falling back to using the the move_group node namespace (deprecated behavior).
+[move_group-6] [DEBUG] [1749824062.329549367] [pluginlib.ClassLoader]: Creating ClassLoader, base = urdf::URDFParser, address = 0x5b7918256410
+[move_group-6] [DEBUG] [1749824062.329910381] [pluginlib.ClassLoader]: Entering determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.329922704] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/sdformat_urdf/sdformat_urdf_plugin.xml...
+[move_group-6] [DEBUG] [1749824062.330117204] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = sdformat_urdf_plugin/SDFormatURDFParser.
+[move_group-6] [DEBUG] [1749824062.330148814] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/urdf/urdf_parser_description.xml...
+[move_group-6] [DEBUG] [1749824062.330269286] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = urdf_xml_parser/URDFXMLParser.
+[move_group-6] [DEBUG] [1749824062.330288938] [pluginlib.ClassLoader]: Exiting determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.330299023] [pluginlib.ClassLoader]: Finished constructring ClassLoader, base = urdf::URDFParser, address = 0x5b7918256410
+[move_group-6] [DEBUG] [1749824062.330331726] [pluginlib.ClassLoader]: Attempting to create managed (unique) instance for class sdformat_urdf_plugin/SDFormatURDFParser.
+[move_group-6] [DEBUG] [1749824062.330348910] [pluginlib.ClassLoader]: Class sdformat_urdf_plugin/SDFormatURDFParser maps to library sdformat_urdf_plugin in classes_available_.
+[move_group-6] [DEBUG] [1749824062.330440277] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330452611] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330460840] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330468338] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330476122] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330483865] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330491517] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330500019] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330508402] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330516050] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330523570] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330531533] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330539297] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330547424] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330556078] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330563954] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330572373] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330580688] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330611750] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330621507] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330630435] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330638689] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330646636] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330654734] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330662323] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330669822] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330677782] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330753348] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330763574] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330771323] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330779207] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330786489] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330795019] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330802876] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330810584] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330818993] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330827046] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330835336] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330854030] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330863467] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/lib64/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330871480] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330879206] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330887582] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/libsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330895858] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/liblibsdformat_urdf_plugin.so'
+[move_group-6] [DEBUG] [1749824062.330916475] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330927983] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330935586] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/libsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330943690] [pluginlib.ClassLoader]: [search path for 'sdformat_urdf_plugin']: '/opt/ros/jazzy/bin/sdformat_urdf/liblibsdformat_urdf_plugind.so'
+[move_group-6] [DEBUG] [1749824062.330952750] [pluginlib.ClassLoader]: Iterating through all possible paths where sdformat_urdf_plugin could be located...
+[move_group-6] [DEBUG] [1749824062.330960886] [pluginlib.ClassLoader]: Checking path /opt/ros/jazzy/lib/libsdformat_urdf_plugin.so 
+[move_group-6] [DEBUG] [1749824062.330978226] [pluginlib.ClassLoader]: Library sdformat_urdf_plugin found at explicit path /opt/ros/jazzy/lib/libsdformat_urdf_plugin.so.
+[move_group-6] [DEBUG] [1749824062.333748931] [pluginlib.ClassLoader]: sdformat_urdf_plugin/SDFormatURDFParser maps to real class type sdformat_urdf::SDFormatURDFParser
+[move_group-6] [DEBUG] [1749824062.333796083] [pluginlib.ClassLoader]: std::unique_ptr to object of real type sdformat_urdf::SDFormatURDFParser created.
+[move_group-6] [DEBUG] [1749824062.334028384] [pluginlib.ClassLoader]: Attempting to create managed (unique) instance for class urdf_xml_parser/URDFXMLParser.
+[move_group-6] [DEBUG] [1749824062.334049078] [pluginlib.ClassLoader]: Class urdf_xml_parser/URDFXMLParser maps to library urdf_xml_parser in classes_available_.
+[move_group-6] [DEBUG] [1749824062.334153230] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334165849] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334174336] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334182901] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334190641] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334198024] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334205874] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334213834] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334221372] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334229502] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334237555] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334245393] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334267783] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334276110] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334283922] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334291694] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334299256] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334332789] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334342806] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334350556] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334358678] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334365685] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334373581] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334380705] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334388896] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334397256] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334405191] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334413299] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334423966] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334431785] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334439324] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334446862] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334454661] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334461411] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334469099] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334480031] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334488770] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334496930] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334503674] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334604501] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/lib64/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334614988] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334623048] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334631227] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/liburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334639267] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/libliburdf_xml_parser.so'
+[move_group-6] [DEBUG] [1749824062.334647095] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334655268] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334673832] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/liburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334683232] [pluginlib.ClassLoader]: [search path for 'urdf_xml_parser']: '/opt/ros/jazzy/bin/urdf/libliburdf_xml_parserd.so'
+[move_group-6] [DEBUG] [1749824062.334702827] [pluginlib.ClassLoader]: Iterating through all possible paths where urdf_xml_parser could be located...
+[move_group-6] [DEBUG] [1749824062.334712286] [pluginlib.ClassLoader]: Checking path /opt/ros/jazzy/lib/liburdf_xml_parser.so 
+[move_group-6] [DEBUG] [1749824062.334739533] [pluginlib.ClassLoader]: Library urdf_xml_parser found at explicit path /opt/ros/jazzy/lib/liburdf_xml_parser.so.
+[move_group-6] [DEBUG] [1749824062.336131507] [pluginlib.ClassLoader]: urdf_xml_parser/URDFXMLParser maps to real class type urdf::URDFXMLParser
+[move_group-6] [DEBUG] [1749824062.336174845] [pluginlib.ClassLoader]: std::unique_ptr to object of real type urdf::URDFXMLParser created.
+[move_group-6] Error:   Link 'end_effector_link' declared as part of a chain in group 'arm' is not known to the URDF
+[move_group-6]          at line 217 in ./src/model.cpp
+[move_group-6] Error:   Link 'end_effector_link' declared as part of group 'gripper' is not known to the URDF
+[move_group-6]          at line 166 in ./src/model.cpp
+[move_group-6] Warning: Group 'gripper' is empty.
+[move_group-6]          at line 262 in ./src/model.cpp
+[move_group-6] Error:   Link 'end_effector_link' specified as parent for end effector 'gripper_end_effector' is not known to the URDF
+[move_group-6]          at line 440 in ./src/model.cpp
+[move_group-6] Warning: Link 'end_effector_link' is not known to URDF. Cannot disable/enable collisons.
+[move_group-6]          at line 594 in ./src/model.cpp
+[move_group-6] [INFO] [1749824062.339002986] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0.0113658 seconds
+[move_group-6] [INFO] [1749824062.339369118] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'pegasus_arm'...
+[move_group-6] [DEBUG] [1749824062.339401974] [move_group.moveit.moveit.core.robot_model]: ... building kinematic chain
+[move_group-6] [INFO] [1749824062.339427515] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-6] [DEBUG] [1749824062.339642393] [move_group.moveit.moveit.core.robot_model]: ... building mimic joints
+[move_group-6] [DEBUG] [1749824062.339681012] [move_group.moveit.moveit.core.robot_model]: ... computing joint indexing
+[move_group-6] [DEBUG] [1749824062.339750937] [move_group.moveit.moveit.core.robot_model]: ... constructing joint groups
+[move_group-6] [WARN] [1749824062.339821838] [move_group.moveit.moveit.core.robot_model]: Group 'gripper' must have at least one valid joint
+[move_group-6] [WARN] [1749824062.339847659] [move_group.moveit.moveit.core.robot_model]: Failed to add group 'gripper'
+[move_group-6] [DEBUG] [1749824062.339874517] [move_group.moveit.moveit.core.robot_model]: ... constructing joint group states
+[move_group-6] [DEBUG] [1749824062.342700607] [move_group.moveit.moveit.ros.kinematics_plugin_loader]: Configuring kinematics solvers
+[move_group-6] [DEBUG] [1749824062.342764516] [move_group.moveit.moveit.ros.kinematics_plugin_loader]: Loading kinematics parameters...
+[move_group-6] [DEBUG] [1749824062.343083000] [move_group]: robot_description_kinematics.arm.kinematics_solver: string = 
+[move_group-6] [DEBUG] [1749824062.343126725] [move_group]: robot_description_kinematics.arm.kinematics_solver_search_resolution: double = 0.100000
+[move_group-6] [DEBUG] [1749824062.343159630] [move_group]: robot_description_kinematics.arm.kinematics_solver_timeout: double = 0.050000
+[move_group-6] [DEBUG] [1749824062.343203692] [move_group.moveit.moveit.ros.kinematics_plugin_loader]: No kinematics solver specified for group 'arm'.
+[move_group-6] [DEBUG] [1749824062.345602702] [move_group]: robot_description_kinematics.gripper.kinematics_solver: string = 
+[move_group-6] [DEBUG] [1749824062.345661800] [move_group]: robot_description_kinematics.gripper.kinematics_solver_search_resolution: double = 0.100000
+[move_group-6] [DEBUG] [1749824062.345689953] [move_group]: robot_description_kinematics.gripper.kinematics_solver_timeout: double = 0.050000
+[move_group-6] [DEBUG] [1749824062.345714607] [move_group.moveit.moveit.ros.kinematics_plugin_loader]: No kinematics solver specified for group 'gripper'.
+[move_group-6] [DEBUG] [1749824062.345742952] [pluginlib.ClassLoader]: Creating ClassLoader, base = kinematics::KinematicsBase, address = 0x5b79183bc000
+[move_group-6] [DEBUG] [1749824062.346650462] [pluginlib.ClassLoader]: Entering determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.346672000] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_fcl_description.xml...
+[move_group-6] [DEBUG] [1749824062.346952837] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = FCL.
+[move_group-6] [DEBUG] [1749824062.346966617] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_bullet_description.xml...
+[move_group-6] [DEBUG] [1749824062.347079919] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = Bullet.
+[move_group-6] [DEBUG] [1749824062.347110025] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_acceleration.xml...
+[move_group-6] [DEBUG] [1749824062.347243602] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::AccelerationLimitedPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.347268095] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_butterworth.xml...
+[move_group-6] [DEBUG] [1749824062.347365917] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::ButterworthFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.347375254] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_ruckig.xml...
+[move_group-6] [DEBUG] [1749824062.347466542] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::RuckigFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.347478651] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/kdl_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.347567821] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = kdl_kinematics_plugin/KDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.347587367] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/srv_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.347674415] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = srv_kinematics_plugin/SrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.347695822] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/cached_ik_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.347832230] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedKDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.347850924] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedSrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.347873805] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_chomp/chomp_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.347970653] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = chomp_interface/CHOMPPlanner.
+[move_group-6] [DEBUG] [1749824062.347987537] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_ompl/ompl_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348083855] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = ompl_interface/OMPLPlanner.
+[move_group-6] [DEBUG] [1749824062.348094019] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_stomp/stomp_moveit_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348165010] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = stomp_moveit/StompPlanner.
+[move_group-6] [DEBUG] [1749824062.348176811] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_request_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348295065] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateBounds.
+[move_group-6] [DEBUG] [1749824062.348309921] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ValidateWorkspaceBounds.
+[move_group-6] [DEBUG] [1749824062.348319191] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateCollision.
+[move_group-6] [DEBUG] [1749824062.348328744] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ResolveConstraintFrames.
+[move_group-6] [DEBUG] [1749824062.348338646] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckForStackedConstraints.
+[move_group-6] [DEBUG] [1749824062.348347752] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_response_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348627867] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddTimeOptimalParameterization.
+[move_group-6] [DEBUG] [1749824062.348640217] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddRuckigTrajectorySmoothing.
+[move_group-6] [DEBUG] [1749824062.348645938] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/DisplayMotionPath.
+[move_group-6] [DEBUG] [1749824062.348651503] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/ValidateSolution.
+[move_group-6] [DEBUG] [1749824062.348657433] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_simple_controller_manager/moveit_simple_controller_manager_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348710696] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = moveit_simple_controller_manager/MoveItSimpleControllerManager.
+[move_group-6] [DEBUG] [1749824062.348719258] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/pilz_industrial_motion_planner/plugins/pilz_industrial_motion_planner_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.348831550] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = pilz_industrial_motion_planner/CommandPlanner.
+[move_group-6] [DEBUG] [1749824062.348840963] [pluginlib.ClassLoader]: Exiting determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.348845347] [pluginlib.ClassLoader]: Finished constructring ClassLoader, base = kinematics::KinematicsBase, address = 0x5b79183bc000
+[move_group-6] [DEBUG] [1749824062.348865743] [move_group.moveit.moveit.ros.robot_model_loader]: Loaded information about the following groups: '' 
+[move_group-6] [WARN] [1749824062.348897837] [move_group.moveit.moveit.ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
+[move_group-6] [DEBUG] [1749824062.348925512] [move_group.moveit.moveit.ros.robot_model_loader]: Loaded kinematic model in 0.021532 seconds
+[move_group-6] [DEBUG] [1749824062.348990131] [rcl]: Initializing wait set with '0' subscriptions, '0' guard conditions, '0' timers, '0' clients, '0' services
+[move_group-6] [DEBUG] [1749824062.349126726] [pluginlib.ClassLoader]: Creating ClassLoader, base = collision_detection::CollisionPlugin, address = 0x5b79183c1d40
+[move_group-6] [DEBUG] [1749824062.349529622] [pluginlib.ClassLoader]: Entering determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.349540252] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_fcl_description.xml...
+[move_group-6] [DEBUG] [1749824062.349651395] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = FCL.
+[move_group-6] [DEBUG] [1749824062.349665687] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_bullet_description.xml...
+[move_group-6] [DEBUG] [1749824062.349741378] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = Bullet.
+[move_group-6] [DEBUG] [1749824062.349749878] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_acceleration.xml...
+[move_group-6] [DEBUG] [1749824062.349845377] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::AccelerationLimitedPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.349857368] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_butterworth.xml...
+[move_group-6] [DEBUG] [1749824062.349932623] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::ButterworthFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.349940659] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_ruckig.xml...
+[move_group-6] [DEBUG] [1749824062.350011697] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::RuckigFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.350018905] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/kdl_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350100311] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = kdl_kinematics_plugin/KDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.350108217] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/srv_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350168105] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = srv_kinematics_plugin/SrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.350175108] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/cached_ik_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350285007] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedKDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.350297889] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedSrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.350304021] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_chomp/chomp_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350372077] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = chomp_interface/CHOMPPlanner.
+[move_group-6] [DEBUG] [1749824062.350380420] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_ompl/ompl_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350467061] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = ompl_interface/OMPLPlanner.
+[move_group-6] [DEBUG] [1749824062.350475788] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_stomp/stomp_moveit_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.350543394] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = stomp_moveit/StompPlanner.
+[move_group-6] [DEBUG] [1749824062.350553589] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_request_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.351312876] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateBounds.
+[move_group-6] [DEBUG] [1749824062.351333263] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ValidateWorkspaceBounds.
+[move_group-6] [DEBUG] [1749824062.351343020] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateCollision.
+[move_group-6] [DEBUG] [1749824062.351353028] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ResolveConstraintFrames.
+[move_group-6] [DEBUG] [1749824062.351363723] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckForStackedConstraints.
+[move_group-6] [DEBUG] [1749824062.351376012] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_response_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.351520474] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddTimeOptimalParameterization.
+[move_group-6] [DEBUG] [1749824062.351555375] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddRuckigTrajectorySmoothing.
+[move_group-6] [DEBUG] [1749824062.351567921] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/DisplayMotionPath.
+[move_group-6] [DEBUG] [1749824062.351581846] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/ValidateSolution.
+[move_group-6] [DEBUG] [1749824062.351595570] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_simple_controller_manager/moveit_simple_controller_manager_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.351750609] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = moveit_simple_controller_manager/MoveItSimpleControllerManager.
+[move_group-6] [DEBUG] [1749824062.351851267] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/pilz_industrial_motion_planner/plugins/pilz_industrial_motion_planner_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.352151072] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = pilz_industrial_motion_planner/CommandPlanner.
+[move_group-6] [DEBUG] [1749824062.352183133] [pluginlib.ClassLoader]: Exiting determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.352193506] [pluginlib.ClassLoader]: Finished constructring ClassLoader, base = collision_detection::CollisionPlugin, address = 0x5b79183c1d40
+[move_group-6] [DEBUG] [1749824062.352409436] [rcl]: Arg 1 (-r) is not a --param nor a -p flag.
+[move_group-6] [DEBUG] [1749824062.352456322] [rcl]: Got remap rule : __node:=move_group_private_100575655629984
+[move_group-6] 
+[move_group-6] [DEBUG] [1749824062.352629892] [rcl]: Initializing node '_' in namespace '/'
+[move_group-6] [DEBUG] [1749824062.352654531] [rcl]: Using domain ID of '0'
+[move_group-6] [DEBUG] [1749824062.352821267] [rcl]: Node initialized
+[move_group-6] [DEBUG] [1749824062.352839483] [rcl]: Initializing publisher for topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.352852312] [rcl]: Expanded and remapped topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.353455902] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.354074794] [rcl]: Initializing service for service name 'move_group_private_100575655629984/get_parameters'
+[move_group-6] [DEBUG] [1749824062.354190162] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/get_parameters'
+[move_group-6] [DEBUG] [1749824062.357769036] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.357797620] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/get_parametersRequest
+[move_group-6] [DEBUG] [1749824062.357803809] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/get_parametersReply
+[move_group-6] [DEBUG] [1749824062.357808665] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.357991852] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.358027732] [rcl]: Initializing service for service name 'move_group_private_100575655629984/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.358048017] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/get_parameter_types'
+[move_group-6] [DEBUG] [1749824062.359173673] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.359199901] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/get_parameter_typesRequest
+[move_group-6] [DEBUG] [1749824062.359206477] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/get_parameter_typesReply
+[move_group-6] [DEBUG] [1749824062.359211568] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.359578833] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.359615112] [rcl]: Initializing service for service name 'move_group_private_100575655629984/set_parameters'
+[move_group-6] [DEBUG] [1749824062.359634127] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/set_parameters'
+[move_group-6] [DEBUG] [1749824062.361605608] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.361642713] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/set_parametersRequest
+[move_group-6] [DEBUG] [1749824062.361657045] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/set_parametersReply
+[move_group-6] [DEBUG] [1749824062.361663383] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.361883029] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.361922984] [rcl]: Initializing service for service name 'move_group_private_100575655629984/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.361944858] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/set_parameters_atomically'
+[move_group-6] [DEBUG] [1749824062.362951234] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.362979526] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/set_parameters_atomicallyRequest
+[move_group-6] [DEBUG] [1749824062.362988487] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/set_parameters_atomicallyReply
+[move_group-6] [DEBUG] [1749824062.362996706] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.363163921] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.363234124] [rcl]: Initializing service for service name 'move_group_private_100575655629984/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.363268658] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/describe_parameters'
+[move_group-6] [DEBUG] [1749824062.364217047] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.364242112] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/describe_parametersRequest
+[move_group-6] [DEBUG] [1749824062.364260205] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/describe_parametersReply
+[move_group-6] [DEBUG] [1749824062.364268281] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.364449694] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.364480181] [rcl]: Initializing service for service name 'move_group_private_100575655629984/list_parameters'
+[move_group-6] [DEBUG] [1749824062.364498821] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/list_parameters'
+[move_group-6] [DEBUG] [1749824062.365347681] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.365372756] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/list_parametersRequest
+[move_group-6] [DEBUG] [1749824062.365380016] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/list_parametersReply
+[move_group-6] [DEBUG] [1749824062.365386283] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.365557530] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.365591238] [rcl]: Initializing publisher for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.365606299] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.366476911] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.366886257] [rcl]: Initializing subscription for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.366909428] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.369685334] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.369889545] [rcl]: Initializing service for service name '/move_group_private_100575655629984/get_type_description'
+[move_group-6] [DEBUG] [1749824062.369908242] [rcl]: Expanded and remapped service name '/move_group_private_100575655629984/get_type_description'
+[move_group-6] [DEBUG] [1749824062.371134223] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.371195285] [rmw_fastrtps_cpp]: Sub Topic rq/move_group_private_100575655629984/get_type_descriptionRequest
+[move_group-6] [DEBUG] [1749824062.371209113] [rmw_fastrtps_cpp]: Pub Topic rr/move_group_private_100575655629984/get_type_descriptionReply
+[move_group-6] [DEBUG] [1749824062.371218710] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.372016884] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.374971161] [rcl]: Arg 1 (-r) is not a --param nor a -p flag.
+[move_group-6] [DEBUG] [1749824062.375007071] [rcl]: Got remap rule : __node:=transform_listener_impl_5b7918533cc0
+[move_group-6] 
+[move_group-6] [DEBUG] [1749824062.375022095] [rcl]: Initializing node '_' in namespace ''
+[move_group-6] [DEBUG] [1749824062.375037649] [rcl]: Using domain ID of '0'
+[move_group-6] [DEBUG] [1749824062.375160613] [rcl]: Node initialized
+[move_group-6] [DEBUG] [1749824062.375179696] [rcl]: Initializing publisher for topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.375193144] [rcl]: Expanded and remapped topic name '/rosout'
+[move_group-6] [DEBUG] [1749824062.375905137] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.376393620] [rcl]: Initializing subscription for topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.376419045] [rcl]: Expanded and remapped topic name '/parameter_events'
+[move_group-6] [DEBUG] [1749824062.377807359] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.377897234] [rcl]: Initializing service for service name '/transform_listener_impl_5b7918533cc0/get_type_description'
+[move_group-6] [DEBUG] [1749824062.377912896] [rcl]: Expanded and remapped service name '/transform_listener_impl_5b7918533cc0/get_type_description'
+[move_group-6] [DEBUG] [1749824062.379292426] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.379383114] [rmw_fastrtps_cpp]: Sub Topic rq/transform_listener_impl_5b7918533cc0/get_type_descriptionRequest
+[move_group-6] [DEBUG] [1749824062.379395211] [rmw_fastrtps_cpp]: Pub Topic rr/transform_listener_impl_5b7918533cc0/get_type_descriptionReply
+[move_group-6] [DEBUG] [1749824062.379511639] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.380368993] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.380785098] [rcl]: Initializing subscription for topic name '/tf'
+[move_group-6] [DEBUG] [1749824062.380809496] [rcl]: Expanded and remapped topic name '/tf'
+[move_group-6] [DEBUG] [1749824062.390919105] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.391096878] [rcl]: Initializing subscription for topic name '/tf_static'
+[move_group-6] [DEBUG] [1749824062.391114324] [rcl]: Expanded and remapped topic name '/tf_static'
+[move_group-6] [DEBUG] [1749824062.392012694] [rcl]: Subscription initialized
+[move_group-6] [DEBUG] [1749824062.392092239] [rcl]: Initializing wait set with '0' subscriptions, '0' guard conditions, '0' timers, '0' clients, '0' services
+[move_group-6] [DEBUG] [1749824062.393777822] [move_group.moveit.moveit.ros.planning_scene_monitor]: No additional default collision operations specified
+[move_group-6] [DEBUG] [1749824062.393899735] [move_group.moveit.moveit.ros.planning_scene_monitor]: Loaded 0 default link paddings
+[move_group-6] [DEBUG] [1749824062.393933975] [move_group.moveit.moveit.ros.planning_scene_monitor]: Loaded 0 default link scales
+[move_group-6] [DEBUG] [1749824062.394020762] [rcl]: Initializing timer with period: 30000000ns
+[move_group-6] [DEBUG] [1749824062.394838419] [move_group.moveit.moveit.ros.planning_scene_monitor]: Maximum frequency for publishing a planning scene is now 4.000000 Hz
+[move_group-6] [DEBUG] [1749824062.395013968] [rcl]: Initializing publisher for topic name 'monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.395035197] [rcl]: Expanded and remapped topic name '/monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.394956344] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395218072] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395314392] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395337206] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395371164] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395390037] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395412238] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395429737] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395452923] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395473234] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395494910] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395512711] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395534566] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395551747] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395574181] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395593731] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395616066] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395633748] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.395655509] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.395672939] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.405102309] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.405764538] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.406050646] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.406145195] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.417795902] [rcl]: Publisher initialized
+[move_group-6] [INFO] [1749824062.417857481] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.418066704] [move_group.moveit.moveit.ros.moveit_cpp]: Configuring Planning Scene Monitor
+[move_group-6] [INFO] [1749824062.418094451] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-6] [DEBUG] [1749824062.418121398] [rcl]: Timer canceled
+[move_group-6] [DEBUG] [1749824062.418084712] [move_group.moveit.moveit.ros.planning_scene_monitor]: Started scene publishing thread ...
+[move_group-6] [DEBUG] [1749824062.418282173] [rcl]: Initializing subscription for topic name 'joint_states'
+[move_group-6] [DEBUG] [1749824062.418304347] [rcl]: Expanded and remapped topic name '/joint_states'
+[move_group-6] [DEBUG] [1749824062.418917864] [move_group.moveit.moveit.ros.planning_scene_monitor]: Published the full planning scene: '(noname)+'
+[move_group-6] [DEBUG] [1749824062.420466415] [rcl]: Subscription initialized
+[move_group-6] [INFO] [1749824062.420564183] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-6] [DEBUG] [1749824062.420605951] [rcl]: Initializing timer with period: 30000000ns
+[move_group-6] [DEBUG] [1749824062.420649627] [rcl]: Initializing subscription for topic name 'attached_collision_object'
+[move_group-6] [DEBUG] [1749824062.420668788] [rcl]: Expanded and remapped topic name '/attached_collision_object'
+[move_group-6] [DEBUG] [1749824062.422410294] [rcl]: Timer canceled
+[move_group-6] [DEBUG] [1749824062.422484409] [rcl]: Timer canceled
+[move_group-6] [DEBUG] [1749824062.423061568] [rcl]: Subscription initialized
+[move_group-6] [INFO] [1749824062.423312068] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-6] [INFO] [1749824062.423366277] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-6] [INFO] [1749824062.424201376] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-6] [DEBUG] [1749824062.424343573] [rcl]: Initializing publisher for topic name 'monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.424414770] [rcl]: Expanded and remapped topic name '/monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.425290392] [rcl]: Publisher initialized
+[move_group-6] [INFO] [1749824062.425345789] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [DEBUG] [1749824062.425392811] [rcl]: Finalizing event
+[move_group-6] [DEBUG] [1749824062.425415182] [rcl]: Event finalized
+[move_group-6] [DEBUG] [1749824062.425431649] [rcl]: Finalizing publisher
+[move_group-6] [INFO] [1749824062.425477875] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-6] [DEBUG] [1749824062.425531985] [rcl]: Initializing subscription for topic name 'planning_scene'
+[move_group-6] [DEBUG] [1749824062.425548008] [rcl]: Expanded and remapped topic name '/planning_scene'
+[move_group-6] [DEBUG] [1749824062.425771233] [move_group.moveit.moveit.ros.planning_scene_monitor]: Started scene publishing thread ...
+[move_group-6] [DEBUG] [1749824062.425927321] [move_group.moveit.moveit.ros.planning_scene_monitor]: Published the full planning scene: '(noname)+'
+[move_group-6] [DEBUG] [1749824062.426324831] [rcl]: Subscription initialized
+[move_group-6] [INFO] [1749824062.426425509] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-6] [INFO] [1749824062.426456021] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-6] [DEBUG] [1749824062.426496232] [rcl]: Initializing subscription for topic name 'collision_object'
+[move_group-6] [DEBUG] [1749824062.426514204] [rcl]: Expanded and remapped topic name '/collision_object'
+[move_group-6] [DEBUG] [1749824062.427694956] [rcl]: Publisher finalized
+[move_group-6] [DEBUG] [1749824062.427721265] [rcl]: Finalizing event
+[move_group-6] [DEBUG] [1749824062.427734761] [rcl]: Event finalized
+[move_group-6] [DEBUG] [1749824062.428795834] [rcl]: Subscription initialized
+[move_group-6] [INFO] [1749824062.428914334] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-6] [DEBUG] [1749824062.429067947] [rcl]: Initializing subscription for topic name 'planning_scene_world'
+[move_group-6] [DEBUG] [1749824062.429116575] [rcl]: Expanded and remapped topic name '/planning_scene_world'
+[move_group-6] [DEBUG] [1749824062.430859241] [rcl]: Subscription initialized
+[move_group-6] [INFO] [1749824062.430930488] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-6] [DEBUG] [1749824062.431046412] [pluginlib.ClassLoader]: Creating ClassLoader, base = occupancy_map_monitor::OccupancyMapUpdater, address = 0x5b79185aace0
+[move_group-6] [DEBUG] [1749824062.431174458] [pluginlib.ClassLoader]: Entering determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.431185714] [pluginlib.ClassLoader]: Exiting determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.431193627] [pluginlib.ClassLoader]: Finished constructring ClassLoader, base = occupancy_map_monitor::OccupancyMapUpdater, address = 0x5b79185aace0
+[move_group-6] [WARN] [1749824062.431235141] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-6] [ERROR] [1749824062.431288484] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-6] [DEBUG] [1749824062.431341549] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Using resolution = 0.100000 m for building octomap
+[move_group-6] [DEBUG] [1749824062.431419877] [rcl]: Initializing service for service name 'save_map'
+[move_group-6] [DEBUG] [1749824062.431442657] [rcl]: Expanded and remapped service name '/save_map'
+[move_group-6] [DEBUG] [1749824062.432444246] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.432471893] [rmw_fastrtps_cpp]: Sub Topic rq/save_mapRequest
+[move_group-6] [DEBUG] [1749824062.432479287] [rmw_fastrtps_cpp]: Pub Topic rr/save_mapReply
+[move_group-6] [DEBUG] [1749824062.432485767] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.432732509] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.432787271] [rcl]: Initializing service for service name 'load_map'
+[move_group-6] [DEBUG] [1749824062.432809694] [rcl]: Expanded and remapped service name '/load_map'
+[move_group-6] [DEBUG] [1749824062.433906238] [rmw_fastrtps_cpp]: ************ Service Details *********
+[move_group-6] [DEBUG] [1749824062.433935870] [rmw_fastrtps_cpp]: Sub Topic rq/load_mapRequest
+[move_group-6] [DEBUG] [1749824062.433943681] [rmw_fastrtps_cpp]: Pub Topic rr/load_mapReply
+[move_group-6] [DEBUG] [1749824062.433950112] [rmw_fastrtps_cpp]: ***********
+[move_group-6] [DEBUG] [1749824062.434170127] [rcl]: Service initialized
+[move_group-6] [DEBUG] [1749824062.434531439] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.434566686] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.434622578] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.434642788] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.434688727] [rcl]: Subscription taking message
+[move_group-6] [DEBUG] [1749824062.434707774] [rcl]: Subscription take succeeded: true
+[move_group-6] [DEBUG] [1749824062.434729491] [move_group]: move_group.planning_plugins: string_array = [UNKNOWN]
+[move_group-6] [DEBUG] [1749824062.434772853] [move_group]: move_group.request_adapters: string_array = [default_planner_request_adapters/AddTimeParameterization, default_planner_request_adapters/FixWorkspaceBounds, default_planner_request_adapters/FixStartStateBounds, default_planner_request_adapters/FixStartStateCollision, default_planner_request_adapters/FixStartStatePathConstraints]
+[move_group-6] [DEBUG] [1749824062.434805662] [move_group]: move_group.response_adapters: string_array = []
+[move_group-6] [DEBUG] [1749824062.434825981] [move_group]: move_group.progress_topic: string = pipeline_state
+[move_group-6] [DEBUG] [1749824062.434905595] [rcl]: Initializing publisher for topic name 'pipeline_state'
+[move_group-6] [DEBUG] [1749824062.434926066] [rcl]: Expanded and remapped topic name '/pipeline_state'
+[move_group-6] [DEBUG] [1749824062.442771019] [rcl]: Publisher initialized
+[move_group-6] [DEBUG] [1749824062.442841331] [pluginlib.ClassLoader]: Creating ClassLoader, base = planning_interface::PlannerManager, address = 0x5b7918847610
+[move_group-6] [DEBUG] [1749824062.443357714] [pluginlib.ClassLoader]: Entering determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.443375978] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_fcl_description.xml...
+[move_group-6] [DEBUG] [1749824062.443570878] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = FCL.
+[move_group-6] [DEBUG] [1749824062.443585289] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/collision_detector_bullet_description.xml...
+[move_group-6] [DEBUG] [1749824062.443701717] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = Bullet.
+[move_group-6] [DEBUG] [1749824062.443718224] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_acceleration.xml...
+[move_group-6] [DEBUG] [1749824062.443854356] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::AccelerationLimitedPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.443869870] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_butterworth.xml...
+[move_group-6] [DEBUG] [1749824062.443993445] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::ButterworthFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.444008193] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_core/filter_plugin_ruckig.xml...
+[move_group-6] [DEBUG] [1749824062.444154513] [pluginlib.ClassLoader]: XML file has no lookup name (i.e. magic name) for class online_signal_smoothing::RuckigFilterPlugin, assuming lookup_name == real class name.
+[move_group-6] [DEBUG] [1749824062.444168738] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/kdl_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444282606] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = kdl_kinematics_plugin/KDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.444296585] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/srv_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444393274] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = srv_kinematics_plugin/SrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.444405687] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_kinematics/cached_ik_kinematics_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444511838] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedKDLKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.444524276] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = cached_ik_kinematics_plugin/CachedSrvKinematicsPlugin.
+[move_group-6] [DEBUG] [1749824062.444532969] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_chomp/chomp_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444604070] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = chomp_interface/CHOMPPlanner.
+[move_group-6] [DEBUG] [1749824062.444628013] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_ompl/ompl_interface_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444715759] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = ompl_interface/OMPLPlanner.
+[move_group-6] [DEBUG] [1749824062.444730132] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_planners_stomp/stomp_moveit_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444806577] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = stomp_moveit/StompPlanner.
+[move_group-6] [DEBUG] [1749824062.444822650] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_request_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.444930330] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateBounds.
+[move_group-6] [DEBUG] [1749824062.444942251] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ValidateWorkspaceBounds.
+[move_group-6] [DEBUG] [1749824062.444950554] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckStartStateCollision.
+[move_group-6] [DEBUG] [1749824062.444958741] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/ResolveConstraintFrames.
+[move_group-6] [DEBUG] [1749824062.444967861] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_request_adapters/CheckForStackedConstraints.
+[move_group-6] [DEBUG] [1749824062.444978168] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_ros_planning/default_response_adapters_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.445083903] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddTimeOptimalParameterization.
+[move_group-6] [DEBUG] [1749824062.445097224] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/AddRuckigTrajectorySmoothing.
+[move_group-6] [DEBUG] [1749824062.445106030] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/DisplayMotionPath.
+[move_group-6] [DEBUG] [1749824062.445114151] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = default_planning_response_adapters/ValidateSolution.
+[move_group-6] [DEBUG] [1749824062.445122459] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/moveit_simple_controller_manager/moveit_simple_controller_manager_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.445216160] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = moveit_simple_controller_manager/MoveItSimpleControllerManager.
+[move_group-6] [DEBUG] [1749824062.445229041] [pluginlib.ClassLoader]: Processing xml file /opt/ros/jazzy/share/pilz_industrial_motion_planner/plugins/pilz_industrial_motion_planner_plugin_description.xml...
+[move_group-6] [DEBUG] [1749824062.445357055] [pluginlib.ClassLoader]: XML file specifies lookup name (i.e. magic name) = pilz_industrial_motion_planner/CommandPlanner.
+[move_group-6] [DEBUG] [1749824062.445379856] [pluginlib.ClassLoader]: Exiting determineAvailableClasses()...
+[move_group-6] [DEBUG] [1749824062.445388184] [pluginlib.ClassLoader]: Finished constructring ClassLoader, base = planning_interface::PlannerManager, address = 0x5b7918847610
+[move_group-6] terminate called after throwing an instance of 'std::runtime_error'
+[move_group-6]   what():  Planning plugin name is empty or not defined in namespace 'move_group'. Please choose one of the available plugins: chomp_interface/CHOMPPlanner, ompl_interface/OMPLPlanner, pilz_industrial_motion_planner/CommandPlanner, stomp_moveit/StompPlanner
+[move_group-6] Stack trace (most recent call last):
+[move_group-6] [DEBUG] [1749824062.450738854] [rcl]: Calling timer
+[move_group-6] #16   Object "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", at 0xffffffffffffffff, in 
+[move_group-6] #15   Object "/opt/ros/jazzy/lib/moveit_ros_move_group/move_group", at 0x5b790f6a8a44, in _start
+[move_group-6] [DEBUG] [1749824062.480741673] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.510740057] [rcl]: Calling timer
+[move_group-6] #14   Source "../csu/libc-start.c", line 360, in __libc_start_main_impl [0x7f114c02a28a]
+[move_group-6] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x7f114c02a1c9]
+[move_group-6] #12   Object "/opt/ros/jazzy/lib/moveit_ros_move_group/move_group", at 0x5b790f6a7162, in main
+[move_group-6] #11   Object "/opt/ros/jazzy/lib/libmoveit_cpp.so.2.12.3", at 0x7f114ce18b6e, in moveit_cpp::MoveItCpp::MoveItCpp(std::shared_ptr<rclcpp::Node> const&, moveit_cpp::MoveItCpp::Options const&)
+[move_group-6] #10   Object "/opt/ros/jazzy/lib/libmoveit_cpp.so.2.12.3", at 0x7f114ce13d07, in moveit_cpp::MoveItCpp::loadPlanningPipelines(moveit_cpp::MoveItCpp::PlanningPipelineOptions const&)
+[move_group-6] #9    Object "/opt/ros/jazzy/lib/libmoveit_planning_pipeline_interfaces.so.2.12.3", at 0x7f114c6b186e, in moveit::planning_pipeline_interfaces::createPlanningPipelineMap(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::shared_ptr<moveit::core::RobotModel const> const&, std::shared_ptr<rclcpp::Node> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+[move_group-6] #8    Object "/opt/ros/jazzy/lib/libmoveit_planning_pipeline.so.2.12.3", at 0x7f114c2ea0d0, in planning_pipeline::PlanningPipeline::PlanningPipeline(std::shared_ptr<moveit::core::RobotModel const> const&, std::shared_ptr<rclcpp::Node> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+[move_group-6] #7    Object "/opt/ros/jazzy/lib/libmoveit_planning_pipeline.so.2.12.3", at 0x7f114c2e8b01, in planning_pipeline::PlanningPipeline::configure()
+[move_group-6] [DEBUG] [1749824062.540742571] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.570792717] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.603639046] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.630741198] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.660732748] [rcl]: Calling timer
+[move_group-6] [DEBUG] [1749824062.690740173] [rcl]: Calling timer
+[move_group-6] #6    Source "../../../../src/libstdc++-v3/libsupc++/eh_throw.cc", line 98, in __cxa_throw [0x7f114c4bb390]
+[move_group-6] #5    Source "../../../../src/libstdc++-v3/libsupc++/eh_terminate.cc", line 58, in terminate [0x7f114c4a5a54]
+[move_group-6] #4    Source "../../../../src/libstdc++-v3/libsupc++/eh_terminate.cc", line 48, in __terminate [0x7f114c4bb0d9]
+[move_group-6] #3    Source "../../../../src/libstdc++-v3/libsupc++/vterminate.cc", line 95, in __verbose_terminate_handler [0x7f114c4a5ff4]
+[move_group-6] #2    Source "./stdlib/abort.c", line 79, in abort [0x7f114c0288fe]
+[move_group-6] #1    Source "../sysdeps/posix/raise.c", line 26, in raise [0x7f114c04527d]
+[move_group-6] #0  | Source "./nptl/pthread_kill.c", line 89, in __pthread_kill_internal
+[move_group-6]     | Source "./nptl/pthread_kill.c", line 78, in __pthread_kill_implementation
+[move_group-6]       Source "./nptl/pthread_kill.c", line 44, in __pthread_kill [0x7f114c09eb2c]
+[move_group-6] Aborted (Signal sent by tkill() 56665 1000)
+[move_group-6] [DEBUG] [1749824062.720748487] [rcl]: Calling timer
+[ERROR] [move_group-6]: process has died [pid 56665, exit code -6, cmd '/opt/ros/jazzy/lib/moveit_ros_move_group/move_group --ros-args --log-level debug --ros-args --params-file /tmp/launch_params_cet0aspv --params-file /tmp/launch_params_kro20mc0 --params-file /tmp/launch_params_3iaalwxh --params-file /tmp/launch_params_3hew2a2p --params-file /tmp/launch_params_zzkqbw1n'].
+[INFO] [launch.user]: MoveIt MoveGroup failed! Check MoveIt configuration or logs.
+[INFO] [launch]: process[move_group-6] was required: shutting down launched system
+[INFO] [ros2_control_node-3]: sending signal 'SIGINT' to process[ros2_control_node-3]
+[INFO] [static_transform_publisher-2]: sending signal 'SIGINT' to process[static_transform_publisher-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[ros2_control_node-3] [INFO] [1749824062.994609700] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-3] [INFO] [1749824062.994802659] [controller_manager]: Shutdown request received....
+[ros2_control_node-3] [INFO] [1749824062.994881175] [controller_manager]: Shutting down all controllers in the controller manager.
+[ros2_control_node-3] [INFO] [1749824062.994920879] [resource_manager]: 'deactivate' hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824062.994947072] [resource_manager]: Successful 'deactivate' of hardware 'PegasusArm'
+[ros2_control_node-3] [INFO] [1749824062.995100180] [resource_manager]: 'shutdown' hardware 'PegasusArm' 
+[ros2_control_node-3] [INFO] [1749824062.995113675] [resource_manager]: Successful 'shutdown' of hardware 'PegasusArm'
+[ros2_control_node-3] [INFO] [1749824062.995175611] [controller_manager]: Shutting down the controller manager.
+[ros2_control_node-3] [ERROR] [1749824062.995339565] [controller_manager.pal_statistics]: Exception in publisher thread: context cannot be slept with because it's invalid!. Aborting!
+[static_transform_publisher-2] [INFO] [1749824062.996940088] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-3] [INFO] [1749824063.000346027] [controller_manager.pal_statistics]: Async messages lost 0
+[ros2_control_node-3] [INFO] [1749824063.000373361] [controller_manager.pal_statistics]: publish_async_failures_ 0
+[robot_state_publisher-1] [INFO] [1749824063.000566752] [rclcpp]: signal_handler(signum=2)
+[INFO] [static_transform_publisher-2]: process has finished cleanly [pid 56522]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 56521]
+[INFO] [ros2_control_node-3]: process has finished cleanly [pid 56613]
+[INFO] [launch.user]: Controller Manager failed! Check ros2_controllers.yaml, URDF, or mock hardware interface.
+[INFO] [launch]: process[ros2_control_node-3] was required: shutting down launched system

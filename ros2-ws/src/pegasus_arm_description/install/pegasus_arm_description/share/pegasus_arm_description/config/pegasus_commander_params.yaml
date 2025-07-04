@@ -1,0 +1,6 @@
+pegasus_commander:
+  ros__parameters:
+    controller_name: pegasus_arm_controller
+    joint_names: ["joint_base_link_link1", "joint_link1_link2", "joint_link2_link3", "joint_link3_link4", "joint_link4_link5", "joint_link5_link6"]
+    joint_limits_file: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/joint_limits.yaml
+    end_effector_frame: end_effector_link

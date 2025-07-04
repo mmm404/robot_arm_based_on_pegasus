@@ -1,0 +1,21 @@
+joint_limits:
+  joint1_base:
+    has_position_limits: true
+    min_position: -6.28
+    max_position: 6.28
+  joint2_shoulder:
+    has_position_limits: true
+    min_position: -0.61
+    max_position: 0.61
+  joint3_elbow:
+    has_position_limits: true
+    min_position: -1.75
+    max_position: 1.75
+  joint4:
+    has_position_limits: true
+    min_position: -1.31
+    max_position: 1.31
+  joint5_wrist:
+    has_position_limits: true
+    min_position: -6.28
+    max_position: 6.28

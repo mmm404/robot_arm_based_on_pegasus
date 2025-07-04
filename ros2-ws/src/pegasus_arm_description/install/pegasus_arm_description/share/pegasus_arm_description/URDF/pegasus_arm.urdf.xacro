@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<robot name="pegasus_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Define dummy link to address KDL inertia warning -->
+  <link name="dummy_link">
+    <inertial>
+      <mass value="0.0001"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- Base link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Joint connecting dummy_link to base_link -->
+  <joint name="dummy_to_base" type="fixed">
+    <parent link="dummy_link"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="link3">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- Link 4 -->
+  <link name="link4">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- Link 5 -->
+  <link name="link5">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint5" type="revolute">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- Link 6 -->
+  <link name="link6">
+    <visual>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.3" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <joint name="joint6" type="revolute">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.57" velocity="2.0"/>
+  </joint>
+
+  <!-- ROS2 Control Hardware Interface -->
+  <ros2_control name="PegasusArm" type="system">
+    <hardware>
+      <plugin>mock_components/GenericSystem</plugin>
+      <param name="set_as_default">true</param>
+      <param name="allow_non_consecutive_index">false</param>
+    </hardware>
+    <joint name="joint1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+    <joint name="joint2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+    <joint name="joint3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+    <joint name="joint4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+    <joint name="joint5">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+    <joint name="joint6">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <param name="min">-1.57</param>
+      <param name="max">1.57</param>
+    </joint>
+  </ros2_control>
+
+  <!-- Transmission for each joint -->
+  <transmission name="joint1_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint1_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint1">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <transmission name="joint2_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint2_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint2">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <transmission name="joint3_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint3_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint3">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <transmission name="joint4_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint4_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint4">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <transmission name="joint5_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint5_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint5">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <transmission name="joint6_trans">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="joint6_actuator">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </actuator>
+    <joint name="joint6">
+      <hardware_interface>PositionJointInterface</hardware_interface>
+    </joint>
+    <mechanical_reduction>1</mechanical_reduction>
+  </transmission>
+
+  <!-- Gazebo plugin (optional for simulation) -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+</robot>

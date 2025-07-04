@@ -1,0 +1,12 @@
+controller_names:
+  - pegasus_arm_controller
+pegasus_arm_controller:
+  type: joint_trajectory_controller/JointTrajectoryController
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+  default: true

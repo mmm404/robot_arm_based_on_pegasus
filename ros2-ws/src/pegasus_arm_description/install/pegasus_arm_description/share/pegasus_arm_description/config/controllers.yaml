@@ -1,0 +1,13 @@
+controller_names:
+  - pegasus_arm_controller
+pegasus_arm_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  joints:
+    - jointbase_link_link1
+    - jointlink1_link2
+    - jointlink2_link3
+    - jointlink3_link4
+    - jointlink4_link5
+    - jointlink5_link6
+  default: true

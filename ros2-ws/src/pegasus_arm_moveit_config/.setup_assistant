@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: pegasus_arm_description
+    relative_path: URDF/my_robot.urdf
+  srdf:
+    relative_path: config/pegasus_arm.srdf
+  package_settings:
+    author_name: mmms
+    author_email: 9sammmmmm@gmail.com
+    generated_timestamp: 1744470437

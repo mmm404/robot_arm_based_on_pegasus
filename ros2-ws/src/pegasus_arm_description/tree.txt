@@ -1,0 +1,321 @@
+.
+├── build
+│   ├── COLCON_IGNORE
+│   └── pegasus_arm_description
+│       ├── ament_cmake_core
+│       │   ├── package.cmake
+│       │   ├── pegasus_arm_descriptionConfig.cmake
+│       │   ├── pegasus_arm_descriptionConfig-version.cmake
+│       │   └── stamps
+│       │       ├── ament_prefix_path.sh.stamp
+│       │       ├── nameConfig.cmake.in.stamp
+│       │       ├── nameConfig-version.cmake.in.stamp
+│       │       ├── package_xml_2_cmake.py.stamp
+│       │       ├── package.xml.stamp
+│       │       ├── path.sh.stamp
+│       │       └── templates_2_cmake.py.stamp
+│       ├── ament_cmake_environment_hooks
+│       │   ├── ament_prefix_path.dsv
+│       │   ├── local_setup.bash
+│       │   ├── local_setup.dsv
+│       │   ├── local_setup.sh
+│       │   ├── local_setup.zsh
+│       │   ├── package.dsv
+│       │   └── path.dsv
+│       ├── ament_cmake_index
+│       │   └── share
+│       │       └── ament_index
+│       │           └── resource_index
+│       │               ├── package_run_dependencies
+│       │               │   └── pegasus_arm_description
+│       │               ├── packages
+│       │               │   └── pegasus_arm_description
+│       │               └── parent_prefix_path
+│       │                   └── pegasus_arm_description
+│       ├── ament_cmake_package_templates
+│       │   └── templates.cmake
+│       ├── ament_cmake_uninstall_target
+│       │   └── ament_cmake_uninstall_target.cmake
+│       ├── AMENT_IGNORE
+│       ├── cmake_args.last
+│       ├── CMakeCache.txt
+│       ├── CMakeFiles
+│       │   ├── 3.28.3
+│       │   │   ├── CMakeCCompiler.cmake
+│       │   │   ├── CMakeCXXCompiler.cmake
+│       │   │   ├── CMakeDetermineCompilerABI_C.bin
+│       │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│       │   │   ├── CMakeSystem.cmake
+│       │   │   ├── CompilerIdC
+│       │   │   │   ├── a.out
+│       │   │   │   ├── CMakeCCompilerId.c
+│       │   │   │   └── tmp
+│       │   │   └── CompilerIdCXX
+│       │   │       ├── a.out
+│       │   │       ├── CMakeCXXCompilerId.cpp
+│       │   │       └── tmp
+│       │   ├── cmake.check_cache
+│       │   ├── CMakeConfigureLog.yaml
+│       │   ├── CMakeDirectoryInformation.cmake
+│       │   ├── CMakeRuleHashes.txt
+│       │   ├── CMakeScratch
+│       │   ├── Makefile2
+│       │   ├── Makefile.cmake
+│       │   ├── pegasus_arm_description_uninstall.dir
+│       │   │   ├── build.make
+│       │   │   ├── cmake_clean.cmake
+│       │   │   ├── compiler_depend.make
+│       │   │   ├── compiler_depend.ts
+│       │   │   ├── DependInfo.cmake
+│       │   │   └── progress.make
+│       │   ├── pkgRedirects
+│       │   ├── progress.marks
+│       │   ├── TargetDirectories.txt
+│       │   └── uninstall.dir
+│       │       ├── build.make
+│       │       ├── cmake_clean.cmake
+│       │       ├── compiler_depend.make
+│       │       ├── compiler_depend.ts
+│       │       ├── DependInfo.cmake
+│       │       └── progress.make
+│       ├── cmake_install.cmake
+│       ├── colcon_build.rc
+│       ├── colcon_command_prefix_build.sh
+│       ├── colcon_command_prefix_build.sh.env
+│       ├── CTestConfiguration.ini
+│       ├── CTestCustom.cmake
+│       ├── CTestTestfile.cmake
+│       ├── install_manifest.txt
+│       └── Makefile
+├── CMakeLists.txt
+├── CMakeLists.txt.save
+├── config
+│   ├── controllers.yaml
+│   ├── kinematics.yaml
+│   ├── moveit_controllers.yaml
+│   ├── moveit_planners.yaml
+│   ├── moveit_planning.yaml
+│   ├── moveit.yaml
+│   ├── ompl_planning.yaml
+│   ├── pegasus_arm.srdf
+│   ├── pegasus_commander_params.yaml
+│   └── ros2_controllers.yaml
+├── include
+│   └── pegasus_arm_description
+├── install
+│   ├── COLCON_IGNORE
+│   ├── local_setup.bash
+│   ├── local_setup.ps1
+│   ├── local_setup.sh
+│   ├── _local_setup_util_ps1.py
+│   ├── _local_setup_util_sh.py
+│   ├── local_setup.zsh
+│   ├── pegasus_arm_description
+│   │   └── share
+│   │       ├── ament_index
+│   │       │   └── resource_index
+│   │       │       ├── package_run_dependencies
+│   │       │       │   └── pegasus_arm_description
+│   │       │       ├── packages
+│   │       │       │   └── pegasus_arm_description
+│   │       │       └── parent_prefix_path
+│   │       │           └── pegasus_arm_description
+│   │       ├── colcon-core
+│   │       │   └── packages
+│   │       │       └── pegasus_arm_description
+│   │       └── pegasus_arm_description
+│   │           ├── cmake
+│   │           │   ├── pegasus_arm_descriptionConfig.cmake
+│   │           │   └── pegasus_arm_descriptionConfig-version.cmake
+│   │           ├── config
+│   │           │   ├── controllers.yaml
+│   │           │   ├── kinematics.yaml
+│   │           │   ├── moveit_planners.yaml
+│   │           │   ├── ompl_planning.yaml
+│   │           │   ├── pegasus_arm.srdf
+│   │           │   ├── pegasus_commander_params.yaml
+│   │           │   └── ros2_controllers.yaml
+│   │           ├── environment
+│   │           │   ├── ament_prefix_path.dsv
+│   │           │   ├── ament_prefix_path.sh
+│   │           │   ├── path.dsv
+│   │           │   └── path.sh
+│   │           ├── hook
+│   │           │   ├── cmake_prefix_path.dsv
+│   │           │   ├── cmake_prefix_path.ps1
+│   │           │   └── cmake_prefix_path.sh
+│   │           ├── launch
+│   │           │   ├── build
+│   │           │   │   └── COLCON_IGNORE
+│   │           │   ├── demo.launch.py
+│   │           │   ├── display.launch.py
+│   │           │   ├── install
+│   │           │   │   ├── COLCON_IGNORE
+│   │           │   │   ├── local_setup.bash
+│   │           │   │   ├── local_setup.ps1
+│   │           │   │   ├── local_setup.sh
+│   │           │   │   ├── _local_setup_util_ps1.py
+│   │           │   │   ├── _local_setup_util_sh.py
+│   │           │   │   ├── local_setup.zsh
+│   │           │   │   ├── setup.bash
+│   │           │   │   ├── setup.ps1
+│   │           │   │   ├── setup.sh
+│   │           │   │   └── setup.zsh
+│   │           │   ├── log
+│   │           │   │   ├── build_2025-05-07_15-53-01
+│   │           │   │   │   ├── events.log
+│   │           │   │   │   └── logger_all.log
+│   │           │   │   ├── COLCON_IGNORE
+│   │           │   │   ├── latest -> latest_build
+│   │           │   │   └── latest_build -> build_2025-05-07_15-53-01
+│   │           │   ├── move_group.launch.py
+│   │           │   ├── moveit_display.launch.py
+│   │           │   ├── moveit_display_minimal.launch.py
+│   │           │   ├── moveit_rviz.launch.py
+│   │           │   ├── __pycache__
+│   │           │   │   └── moveit_display.launch.cpython-312.pyc
+│   │           │   ├── rsp.launch.py
+│   │           │   ├── setup_assistant.launch.py
+│   │           │   ├── spawn_controllers.launch.py
+│   │           │   ├── static_virtual_joint_tfs.launch.py
+│   │           │   └── warehouse_db.launch.py
+│   │           ├── local_setup.bash
+│   │           ├── local_setup.dsv
+│   │           ├── local_setup.sh
+│   │           ├── local_setup.zsh
+│   │           ├── package.bash
+│   │           ├── package.dsv
+│   │           ├── package.ps1
+│   │           ├── package.sh
+│   │           ├── package.xml
+│   │           ├── package.zsh
+│   │           ├── rviz
+│   │           │   ├── minimal.rviz
+│   │           │   └── moveit.rviz
+│   │           ├── srdf
+│   │           │   └── pegasus_arm.srdf
+│   │           ├── urdf
+│   │           │   ├── pegasus_arm.ros2_control.xacro
+│   │           │   └── pegasus_arm.urdf.xacro
+│   │           └── URDF
+│   │               ├── my_robot.urdf
+│   │               ├── pegasus_arm_new.urdf.xacro
+│   │               └── pegasus_arm.urdf.xacro
+│   ├── setup.bash
+│   ├── setup.ps1
+│   ├── setup.sh
+│   └── setup.zsh
+├── launch
+│   ├── build
+│   │   └── COLCON_IGNORE
+│   ├── demo.launch.py
+│   ├── display.launch.py
+│   ├── install
+│   │   ├── COLCON_IGNORE
+│   │   ├── local_setup.bash
+│   │   ├── local_setup.ps1
+│   │   ├── local_setup.sh
+│   │   ├── _local_setup_util_ps1.py
+│   │   ├── _local_setup_util_sh.py
+│   │   ├── local_setup.zsh
+│   │   ├── setup.bash
+│   │   ├── setup.ps1
+│   │   ├── setup.sh
+│   │   └── setup.zsh
+│   ├── log
+│   │   ├── build_2025-05-07_15-53-01
+│   │   │   ├── events.log
+│   │   │   └── logger_all.log
+│   │   ├── COLCON_IGNORE
+│   │   ├── latest -> latest_build
+│   │   └── latest_build -> build_2025-05-07_15-53-01
+│   ├── move_group.launch.py
+│   ├── moveit_display.launch.py
+│   ├── moveit_display_minimal.launch.py
+│   ├── moveit_rviz.launch.py
+│   ├── rsp.launch.py
+│   ├── setup_assistant.launch.py
+│   ├── spawn_controllers.launch.py
+│   ├── static_virtual_joint_tfs.launch.py
+│   └── warehouse_db.launch.py
+├── log
+│   ├── build_2025-04-25_18-19-02
+│   │   ├── events.log
+│   │   └── logger_all.log
+│   ├── build_2025-06-13_17-11-41
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── pegasus_arm_description
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── COLCON_IGNORE
+│   ├── latest -> latest_build
+│   ├── latest_build -> build_2025-06-13_17-11-41
+│   ├── latest_list -> list_2025-04-29_11-00-39
+│   ├── list_2025-03-26_15-10-44
+│   │   └── logger_all.log
+│   ├── list_2025-04-09_11-54-37
+│   │   └── logger_all.log
+│   ├── list_2025-04-09_13-14-42
+│   │   └── logger_all.log
+│   ├── list_2025-04-14_19-57-55
+│   │   └── logger_all.log
+│   └── list_2025-04-29_11-00-39
+│       └── logger_all.log
+├── log.txt
+├── package.xml
+├── rviz
+│   ├── minimal.rviz
+│   └── moveit.rviz
+├── scripts
+│   ├── check_controllers.py
+│   └── pegasus_commander.py
+├── setup.py
+├── src
+│   └── pegasus_arm_commander
+│       ├── package.xml
+│       ├── pegasus_arm_commander
+│       │   ├── build
+│       │   │   └── COLCON_IGNORE
+│       │   ├── __init__.py
+│       │   ├── install
+│       │   │   ├── COLCON_IGNORE
+│       │   │   ├── local_setup.bash
+│       │   │   ├── local_setup.ps1
+│       │   │   ├── local_setup.sh
+│       │   │   ├── _local_setup_util_ps1.py
+│       │   │   ├── _local_setup_util_sh.py
+│       │   │   ├── local_setup.zsh
+│       │   │   ├── setup.bash
+│       │   │   ├── setup.ps1
+│       │   │   ├── setup.sh
+│       │   │   └── setup.zsh
+│       │   ├── log
+│       │   │   ├── build_2025-04-25_16-17-42
+│       │   │   │   ├── events.log
+│       │   │   │   └── logger_all.log
+│       │   │   ├── COLCON_IGNORE
+│       │   │   ├── latest -> latest_build
+│       │   │   └── latest_build -> build_2025-04-25_16-17-42
+│       │   └── pegasus_commander.py
+│       ├── resource
+│       │   └── pegasus_arm_commander
+│       ├── setup.cfg
+│       └── test
+│           ├── test_copyright.py
+│           ├── test_flake8.py
+│           └── test_pep257.py
+├── srdf
+│   └── pegasus_arm.srdf
+├── urdf
+│   ├── pegasus_arm.ros2_control.xacro
+│   └── pegasus_arm.urdf.xacro
+└── URDF
+    ├── my_robot.urdf
+    ├── pegasus_arm_new.urdf.xacro
+    └── pegasus_arm.urdf.xacro
+
+90 directories, 229 files
