@@ -6,7 +6,8 @@ This repository contains the code and documentation for the Pegasus Arm, a robot
 
 ---
 
-## Setup Instructions
+## Setup Instructions<img width="806" height="736" alt="Screenshot from 2025-07-31 14-30-52" src="https://github.com/user-attachments/assets/fe2a3875-a7ca-42a0-9ebb-bb29a66489c0" />
+
 
 ### Activating Python3 Workspace
 
