@@ -1,0 +1,234 @@
+[0.000000] (-) TimerEvent: {}
+[0.000220] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000278] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000317] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.000379] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.000430] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.000480] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.000512] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.000541] (-) JobUnselected: {'identifier': 'gpio_controllers'}
+[0.000571] (-) JobUnselected: {'identifier': 'gps_sensor_broadcaster'}
+[0.000600] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.000630] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.000660] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.000690] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.000720] (-) JobUnselected: {'identifier': 'mecanum_drive_controller'}
+[0.000749] (-) JobUnselected: {'identifier': 'parallel_gripper_controller'}
+[0.000813] (-) JobUnselected: {'identifier': 'pegasus_arm_commander'}
+[0.000946] (-) JobUnselected: {'identifier': 'pegasus_arm_moveit_config'}
+[0.000976] (-) JobUnselected: {'identifier': 'pegasus_assistant'}
+[0.001017] (-) JobUnselected: {'identifier': 'pid_controller'}
+[0.001082] (-) JobUnselected: {'identifier': 'pose_broadcaster'}
+[0.001130] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.001171] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.001215] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.001254] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.001290] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.001326] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.001368] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.001409] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.001451] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.001479] (pegasus_arm_description) JobQueued: {'identifier': 'pegasus_arm_description', 'dependencies': OrderedDict()}
+[0.031247] (pegasus_arm_description) JobStarted: {'identifier': 'pegasus_arm_description'}
+[0.099418] (-) TimerEvent: {}
+[0.178452] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'cmake'}
+[0.199594] (-) TimerEvent: {}
+[0.215422] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'build'}
+[0.218914] (pegasus_arm_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/pegasus_arm_description', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '101492', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=8fcafb72dfb1b59b0a430c9c6868b185', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/101492,unix/mmms:/tmp/.ICE-unix/101492', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7eefed73_e30c_49a0_83a9_1ab3946469de', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=8fcafb72dfb1b59b0a430c9c6868b185', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[0.299737] (-) TimerEvent: {}
+[0.400265] (-) TimerEvent: {}
+[0.501056] (-) TimerEvent: {}
+[0.601860] (-) TimerEvent: {}
+[0.702257] (-) TimerEvent: {}
+[0.802940] (-) TimerEvent: {}
+[0.903410] (-) TimerEvent: {}
+[1.003949] (-) TimerEvent: {}
+[1.104538] (-) TimerEvent: {}
+[1.205560] (-) TimerEvent: {}
+[1.306520] (-) TimerEvent: {}
+[1.407128] (-) TimerEvent: {}
+[1.507629] (-) TimerEvent: {}
+[1.608623] (-) TimerEvent: {}
+[1.699375] (pegasus_arm_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.708777] (-) TimerEvent: {}
+[1.809527] (-) TimerEvent: {}
+[1.910146] (-) TimerEvent: {}
+[2.010493] (-) TimerEvent: {}
+[2.110914] (-) TimerEvent: {}
+[2.211436] (-) TimerEvent: {}
+[2.311858] (-) TimerEvent: {}
+[2.412257] (-) TimerEvent: {}
+[2.454312] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.512544] (-) TimerEvent: {}
+[2.613499] (-) TimerEvent: {}
+[2.714368] (-) TimerEvent: {}
+[2.806988] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.814554] (-) TimerEvent: {}
+[2.854223] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.914762] (-) TimerEvent: {}
+[2.920891] (pegasus_arm_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.992415] (pegasus_arm_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.015003] (-) TimerEvent: {}
+[3.115470] (-) TimerEvent: {}
+[3.216003] (-) TimerEvent: {}
+[3.267782] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.285251] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.316243] (-) TimerEvent: {}
+[3.416939] (-) TimerEvent: {}
+[3.517344] (-) TimerEvent: {}
+[3.617817] (-) TimerEvent: {}
+[3.666906] (pegasus_arm_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.717943] (-) TimerEvent: {}
+[3.818317] (-) TimerEvent: {}
+[3.877361] (pegasus_arm_description) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[3.918553] (-) TimerEvent: {}
+[4.019351] (-) TimerEvent: {}
+[4.057951] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[4.119682] (-) TimerEvent: {}
+[4.220291] (-) TimerEvent: {}
+[4.320637] (-) TimerEvent: {}
+[4.420956] (-) TimerEvent: {}
+[4.521374] (-) TimerEvent: {}
+[4.621911] (-) TimerEvent: {}
+[4.722533] (-) TimerEvent: {}
+[4.822953] (-) TimerEvent: {}
+[4.923355] (-) TimerEvent: {}
+[5.023734] (-) TimerEvent: {}
+[5.124091] (-) TimerEvent: {}
+[5.224585] (-) TimerEvent: {}
+[5.279199] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[5.324780] (-) TimerEvent: {}
+[5.425485] (-) TimerEvent: {}
+[5.525982] (-) TimerEvent: {}
+[5.552612] (pegasus_arm_description) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[5.612477] (pegasus_arm_description) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.9 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[5.626272] (-) TimerEvent: {}
+[5.727060] (-) TimerEvent: {}
+[5.736948] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[5.827347] (-) TimerEvent: {}
+[5.927955] (-) TimerEvent: {}
+[5.967683] (pegasus_arm_description) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.028077] (-) TimerEvent: {}
+[6.128643] (-) TimerEvent: {}
+[6.229231] (-) TimerEvent: {}
+[6.330108] (-) TimerEvent: {}
+[6.430711] (-) TimerEvent: {}
+[6.531142] (-) TimerEvent: {}
+[6.631523] (-) TimerEvent: {}
+[6.700329] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[6.731653] (-) TimerEvent: {}
+[6.832495] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[6.832860] (-) TimerEvent: {}
+[6.911365] (pegasus_arm_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[6.932989] (-) TimerEvent: {}
+[7.012351] (pegasus_arm_description) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)\n'}
+[7.033113] (-) TimerEvent: {}
+[7.038844] (pegasus_arm_description) StdoutLine: {'line': b'-- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[7.133261] (-) TimerEvent: {}
+[7.233609] (-) TimerEvent: {}
+[7.334012] (-) TimerEvent: {}
+[7.434346] (-) TimerEvent: {}
+[7.534761] (-) TimerEvent: {}
+[7.637384] (-) TimerEvent: {}
+[7.730211] (pegasus_arm_description) StdoutLine: {'line': b'-- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)\n'}
+[7.737506] (-) TimerEvent: {}
+[7.839519] (-) TimerEvent: {}
+[7.939900] (-) TimerEvent: {}
+[8.047081] (-) TimerEvent: {}
+[8.147577] (-) TimerEvent: {}
+[8.214677] (pegasus_arm_description) StdoutLine: {'line': b'-- Configuring done (6.8s)\n'}
+[8.247665] (-) TimerEvent: {}
+[8.316177] (pegasus_arm_description) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.347882] (-) TimerEvent: {}
+[8.348219] (pegasus_arm_description) StdoutLine: {'line': b'-- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_arm_description\n'}
+[8.447951] (-) TimerEvent: {}
+[8.470441] (pegasus_arm_description) CommandEnded: {'returncode': 0}
+[8.489212] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'install'}
+[8.507426] (pegasus_arm_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mmms/ros2-ws/build/pegasus_arm_description'], 'cwd': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '101492', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=8fcafb72dfb1b59b0a430c9c6868b185', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/101492,unix/mmms:/tmp/.ICE-unix/101492', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7eefed73_e30c_49a0_83a9_1ab3946469de', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=8fcafb72dfb1b59b0a430c9c6868b185', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[8.519987] (pegasus_arm_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.520298] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf\n'}
+[8.520658] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.urdf.xacro\n'}
+[8.521079] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.ros2_control.xacro\n'}
+[8.521478] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF\n'}
+[8.521923] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm_new.urdf.xacro\n'}
+[8.522185] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf.xacro\n'}
+[8.532474] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode\n'}
+[8.533206] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/c_cpp_properties.json\n'}
+[8.533555] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/settings.json\n'}
+[8.534312] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/my_robot.urdf\n'}
+[8.535115] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf\n'}
+[8.535552] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf\n'}
+[8.535887] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf/pegasus_arm.srdf\n'}
+[8.536285] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config\n'}
+[8.536653] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit.yaml\n'}
+[8.536929] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers.yaml\n'}
+[8.537248] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ompl_planning.yaml\n'}
+[8.537604] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planners.yaml\n'}
+[8.537854] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_commander_params.yaml\n'}
+[8.538225] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planning.yaml\n'}
+[8.538592] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_arm.srdf\n'}
+[8.538967] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_controllers.yaml\n'}
+[8.539381] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers1.yaml\n'}
+[8.539809] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/controllers.yaml\n'}
+[8.540144] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/kinematics.yaml\n'}
+[8.540480] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz\n'}
+[8.540740] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/minimal.rviz\n'}
+[8.540949] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/moveit.rviz\n'}
+[8.541160] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch\n'}
+[8.541425] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/demo.launch.py\n'}
+[8.541679] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install\n'}
+[8.541845] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.bash\n'}
+[8.542093] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.sh\n'}
+[8.542316] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.ps1\n'}
+[8.542531] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_sh.py\n'}
+[8.542791] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.bash\n'}
+[8.543179] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/.colcon_install_layout\n'}
+[8.543484] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.sh\n'}
+[8.543766] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/COLCON_IGNORE\n'}
+[8.544076] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.ps1\n'}
+[8.544353] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.zsh\n'}
+[8.544672] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.zsh\n'}
+[8.545022] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_ps1.py\n'}
+[8.545347] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display_minimal.launch.py\n'}
+[8.545663] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display.launch.py\n'}
+[8.546015] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/rsp.launch.py\n'}
+[8.546307] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/move_group.launch.py\n'}
+[8.546659] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/static_virtual_joint_tfs.launch.py\n'}
+[8.546997] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode\n'}
+[8.547221] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/c_cpp_properties.json\n'}
+[8.547430] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/settings.json\n'}
+[8.547630] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log\n'}
+[8.547925] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/COLCON_IGNORE\n'}
+[8.548105] (-) TimerEvent: {}
+[8.548330] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest\n'}
+[8.548517] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01\n'}
+[8.548704] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/events.log\n'}
+[8.549153] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/logger_all.log\n'}
+[8.549416] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest_build\n'}
+[8.549589] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/spawn_controllers.launch.py\n'}
+[8.550007] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/warehouse_db.launch.py\n'}
+[8.550537] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_rviz.launch.py\n'}
+[8.551078] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/setup_assistant.launch.py\n'}
+[8.552734] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/display.launch.py\n'}
+[8.553170] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build\n'}
+[8.553686] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/COLCON_IGNORE\n'}
+[8.554316] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/.built_by\n'}
+[8.554724] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_description\n'}
+[8.555178] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_description\n'}
+[8.556739] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.sh\n'}
+[8.557919] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.dsv\n'}
+[8.558307] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.sh\n'}
+[8.558485] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.dsv\n'}
+[8.558670] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.bash\n'}
+[8.558933] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.sh\n'}
+[8.559256] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.zsh\n'}
+[8.559824] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.dsv\n'}
+[8.560278] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.dsv\n'}
+[8.560929] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/packages/pegasus_arm_description\n'}
+[8.561910] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig.cmake\n'}
+[8.562582] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig-version.cmake\n'}
+[8.563634] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.xml\n'}
+[8.566972] (pegasus_arm_description) CommandEnded: {'returncode': 0}
+[8.648325] (-) TimerEvent: {}
+[8.715538] (pegasus_arm_description) JobEnded: {'identifier': 'pegasus_arm_description', 'rc': 0}
+[8.718029] (-) EventReactorShutdown: {}

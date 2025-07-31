@@ -1,0 +1,887 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (admittance_controller) JobQueued: {'identifier': 'admittance_controller', 'dependencies': OrderedDict()}
+[0.000263] (diff_drive_controller) JobQueued: {'identifier': 'diff_drive_controller', 'dependencies': OrderedDict()}
+[0.000295] (force_torque_sensor_broadcaster) JobQueued: {'identifier': 'force_torque_sensor_broadcaster', 'dependencies': OrderedDict()}
+[0.000322] (forward_command_controller) JobQueued: {'identifier': 'forward_command_controller', 'dependencies': OrderedDict()}
+[0.000349] (gpio_controllers) JobQueued: {'identifier': 'gpio_controllers', 'dependencies': OrderedDict()}
+[0.000382] (gps_sensor_broadcaster) JobQueued: {'identifier': 'gps_sensor_broadcaster', 'dependencies': OrderedDict()}
+[0.000408] (gripper_controllers) JobQueued: {'identifier': 'gripper_controllers', 'dependencies': OrderedDict()}
+[0.000433] (imu_sensor_broadcaster) JobQueued: {'identifier': 'imu_sensor_broadcaster', 'dependencies': OrderedDict()}
+[0.000457] (joint_state_broadcaster) JobQueued: {'identifier': 'joint_state_broadcaster', 'dependencies': OrderedDict()}
+[0.000481] (joint_trajectory_controller) JobQueued: {'identifier': 'joint_trajectory_controller', 'dependencies': OrderedDict()}
+[0.000505] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000530] (parallel_gripper_controller) JobQueued: {'identifier': 'parallel_gripper_controller', 'dependencies': OrderedDict()}
+[0.000554] (pegasus_arm_commander) JobQueued: {'identifier': 'pegasus_arm_commander', 'dependencies': OrderedDict()}
+[0.000578] (pegasus_arm_description) JobQueued: {'identifier': 'pegasus_arm_description', 'dependencies': OrderedDict()}
+[0.000602] (pid_controller) JobQueued: {'identifier': 'pid_controller', 'dependencies': OrderedDict()}
+[0.000626] (pose_broadcaster) JobQueued: {'identifier': 'pose_broadcaster', 'dependencies': OrderedDict()}
+[0.000650] (range_sensor_broadcaster) JobQueued: {'identifier': 'range_sensor_broadcaster', 'dependencies': OrderedDict()}
+[0.000674] (ros2_controllers_test_nodes) JobQueued: {'identifier': 'ros2_controllers_test_nodes', 'dependencies': OrderedDict()}
+[0.000698] (rqt_joint_trajectory_controller) JobQueued: {'identifier': 'rqt_joint_trajectory_controller', 'dependencies': OrderedDict()}
+[0.000732] (steering_controllers_library) JobQueued: {'identifier': 'steering_controllers_library', 'dependencies': OrderedDict()}
+[0.000757] (tricycle_controller) JobQueued: {'identifier': 'tricycle_controller', 'dependencies': OrderedDict()}
+[0.000782] (ackermann_steering_controller) JobQueued: {'identifier': 'ackermann_steering_controller', 'dependencies': OrderedDict({'steering_controllers_library': '/home/mmms/ros2-ws/install/steering_controllers_library'})}
+[0.000829] (bicycle_steering_controller) JobQueued: {'identifier': 'bicycle_steering_controller', 'dependencies': OrderedDict({'steering_controllers_library': '/home/mmms/ros2-ws/install/steering_controllers_library'})}
+[0.000867] (effort_controllers) JobQueued: {'identifier': 'effort_controllers', 'dependencies': OrderedDict({'forward_command_controller': '/home/mmms/ros2-ws/install/forward_command_controller'})}
+[0.000896] (pegasus_arm_moveit_config) JobQueued: {'identifier': 'pegasus_arm_moveit_config', 'dependencies': OrderedDict({'pegasus_arm_description': '/home/mmms/ros2-ws/install/pegasus_arm_description'})}
+[0.000925] (pegasus_assistant) JobQueued: {'identifier': 'pegasus_assistant', 'dependencies': OrderedDict({'pegasus_arm_description': '/home/mmms/ros2-ws/install/pegasus_arm_description'})}
+[0.000953] (position_controllers) JobQueued: {'identifier': 'position_controllers', 'dependencies': OrderedDict({'forward_command_controller': '/home/mmms/ros2-ws/install/forward_command_controller'})}
+[0.000981] (tricycle_steering_controller) JobQueued: {'identifier': 'tricycle_steering_controller', 'dependencies': OrderedDict({'steering_controllers_library': '/home/mmms/ros2-ws/install/steering_controllers_library'})}
+[0.001022] (velocity_controllers) JobQueued: {'identifier': 'velocity_controllers', 'dependencies': OrderedDict({'forward_command_controller': '/home/mmms/ros2-ws/install/forward_command_controller'})}
+[0.002347] (ros2_controllers) JobQueued: {'identifier': 'ros2_controllers', 'dependencies': OrderedDict({'admittance_controller': '/home/mmms/ros2-ws/install/admittance_controller', 'diff_drive_controller': '/home/mmms/ros2-ws/install/diff_drive_controller', 'force_torque_sensor_broadcaster': '/home/mmms/ros2-ws/install/force_torque_sensor_broadcaster', 'forward_command_controller': '/home/mmms/ros2-ws/install/forward_command_controller', 'gpio_controllers': '/home/mmms/ros2-ws/install/gpio_controllers', 'gps_sensor_broadcaster': '/home/mmms/ros2-ws/install/gps_sensor_broadcaster', 'gripper_controllers': '/home/mmms/ros2-ws/install/gripper_controllers', 'imu_sensor_broadcaster': '/home/mmms/ros2-ws/install/imu_sensor_broadcaster', 'joint_state_broadcaster': '/home/mmms/ros2-ws/install/joint_state_broadcaster', 'joint_trajectory_controller': '/home/mmms/ros2-ws/install/joint_trajectory_controller', 'mecanum_drive_controller': '/home/mmms/ros2-ws/install/mecanum_drive_controller', 'parallel_gripper_controller': '/home/mmms/ros2-ws/install/parallel_gripper_controller', 'pid_controller': '/home/mmms/ros2-ws/install/pid_controller', 'pose_broadcaster': '/home/mmms/ros2-ws/install/pose_broadcaster', 'range_sensor_broadcaster': '/home/mmms/ros2-ws/install/range_sensor_broadcaster', 'steering_controllers_library': '/home/mmms/ros2-ws/install/steering_controllers_library', 'tricycle_controller': '/home/mmms/ros2-ws/install/tricycle_controller', 'ackermann_steering_controller': '/home/mmms/ros2-ws/install/ackermann_steering_controller', 'bicycle_steering_controller': '/home/mmms/ros2-ws/install/bicycle_steering_controller', 'effort_controllers': '/home/mmms/ros2-ws/install/effort_controllers', 'position_controllers': '/home/mmms/ros2-ws/install/position_controllers', 'tricycle_steering_controller': '/home/mmms/ros2-ws/install/tricycle_steering_controller', 'velocity_controllers': '/home/mmms/ros2-ws/install/velocity_controllers'})}
+[0.003398] (forward_command_controller) JobStarted: {'identifier': 'forward_command_controller'}
+[0.081486] (steering_controllers_library) JobStarted: {'identifier': 'steering_controllers_library'}
+[0.092585] (pegasus_arm_description) JobStarted: {'identifier': 'pegasus_arm_description'}
+[0.101725] (-) TimerEvent: {}
+[0.125532] (admittance_controller) JobStarted: {'identifier': 'admittance_controller'}
+[0.138458] (forward_command_controller) JobProgress: {'identifier': 'forward_command_controller', 'progress': 'cmake'}
+[0.139848] (forward_command_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/mmms/ros2-ws/src/ros2_controllers/forward_command_controller', '-DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/forward_command_controller'], 'cwd': '/home/mmms/ros2-ws/build/forward_command_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/forward_command_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[0.201986] (-) TimerEvent: {}
+[0.224769] (steering_controllers_library) JobProgress: {'identifier': 'steering_controllers_library', 'progress': 'cmake'}
+[0.226964] (steering_controllers_library) Command: {'cmd': ['/usr/bin/cmake', '/home/mmms/ros2-ws/src/ros2_controllers/steering_controllers_library', '-DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/steering_controllers_library'], 'cwd': '/home/mmms/ros2-ws/build/steering_controllers_library', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/steering_controllers_library', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[0.244861] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'cmake'}
+[0.302212] (-) TimerEvent: {}
+[0.318459] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'build'}
+[0.321887] (pegasus_arm_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/pegasus_arm_description', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[0.333925] (admittance_controller) JobProgress: {'identifier': 'admittance_controller', 'progress': 'cmake'}
+[0.335184] (admittance_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/mmms/ros2-ws/src/ros2_controllers/admittance_controller', '-DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/admittance_controller'], 'cwd': '/home/mmms/ros2-ws/build/admittance_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/admittance_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[0.402364] (-) TimerEvent: {}
+[0.502967] (-) TimerEvent: {}
+[0.603729] (-) TimerEvent: {}
+[0.704400] (-) TimerEvent: {}
+[0.805315] (-) TimerEvent: {}
+[0.905935] (-) TimerEvent: {}
+[1.006396] (-) TimerEvent: {}
+[1.107184] (-) TimerEvent: {}
+[1.207953] (-) TimerEvent: {}
+[1.308546] (-) TimerEvent: {}
+[1.409612] (-) TimerEvent: {}
+[1.510653] (-) TimerEvent: {}
+[1.611248] (-) TimerEvent: {}
+[1.711956] (-) TimerEvent: {}
+[1.812412] (-) TimerEvent: {}
+[1.912997] (-) TimerEvent: {}
+[2.014135] (-) TimerEvent: {}
+[2.115798] (-) TimerEvent: {}
+[2.217145] (-) TimerEvent: {}
+[2.318046] (-) TimerEvent: {}
+[2.418822] (-) TimerEvent: {}
+[2.519197] (-) TimerEvent: {}
+[2.619800] (-) TimerEvent: {}
+[2.651402] (pegasus_arm_description) CommandEnded: {'returncode': 0}
+[2.686634] (pegasus_arm_description) JobProgress: {'identifier': 'pegasus_arm_description', 'progress': 'install'}
+[2.719249] (pegasus_arm_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mmms/ros2-ws/build/pegasus_arm_description'], 'cwd': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/pegasus_arm_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[2.720736] (-) TimerEvent: {}
+[2.749845] (pegasus_arm_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.750614] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf\n'}
+[2.774039] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.urdf.xacro\n'}
+[2.774407] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.ros2_control.xacro\n'}
+[2.774621] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF\n'}
+[2.774890] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm_new.urdf.xacro\n'}
+[2.775322] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf.xacro\n'}
+[2.775535] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode\n'}
+[2.775745] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/c_cpp_properties.json\n'}
+[2.775970] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/settings.json\n'}
+[2.776194] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/my_robot.urdf\n'}
+[2.776394] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf\n'}
+[2.776591] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf\n'}
+[2.776787] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf/pegasus_arm.srdf\n'}
+[2.776982] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config\n'}
+[2.777200] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit.yaml\n'}
+[2.777397] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers.yaml\n'}
+[2.777589] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ompl_planning.yaml\n'}
+[2.777781] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planners.yaml\n'}
+[2.777994] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_commander_params.yaml\n'}
+[2.778294] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planning.yaml\n'}
+[2.778492] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_arm.srdf\n'}
+[2.778623] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_controllers.yaml\n'}
+[2.778735] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/controllers.yaml\n'}
+[2.778846] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/kinematics.yaml\n'}
+[2.778958] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz\n'}
+[2.779409] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/minimal.rviz\n'}
+[2.779534] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/moveit.rviz\n'}
+[2.779645] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch\n'}
+[2.779819] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/demo.launch.py\n'}
+[2.779997] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install\n'}
+[2.780316] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.bash\n'}
+[2.780609] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.sh\n'}
+[2.780890] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.ps1\n'}
+[2.781223] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_sh.py\n'}
+[2.781519] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.bash\n'}
+[2.781842] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/.colcon_install_layout\n'}
+[2.782168] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.sh\n'}
+[2.782463] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/COLCON_IGNORE\n'}
+[2.782741] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.ps1\n'}
+[2.783069] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.zsh\n'}
+[2.783384] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.zsh\n'}
+[2.783666] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_ps1.py\n'}
+[2.783945] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display_minimal.launch.py\n'}
+[2.784409] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display.launch.py\n'}
+[2.784860] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/rsp.launch.py\n'}
+[2.785185] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/move_group.launch.py\n'}
+[2.785612] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/static_virtual_joint_tfs.launch.py\n'}
+[2.785911] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode\n'}
+[2.786264] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/c_cpp_properties.json\n'}
+[2.786552] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/settings.json\n'}
+[2.786831] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log\n'}
+[2.787136] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/COLCON_IGNORE\n'}
+[2.787544] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest\n'}
+[2.787854] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01\n'}
+[2.788279] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/events.log\n'}
+[2.788578] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/logger_all.log\n'}
+[2.788878] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest_build\n'}
+[2.789240] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/spawn_controllers.launch.py\n'}
+[2.789535] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/warehouse_db.launch.py\n'}
+[2.789814] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_rviz.launch.py\n'}
+[2.790130] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/setup_assistant.launch.py\n'}
+[2.790428] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/display.launch.py\n'}
+[2.790708] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build\n'}
+[2.791125] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/COLCON_IGNORE\n'}
+[2.791439] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/.built_by\n'}
+[2.791740] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_description\n'}
+[2.792069] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_description\n'}
+[2.792422] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.sh\n'}
+[2.792733] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.dsv\n'}
+[2.793178] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.sh\n'}
+[2.793472] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.dsv\n'}
+[2.793751] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.bash\n'}
+[2.794098] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.sh\n'}
+[2.794543] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.zsh\n'}
+[2.794920] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.dsv\n'}
+[2.795316] (pegasus_arm_description) StdoutLine: {'line': b'-- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.dsv\n'}
+[2.799654] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/packages/pegasus_arm_description\n'}
+[2.800050] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig.cmake\n'}
+[2.800235] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig-version.cmake\n'}
+[2.800491] (pegasus_arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.xml\n'}
+[2.802663] (pegasus_arm_description) CommandEnded: {'returncode': 0}
+[2.821144] (-) TimerEvent: {}
+[2.922181] (-) TimerEvent: {}
+[3.025150] (-) TimerEvent: {}
+[3.126085] (-) TimerEvent: {}
+[3.227199] (-) TimerEvent: {}
+[3.279424] (pegasus_arm_description) JobEnded: {'identifier': 'pegasus_arm_description', 'rc': 0}
+[3.282431] (diff_drive_controller) JobStarted: {'identifier': 'diff_drive_controller'}
+[3.303886] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'cmake'}
+[3.304696] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/mmms/ros2-ws/src/ros2_controllers/diff_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/diff_drive_controller'], 'cwd': '/home/mmms/ros2-ws/build/diff_drive_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/diff_drive_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[3.327497] (-) TimerEvent: {}
+[3.428789] (-) TimerEvent: {}
+[3.529475] (-) TimerEvent: {}
+[3.629973] (-) TimerEvent: {}
+[3.731149] (-) TimerEvent: {}
+[3.831757] (-) TimerEvent: {}
+[3.932598] (-) TimerEvent: {}
+[4.034218] (-) TimerEvent: {}
+[4.074178] (admittance_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.074646] (steering_controllers_library) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.076075] (forward_command_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.078934] (diff_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.134538] (-) TimerEvent: {}
+[4.235510] (-) TimerEvent: {}
+[4.336979] (-) TimerEvent: {}
+[4.437578] (-) TimerEvent: {}
+[4.538770] (-) TimerEvent: {}
+[4.639929] (-) TimerEvent: {}
+[4.742170] (-) TimerEvent: {}
+[4.847185] (-) TimerEvent: {}
+[4.889157] (diff_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.942883] (steering_controllers_library) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.943520] (forward_command_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.948128] (-) TimerEvent: {}
+[4.953739] (admittance_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[5.052295] (-) TimerEvent: {}
+[5.143224] (forward_command_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.143769] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.148323] (admittance_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.154127] (-) TimerEvent: {}
+[5.162277] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.257406] (-) TimerEvent: {}
+[5.359151] (-) TimerEvent: {}
+[5.459834] (-) TimerEvent: {}
+[5.561446] (-) TimerEvent: {}
+[5.664899] (-) TimerEvent: {}
+[5.679779] (forward_command_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.758342] (forward_command_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.758760] (forward_command_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.762144] (forward_command_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.765176] (-) TimerEvent: {}
+[5.776267] (admittance_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.777621] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.818986] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.821378] (admittance_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.821782] (admittance_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.824732] (admittance_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.829244] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.830222] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.834468] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.857224] (steering_controllers_library) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.857651] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.858610] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.865359] (-) TimerEvent: {}
+[5.875425] (forward_command_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.884096] (admittance_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.884517] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.887542] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.965514] (-) TimerEvent: {}
+[6.067607] (-) TimerEvent: {}
+[6.178819] (-) TimerEvent: {}
+[6.281593] (-) TimerEvent: {}
+[6.386744] (-) TimerEvent: {}
+[6.469676] (admittance_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.490118] (-) TimerEvent: {}
+[6.513174] (admittance_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.514652] (admittance_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.517494] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.518140] (admittance_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.520542] (forward_command_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.550167] (steering_controllers_library) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.550800] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.552391] (steering_controllers_library) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.552845] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.557091] (forward_command_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.560156] (forward_command_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.563003] (forward_command_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.584656] (forward_command_controller) StdoutLine: {'line': b'-- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)\n'}
+[6.585428] (steering_controllers_library) StdoutLine: {'line': b'-- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)\n'}
+[6.585761] (admittance_controller) StdoutLine: {'line': b'-- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)\n'}
+[6.590231] (-) TimerEvent: {}
+[6.603175] (forward_command_controller) StdoutLine: {'line': b'-- Compiler warnings enabled for GNU\n'}
+[6.603598] (admittance_controller) StdoutLine: {'line': b'-- Compiler warnings enabled for GNU\n'}
+[6.603908] (forward_command_controller) StdoutLine: {'line': b'-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)\n'}
+[6.609681] (steering_controllers_library) StdoutLine: {'line': b'-- Compiler warnings enabled for GNU\n'}
+[6.611140] (steering_controllers_library) StdoutLine: {'line': b'-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)\n'}
+[6.611673] (admittance_controller) StdoutLine: {'line': b'-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)\n'}
+[6.612022] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.612330] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.612606] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.617321] (diff_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)\n'}
+[6.617676] (diff_drive_controller) StdoutLine: {'line': b'-- Compiler warnings enabled for GNU\n'}
+[6.617972] (diff_drive_controller) StdoutLine: {'line': b'-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)\n'}
+[6.648074] (forward_command_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[6.648470] (steering_controllers_library) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[6.648738] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[6.649102] (admittance_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[6.690391] (-) TimerEvent: {}
+[6.791088] (-) TimerEvent: {}
+[6.892089] (-) TimerEvent: {}
+[6.992546] (-) TimerEvent: {}
+[7.093066] (-) TimerEvent: {}
+[7.194083] (-) TimerEvent: {}
+[7.294645] (-) TimerEvent: {}
+[7.325234] (diff_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.353142] (admittance_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.374124] (forward_command_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.394804] (-) TimerEvent: {}
+[7.416818] (steering_controllers_library) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.497254] (-) TimerEvent: {}
+[7.597820] (-) TimerEvent: {}
+[7.698345] (-) TimerEvent: {}
+[7.802741] (-) TimerEvent: {}
+[7.905591] (-) TimerEvent: {}
+[8.006110] (-) TimerEvent: {}
+[8.037948] (admittance_controller) StdoutLine: {'line': b'-- Found angles: 1.16.0 (/opt/ros/jazzy/share/angles/cmake)\n'}
+[8.051136] (steering_controllers_library) StdoutLine: {'line': b'-- Found control_msgs: 5.4.0 (/opt/ros/jazzy/share/control_msgs/cmake)\n'}
+[8.060656] (admittance_controller) StdoutLine: {'line': b'-- Found control_msgs: 5.4.0 (/opt/ros/jazzy/share/control_msgs/cmake)\n'}
+[8.078599] (forward_command_controller) StdoutLine: {'line': b'-- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)\n'}
+[8.106302] (-) TimerEvent: {}
+[8.120191] (diff_drive_controller) StdoutLine: {'line': b'-- Found control_toolbox: 4.3.0 (/opt/ros/jazzy/share/control_toolbox/cmake)\n'}
+[8.206447] (-) TimerEvent: {}
+[8.307112] (-) TimerEvent: {}
+[8.407694] (-) TimerEvent: {}
+[8.497413] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.499560] (steering_controllers_library) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.499942] (admittance_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.503268] (forward_command_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.508122] (-) TimerEvent: {}
+[8.572566] (steering_controllers_library) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.576319] (admittance_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.577109] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.577444] (forward_command_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.609104] (-) TimerEvent: {}
+[8.664367] (steering_controllers_library) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.665551] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.667858] (admittance_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.670228] (forward_command_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.710296] (-) TimerEvent: {}
+[8.773204] (forward_command_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.776117] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.776996] (steering_controllers_library) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.777564] (admittance_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.810391] (-) TimerEvent: {}
+[8.913403] (-) TimerEvent: {}
+[9.076121] (-) TimerEvent: {}
+[9.178281] (-) TimerEvent: {}
+[9.280066] (-) TimerEvent: {}
+[9.384800] (-) TimerEvent: {}
+[9.426305] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[9.493106] (-) TimerEvent: {}
+[9.499856] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.594129] (-) TimerEvent: {}
+[9.694792] (-) TimerEvent: {}
+[9.798186] (-) TimerEvent: {}
+[9.898800] (-) TimerEvent: {}
+[10.001127] (-) TimerEvent: {}
+[10.101766] (-) TimerEvent: {}
+[10.128683] (diff_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[10.204109] (-) TimerEvent: {}
+[10.230385] (steering_controllers_library) StdoutLine: {'line': b'-- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)\n'}
+[10.234898] (admittance_controller) StdoutLine: {'line': b'-- Found control_toolbox: 4.3.0 (/opt/ros/jazzy/share/control_toolbox/cmake)\n'}
+[10.264164] (diff_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[10.305112] (-) TimerEvent: {}
+[10.369665] (diff_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.405341] (-) TimerEvent: {}
+[10.438117] (admittance_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[10.445089] (admittance_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.490115] (forward_command_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[10.498182] (steering_controllers_library) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[10.505469] (-) TimerEvent: {}
+[10.607037] (-) TimerEvent: {}
+[10.710107] (-) TimerEvent: {}
+[10.741095] (forward_command_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[10.747809] (admittance_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[10.752187] (forward_command_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.812108] (-) TimerEvent: {}
+[10.813847] (admittance_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[10.847714] (forward_command_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[10.866507] (steering_controllers_library) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[10.890825] (admittance_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.891410] (steering_controllers_library) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.912712] (-) TimerEvent: {}
+[11.027192] (-) TimerEvent: {}
+[11.131151] (-) TimerEvent: {}
+[11.186382] (forward_command_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[11.198549] (forward_command_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.231284] (-) TimerEvent: {}
+[11.242179] (steering_controllers_library) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.276163] (forward_command_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[11.286405] (forward_command_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.313057] (forward_command_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.332050] (-) TimerEvent: {}
+[11.355087] (forward_command_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.433336] (-) TimerEvent: {}
+[11.549916] (steering_controllers_library) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[11.550638] (-) TimerEvent: {}
+[11.604820] (steering_controllers_library) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.659112] (-) TimerEvent: {}
+[11.685094] (steering_controllers_library) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[11.697088] (steering_controllers_library) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.748324] (steering_controllers_library) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[11.759248] (-) TimerEvent: {}
+[11.787269] (steering_controllers_library) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.862702] (-) TimerEvent: {}
+[11.973772] (-) TimerEvent: {}
+[12.077151] (-) TimerEvent: {}
+[12.181507] (-) TimerEvent: {}
+[12.283935] (-) TimerEvent: {}
+[12.385036] (-) TimerEvent: {}
+[12.492413] (-) TimerEvent: {}
+[12.592868] (-) TimerEvent: {}
+[12.694464] (-) TimerEvent: {}
+[12.795555] (-) TimerEvent: {}
+[12.899138] (-) TimerEvent: {}
+[13.003256] (-) TimerEvent: {}
+[13.104081] (-) TimerEvent: {}
+[13.204640] (-) TimerEvent: {}
+[13.309204] (-) TimerEvent: {}
+[13.416505] (-) TimerEvent: {}
+[13.520367] (-) TimerEvent: {}
+[13.620902] (-) TimerEvent: {}
+[13.722103] (-) TimerEvent: {}
+[13.823125] (-) TimerEvent: {}
+[13.923576] (-) TimerEvent: {}
+[14.001317] (diff_drive_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[14.029524] (-) TimerEvent: {}
+[14.036308] (admittance_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[14.046406] (diff_drive_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[14.053208] (diff_drive_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[14.059679] (forward_command_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)\n'}
+[14.090632] (admittance_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[14.091540] (admittance_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[14.130247] (forward_command_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[14.130886] (-) TimerEvent: {}
+[14.202116] (steering_controllers_library) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)\n'}
+[14.202904] (steering_controllers_library) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[14.233470] (-) TimerEvent: {}
+[14.325352] (forward_command_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)\n'}
+[14.333568] (-) TimerEvent: {}
+[14.355165] (steering_controllers_library) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[14.393410] (forward_command_controller) StdoutLine: {'line': b'-- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[14.434303] (-) TimerEvent: {}
+[14.539091] (-) TimerEvent: {}
+[14.645387] (-) TimerEvent: {}
+[14.666814] (steering_controllers_library) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[14.745713] (-) TimerEvent: {}
+[14.849099] (-) TimerEvent: {}
+[14.851954] (steering_controllers_library) StdoutLine: {'line': b'-- Found tf2: 0.36.11 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[14.878800] (steering_controllers_library) StdoutLine: {'line': b'-- Found tf2_msgs: 0.36.11 (/opt/ros/jazzy/share/tf2_msgs/cmake)\n'}
+[14.952713] (-) TimerEvent: {}
+[15.116802] (forward_command_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)\n'}
+[15.117560] (-) TimerEvent: {}
+[15.118445] (steering_controllers_library) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.11 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[15.143281] (admittance_controller) StdoutLine: {'line': b'-- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)\n'}
+[15.147200] (steering_controllers_library) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[15.154377] (forward_command_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[15.155080] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)\n'}
+[15.168231] (steering_controllers_library) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[15.168855] (steering_controllers_library) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[15.217820] (-) TimerEvent: {}
+[15.250568] (forward_command_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[15.265173] (forward_command_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[15.318216] (-) TimerEvent: {}
+[15.421404] (-) TimerEvent: {}
+[15.471401] (steering_controllers_library) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)\n'}
+[15.482091] (steering_controllers_library) StdoutLine: {'line': b'-- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[15.485879] (diff_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[15.521551] (-) TimerEvent: {}
+[15.622104] (-) TimerEvent: {}
+[15.629527] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)\n'}
+[15.633546] (admittance_controller) StdoutLine: {'line': b'-- Found kinematics_interface: 1.3.0 (/opt/ros/jazzy/share/kinematics_interface/cmake)\n'}
+[15.635622] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[15.792747] (-) TimerEvent: {}
+[15.794805] (admittance_controller) StdoutLine: {'line': b'-- Found tf2_eigen: 0.36.11 (/opt/ros/jazzy/share/tf2_eigen/cmake)\n'}
+[15.894145] (-) TimerEvent: {}
+[15.941197] (admittance_controller) StdoutLine: {'line': b'-- Found tf2_kdl: 0.36.11 (/opt/ros/jazzy/share/tf2_kdl/cmake)\n'}
+[15.960980] (steering_controllers_library) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)\n'}
+[15.980436] (steering_controllers_library) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[15.994264] (-) TimerEvent: {}
+[16.023082] (steering_controllers_library) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[16.023752] (admittance_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)\n'}
+[16.039984] (steering_controllers_library) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[16.047873] (admittance_controller) StdoutLine: {'line': b'-- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[16.072730] (steering_controllers_library) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[16.073388] (steering_controllers_library) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[16.082568] (steering_controllers_library) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[16.094391] (-) TimerEvent: {}
+[16.196302] (-) TimerEvent: {}
+[16.285176] (forward_command_controller) StdoutLine: {'line': b'-- Configuring done (15.2s)\n'}
+[16.300091] (-) TimerEvent: {}
+[16.366152] (diff_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)\n'}
+[16.375327] (diff_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[16.394122] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[16.397161] (diff_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[16.400222] (-) TimerEvent: {}
+[16.456642] (admittance_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)\n'}
+[16.475987] (steering_controllers_library) StdoutLine: {'line': b'-- Configuring done (15.4s)\n'}
+[16.486728] (admittance_controller) StdoutLine: {'line': b'-- Found kinematics_interface_kdl: 1.3.0 (/opt/ros/jazzy/share/kinematics_interface_kdl/cmake)\n'}
+[16.500373] (-) TimerEvent: {}
+[16.600949] (-) TimerEvent: {}
+[16.639347] (diff_drive_controller) StdoutLine: {'line': b'-- Configuring done (13.3s)\n'}
+[16.652738] (admittance_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[16.668738] (admittance_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[16.671677] (admittance_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[16.701111] (-) TimerEvent: {}
+[16.802777] (-) TimerEvent: {}
+[16.828240] (diff_drive_controller) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[16.868651] (steering_controllers_library) StdoutLine: {'line': b'-- Generating done (0.4s)\n'}
+[16.884172] (diff_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/mmms/ros2-ws/build/diff_drive_controller\n'}
+[16.890579] (forward_command_controller) StdoutLine: {'line': b'-- Generating done (0.5s)\n'}
+[16.903095] (-) TimerEvent: {}
+[16.912911] (steering_controllers_library) StdoutLine: {'line': b'-- Build files have been written to: /home/mmms/ros2-ws/build/steering_controllers_library\n'}
+[16.946102] (diff_drive_controller) CommandEnded: {'returncode': 0}
+[16.947131] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'build'}
+[16.949115] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/diff_drive_controller', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/diff_drive_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/diff_drive_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[16.959826] (forward_command_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/mmms/ros2-ws/build/forward_command_controller\n'}
+[16.972755] (steering_controllers_library) CommandEnded: {'returncode': 0}
+[16.989091] (steering_controllers_library) JobProgress: {'identifier': 'steering_controllers_library', 'progress': 'build'}
+[16.989220] (steering_controllers_library) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/steering_controllers_library', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/steering_controllers_library', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/steering_controllers_library', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[17.004318] (-) TimerEvent: {}
+[17.025286] (forward_command_controller) CommandEnded: {'returncode': 0}
+[17.026399] (forward_command_controller) JobProgress: {'identifier': 'forward_command_controller', 'progress': 'build'}
+[17.026566] (forward_command_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/forward_command_controller', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/forward_command_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/forward_command_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[17.035116] (admittance_controller) StdoutLine: {'line': b'-- Configuring done (15.9s)\n'}
+[17.104590] (-) TimerEvent: {}
+[17.206857] (-) TimerEvent: {}
+[17.266710] (steering_controllers_library) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/steering_controllers_library/include/steering_controllers_library/steering_controllers_library_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/steering_controllers_library/src/steering_controllers_library.yaml `\x1b[0m\n'}
+[17.297580] (diff_drive_controller) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller_parameter.yaml custom_validators.hpp`\x1b[0m\n'}
+[17.307204] (-) TimerEvent: {}
+[17.367272] (forward_command_controller) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller/forward_command_controller_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller_parameters.yaml `\x1b[0m\n'}
+[17.407331] (-) TimerEvent: {}
+[17.431840] (admittance_controller) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[17.482060] (admittance_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/mmms/ros2-ws/build/admittance_controller\n'}
+[17.507442] (-) TimerEvent: {}
+[17.532216] (admittance_controller) CommandEnded: {'returncode': 0}
+[17.533265] (admittance_controller) JobProgress: {'identifier': 'admittance_controller', 'progress': 'build'}
+[17.533666] (admittance_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmms/ros2-ws/build/admittance_controller', '--', '-j4', '-l4'], 'cwd': '/home/mmms/ros2-ws/build/admittance_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmms', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mmms', 'OLDPWD': '/home/mmms', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2850', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mmms/ros2-ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmms', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mmms', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mmms:@/tmp/.ICE-unix/2850,unix/mmms:/tmp/.ICE-unix/2850', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/098954ab_1cfe_44d4_9832_61d78b1abbaa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mmms/ros2-ws/build/admittance_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=5db638d6aa56535307f157b56889ed9a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/mmms/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/home/mmms/ros2-ws/install/pegasus_arm_description:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy'}), 'shell': False}
+[17.607584] (-) TimerEvent: {}
+[17.669780] (admittance_controller) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/admittance_controller/include/admittance_controller/admittance_controller_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/admittance_controller/src/admittance_controller_parameters.yaml `\x1b[0m\n'}
+[17.708204] (-) TimerEvent: {}
+[17.811494] (-) TimerEvent: {}
+[17.912306] (-) TimerEvent: {}
+[18.012825] (-) TimerEvent: {}
+[18.113631] (-) TimerEvent: {}
+[18.215240] (-) TimerEvent: {}
+[18.317980] (-) TimerEvent: {}
+[18.418522] (-) TimerEvent: {}
+[18.521075] (-) TimerEvent: {}
+[18.621552] (-) TimerEvent: {}
+[18.722080] (-) TimerEvent: {}
+[18.822599] (-) TimerEvent: {}
+[18.935294] (-) TimerEvent: {}
+[19.042971] (-) TimerEvent: {}
+[19.145780] (-) TimerEvent: {}
+[19.246312] (-) TimerEvent: {}
+[19.346976] (-) TimerEvent: {}
+[19.448638] (-) TimerEvent: {}
+[19.555450] (-) TimerEvent: {}
+[19.662865] (-) TimerEvent: {}
+[19.763455] (-) TimerEvent: {}
+[19.864086] (-) TimerEvent: {}
+[19.965078] (-) TimerEvent: {}
+[20.065927] (-) TimerEvent: {}
+[20.168377] (-) TimerEvent: {}
+[20.269466] (-) TimerEvent: {}
+[20.369950] (-) TimerEvent: {}
+[20.470495] (-) TimerEvent: {}
+[20.571155] (-) TimerEvent: {}
+[20.672298] (-) TimerEvent: {}
+[20.772785] (-) TimerEvent: {}
+[20.876241] (-) TimerEvent: {}
+[20.976754] (-) TimerEvent: {}
+[21.070756] (forward_command_controller) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mCreating deprecated header file /home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller_parameters.hpp\x1b[0m\n'}
+[21.076941] (-) TimerEvent: {}
+[21.179543] (-) TimerEvent: {}
+[21.280243] (-) TimerEvent: {}
+[21.318401] (forward_command_controller) StdoutLine: {'line': b'[  9%] Built target forward_command_controller_parameters\n'}
+[21.381115] (-) TimerEvent: {}
+[21.397237] (forward_command_controller) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[21.483296] (-) TimerEvent: {}
+[21.584119] (-) TimerEvent: {}
+[21.688465] (-) TimerEvent: {}
+[21.793160] (-) TimerEvent: {}
+[21.900116] (-) TimerEvent: {}
+[22.001911] (-) TimerEvent: {}
+[22.103319] (-) TimerEvent: {}
+[22.205194] (-) TimerEvent: {}
+[22.305707] (-) TimerEvent: {}
+[22.407506] (-) TimerEvent: {}
+[22.510146] (-) TimerEvent: {}
+[22.611092] (-) TimerEvent: {}
+[22.712093] (-) TimerEvent: {}
+[22.812609] (-) TimerEvent: {}
+[22.914780] (-) TimerEvent: {}
+[22.993170] (steering_controllers_library) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mCreating deprecated header file /home/mmms/ros2-ws/build/steering_controllers_library/include/steering_controllers_library_parameters.hpp\x1b[0m\n'}
+[23.075575] (-) TimerEvent: {}
+[23.177184] (-) TimerEvent: {}
+[23.231966] (steering_controllers_library) StdoutLine: {'line': b'[ 14%] Built target steering_controllers_library_parameters\n'}
+[23.278244] (-) TimerEvent: {}
+[23.322338] (steering_controllers_library) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[23.351367] (admittance_controller) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mCreating deprecated header file /home/mmms/ros2-ws/build/admittance_controller/include/admittance_controller_parameters.hpp\x1b[0m\n'}
+[23.378332] (-) TimerEvent: {}
+[23.436455] (admittance_controller) StdoutLine: {'line': b'[ 15%] Built target admittance_controller_parameters\n'}
+[23.472773] (admittance_controller) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[23.478455] (-) TimerEvent: {}
+[23.578925] (-) TimerEvent: {}
+[23.682701] (-) TimerEvent: {}
+[23.784587] (-) TimerEvent: {}
+[23.885377] (-) TimerEvent: {}
+[23.986040] (-) TimerEvent: {}
+[24.156965] (-) TimerEvent: {}
+[24.261458] (-) TimerEvent: {}
+[24.362054] (-) TimerEvent: {}
+[24.475534] (-) TimerEvent: {}
+[24.578303] (-) TimerEvent: {}
+[24.680837] (-) TimerEvent: {}
+[24.788510] (-) TimerEvent: {}
+[24.892919] (-) TimerEvent: {}
+[24.997598] (-) TimerEvent: {}
+[25.103207] (-) TimerEvent: {}
+[25.204710] (-) TimerEvent: {}
+[25.308573] (-) TimerEvent: {}
+[25.413733] (-) TimerEvent: {}
+[25.480300] (diff_drive_controller) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mCreating deprecated header file /home/mmms/ros2-ws/build/diff_drive_controller/include/diff_drive_controller_parameters.hpp\x1b[0m\n'}
+[25.513888] (-) TimerEvent: {}
+[25.617350] (-) TimerEvent: {}
+[25.634431] (diff_drive_controller) StdoutLine: {'line': b'[ 14%] Built target diff_drive_controller_parameters\n'}
+[25.694066] (diff_drive_controller) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[25.717495] (-) TimerEvent: {}
+[25.819998] (-) TimerEvent: {}
+[25.928174] (-) TimerEvent: {}
+[26.033235] (-) TimerEvent: {}
+[26.133966] (-) TimerEvent: {}
+[26.238662] (-) TimerEvent: {}
+[26.350192] (-) TimerEvent: {}
+[26.451213] (-) TimerEvent: {}
+[26.555498] (-) TimerEvent: {}
+[26.656079] (-) TimerEvent: {}
+[26.756873] (-) TimerEvent: {}
+[26.862773] (-) TimerEvent: {}
+[26.967133] (-) TimerEvent: {}
+[27.099151] (-) TimerEvent: {}
+[27.206692] (-) TimerEvent: {}
+[27.310272] (-) TimerEvent: {}
+[27.411055] (-) TimerEvent: {}
+[27.512635] (-) TimerEvent: {}
+[27.616685] (-) TimerEvent: {}
+[27.732508] (-) TimerEvent: {}
+[27.835031] (-) TimerEvent: {}
+[27.936312] (-) TimerEvent: {}
+[28.041648] (-) TimerEvent: {}
+[28.164315] (-) TimerEvent: {}
+[28.265129] (-) TimerEvent: {}
+[28.365717] (-) TimerEvent: {}
+[28.468175] (-) TimerEvent: {}
+[28.577503] (-) TimerEvent: {}
+[28.681537] (-) TimerEvent: {}
+[28.792427] (-) TimerEvent: {}
+[28.919753] (-) TimerEvent: {}
+[29.021112] (-) TimerEvent: {}
+[29.121866] (-) TimerEvent: {}
+[29.241146] (-) TimerEvent: {}
+[29.342711] (-) TimerEvent: {}
+[29.450576] (-) TimerEvent: {}
+[29.564799] (-) TimerEvent: {}
+[29.682532] (-) TimerEvent: {}
+[29.785356] (-) TimerEvent: {}
+[29.889311] (-) TimerEvent: {}
+[29.995172] (-) TimerEvent: {}
+[30.098360] (-) TimerEvent: {}
+[30.200978] (-) TimerEvent: {}
+[30.304106] (-) TimerEvent: {}
+[30.405375] (-) TimerEvent: {}
+[30.507314] (-) TimerEvent: {}
+[30.612162] (-) TimerEvent: {}
+[30.712670] (-) TimerEvent: {}
+[30.814138] (-) TimerEvent: {}
+[30.915854] (-) TimerEvent: {}
+[31.025108] (-) TimerEvent: {}
+[31.126225] (-) TimerEvent: {}
+[31.170177] (steering_controllers_library) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[31.226368] (-) TimerEvent: {}
+[31.345629] (-) TimerEvent: {}
+[31.403212] (steering_controllers_library) StdoutLine: {'line': b'[ 28%] Built target gmock_main\n'}
+[31.450126] (-) TimerEvent: {}
+[31.494395] (steering_controllers_library) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/steering_controllers_library.dir/src/steering_controllers_library.cpp.o\x1b[0m\n'}
+[31.551108] (-) TimerEvent: {}
+[31.651673] (-) TimerEvent: {}
+[31.753113] (-) TimerEvent: {}
+[31.855757] (-) TimerEvent: {}
+[31.965074] (-) TimerEvent: {}
+[32.068003] (-) TimerEvent: {}
+[32.169591] (-) TimerEvent: {}
+[32.270519] (-) TimerEvent: {}
+[32.379309] (-) TimerEvent: {}
+[32.485649] (-) TimerEvent: {}
+[32.586219] (-) TimerEvent: {}
+[32.686769] (-) TimerEvent: {}
+[32.788110] (-) TimerEvent: {}
+[32.892481] (-) TimerEvent: {}
+[33.016530] (-) TimerEvent: {}
+[33.121310] (-) TimerEvent: {}
+[33.230834] (-) TimerEvent: {}
+[33.344336] (-) TimerEvent: {}
+[33.448891] (-) TimerEvent: {}
+[33.551291] (-) TimerEvent: {}
+[33.653429] (-) TimerEvent: {}
+[33.757974] (-) TimerEvent: {}
+[33.861119] (-) TimerEvent: {}
+[33.961774] (-) TimerEvent: {}
+[34.062816] (-) TimerEvent: {}
+[34.163667] (-) TimerEvent: {}
+[34.264235] (-) TimerEvent: {}
+[34.364863] (-) TimerEvent: {}
+[34.467618] (-) TimerEvent: {}
+[34.585198] (-) TimerEvent: {}
+[34.692532] (-) TimerEvent: {}
+[34.794327] (-) TimerEvent: {}
+[34.905569] (-) TimerEvent: {}
+[35.020117] (-) TimerEvent: {}
+[35.121856] (-) TimerEvent: {}
+[35.225332] (-) TimerEvent: {}
+[35.325927] (-) TimerEvent: {}
+[35.428586] (-) TimerEvent: {}
+[35.537917] (-) TimerEvent: {}
+[35.650104] (-) TimerEvent: {}
+[35.757158] (-) TimerEvent: {}
+[35.861463] (-) TimerEvent: {}
+[35.964134] (-) TimerEvent: {}
+[36.068798] (-) TimerEvent: {}
+[36.170843] (-) TimerEvent: {}
+[36.274839] (-) TimerEvent: {}
+[36.376848] (-) TimerEvent: {}
+[36.477566] (-) TimerEvent: {}
+[36.580115] (-) TimerEvent: {}
+[36.681036] (-) TimerEvent: {}
+[36.786757] (-) TimerEvent: {}
+[36.888647] (-) TimerEvent: {}
+[36.995364] (-) TimerEvent: {}
+[37.164142] (-) TimerEvent: {}
+[37.265119] (-) TimerEvent: {}
+[37.367331] (-) TimerEvent: {}
+[37.467947] (-) TimerEvent: {}
+[37.569285] (-) TimerEvent: {}
+[37.672199] (-) TimerEvent: {}
+[37.966558] (-) TimerEvent: {}
+[38.067178] (-) TimerEvent: {}
+[38.169300] (-) TimerEvent: {}
+[38.272790] (-) TimerEvent: {}
+[38.373391] (-) TimerEvent: {}
+[38.476386] (-) TimerEvent: {}
+[38.577601] (-) TimerEvent: {}
+[38.680335] (-) TimerEvent: {}
+[38.781105] (-) TimerEvent: {}
+[38.881569] (-) TimerEvent: {}
+[38.987869] (-) TimerEvent: {}
+[39.187550] (-) TimerEvent: {}
+[39.289468] (-) TimerEvent: {}
+[39.395763] (-) TimerEvent: {}
+[39.497994] (-) TimerEvent: {}
+[39.602310] (-) TimerEvent: {}
+[39.709955] (-) TimerEvent: {}
+[39.814898] (-) TimerEvent: {}
+[39.918117] (-) TimerEvent: {}
+[40.019088] (-) TimerEvent: {}
+[40.121498] (-) TimerEvent: {}
+[40.227652] (-) TimerEvent: {}
+[40.328351] (-) TimerEvent: {}
+[40.433390] (-) TimerEvent: {}
+[40.534068] (-) TimerEvent: {}
+[40.636455] (-) TimerEvent: {}
+[40.739412] (-) TimerEvent: {}
+[40.840074] (-) TimerEvent: {}
+[40.951865] (-) TimerEvent: {}
+[41.059568] (-) TimerEvent: {}
+[41.161133] (-) TimerEvent: {}
+[41.267791] (-) TimerEvent: {}
+[41.371886] (-) TimerEvent: {}
+[41.474341] (-) TimerEvent: {}
+[41.579564] (-) TimerEvent: {}
+[41.691106] (-) TimerEvent: {}
+[41.800118] (-) TimerEvent: {}
+[41.900975] (-) TimerEvent: {}
+[42.013096] (-) TimerEvent: {}
+[42.114066] (-) TimerEvent: {}
+[42.214741] (-) TimerEvent: {}
+[42.316318] (-) TimerEvent: {}
+[42.417242] (-) TimerEvent: {}
+[42.522829] (-) TimerEvent: {}
+[42.627665] (-) TimerEvent: {}
+[42.728348] (-) TimerEvent: {}
+[42.829107] (-) TimerEvent: {}
+[42.930315] (-) TimerEvent: {}
+[43.034157] (-) TimerEvent: {}
+[43.135129] (-) TimerEvent: {}
+[43.235736] (-) TimerEvent: {}
+[43.336248] (-) TimerEvent: {}
+[43.437133] (-) TimerEvent: {}
+[43.545760] (-) TimerEvent: {}
+[43.647638] (-) TimerEvent: {}
+[43.750361] (-) TimerEvent: {}
+[43.852306] (-) TimerEvent: {}
+[43.959471] (-) TimerEvent: {}
+[44.060034] (-) TimerEvent: {}
+[44.160687] (-) TimerEvent: {}
+[44.266146] (-) TimerEvent: {}
+[44.367638] (-) TimerEvent: {}
+[44.470342] (-) TimerEvent: {}
+[44.571302] (-) TimerEvent: {}
+[44.676837] (-) TimerEvent: {}
+[44.787643] (-) TimerEvent: {}
+[44.888402] (-) TimerEvent: {}
+[44.990225] (-) TimerEvent: {}
+[45.092444] (-) TimerEvent: {}
+[45.196586] (-) TimerEvent: {}
+[45.308938] (-) TimerEvent: {}
+[45.409590] (-) TimerEvent: {}
+[45.510668] (-) TimerEvent: {}
+[45.613898] (-) TimerEvent: {}
+[45.716146] (-) TimerEvent: {}
+[45.817299] (-) TimerEvent: {}
+[45.921102] (-) TimerEvent: {}
+[46.052293] (-) TimerEvent: {}
+[46.153746] (-) TimerEvent: {}
+[46.254587] (-) TimerEvent: {}
+[46.355205] (-) TimerEvent: {}
+[46.456113] (-) TimerEvent: {}
+[46.572616] (-) TimerEvent: {}
+[46.673726] (-) TimerEvent: {}
+[46.774369] (-) TimerEvent: {}
+[46.874971] (-) TimerEvent: {}
+[46.975578] (-) TimerEvent: {}
+[47.082255] (-) TimerEvent: {}
+[47.188191] (-) TimerEvent: {}
+[47.289140] (-) TimerEvent: {}
+[47.368071] (forward_command_controller) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[47.406275] (-) TimerEvent: {}
+[47.507156] (-) TimerEvent: {}
+[47.520071] (admittance_controller) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[47.607580] (-) TimerEvent: {}
+[47.817671] (admittance_controller) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[48.181721] (-) TimerEvent: {}
+[48.192702] (admittance_controller) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[48.354617] (-) TimerEvent: {}
+[48.382363] (admittance_controller) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[48.383457] (admittance_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:287: gmock/CMakeFiles/gmock.dir/all] Error 2\n'}
+[48.384044] (admittance_controller) StderrLine: {'line': b'gmake: *** wait: No child processes.  Stop.\n'}
+[48.385158] (admittance_controller) StderrLine: {'line': b'gmake: *** Waiting for unfinished jobs....\n'}
+[48.385695] (admittance_controller) StderrLine: {'line': b'gmake: *** wait: No child processes.  Stop.\n'}
+[48.386122] (steering_controllers_library) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/steering_controllers_library.dir/build.make:76: CMakeFiles/steering_controllers_library.dir/src/steering_controllers_library.cpp.o] Interrupt\n'}
+[48.489930] (-) TimerEvent: {}
+[48.543102] (steering_controllers_library) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:206: CMakeFiles/steering_controllers_library.dir/all] Interrupt\n'}
+[48.589356] (steering_controllers_library) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[48.589737] (diff_drive_controller) StderrLine: {'line': b"gmake[2]: *** Deleting file 'gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o'\n"}
+[48.599493] (-) TimerEvent: {}
+[48.599733] (diff_drive_controller) StderrLine: {'line': b'gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:76: gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o] Interrupt\n'}
+[48.600004] (diff_drive_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:288: gmock/CMakeFiles/gmock.dir/all] Interrupt\n'}
+[48.600403] (diff_drive_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[48.600702] (forward_command_controller) StderrLine: {'line': b'gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:90: gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o] Interrupt\n'}
+[48.601116] (forward_command_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:385: gmock/CMakeFiles/gmock.dir/all] Interrupt\n'}
+[48.619070] (forward_command_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[48.619861] (admittance_controller) CommandEnded: {'returncode': -2}
+[48.721089] (-) TimerEvent: {}
+[48.888286] (-) TimerEvent: {}
+[49.020809] (-) TimerEvent: {}
+[49.158418] (-) TimerEvent: {}
+[49.291726] (-) TimerEvent: {}
+[49.470607] (-) TimerEvent: {}
+[49.647102] (-) TimerEvent: {}
+[49.854471] (-) TimerEvent: {}
+[50.010362] (-) TimerEvent: {}
+[50.163959] (-) TimerEvent: {}
+[50.292978] (-) TimerEvent: {}
+[50.414985] (-) TimerEvent: {}
+[50.526411] (-) TimerEvent: {}
+[50.663781] (-) TimerEvent: {}
+[50.711951] (admittance_controller) JobEnded: {'identifier': 'admittance_controller', 'rc': 'SIGINT'}
+[50.903182] (-) TimerEvent: {}
+[50.914153] (forward_command_controller) CommandEnded: {'returncode': -2}
+[50.978679] (forward_command_controller) JobEnded: {'identifier': 'forward_command_controller', 'rc': 'SIGINT'}
+[50.981490] (diff_drive_controller) CommandEnded: {'returncode': -2}
+[51.058407] (-) TimerEvent: {}
+[51.172927] (-) TimerEvent: {}
+[51.209726] (diff_drive_controller) JobEnded: {'identifier': 'diff_drive_controller', 'rc': 'SIGINT'}
+[51.227542] (steering_controllers_library) CommandEnded: {'returncode': -2}
+[51.286623] (-) TimerEvent: {}
+[51.391703] (steering_controllers_library) JobEnded: {'identifier': 'steering_controllers_library', 'rc': 'SIGINT'}
+[51.500351] (-) TimerEvent: {}
+[51.617946] (-) TimerEvent: {}
+[51.814174] (-) TimerEvent: {}
+[52.007109] (-) TimerEvent: {}
+[52.347621] (-) TimerEvent: {}
+[52.535572] (-) TimerEvent: {}
+[52.625208] (force_torque_sensor_broadcaster) JobSkipped: {'identifier': 'force_torque_sensor_broadcaster'}
+[52.625437] (gpio_controllers) JobSkipped: {'identifier': 'gpio_controllers'}
+[52.625562] (gps_sensor_broadcaster) JobSkipped: {'identifier': 'gps_sensor_broadcaster'}
+[52.625665] (gripper_controllers) JobSkipped: {'identifier': 'gripper_controllers'}
+[52.625759] (imu_sensor_broadcaster) JobSkipped: {'identifier': 'imu_sensor_broadcaster'}
+[52.625853] (joint_state_broadcaster) JobSkipped: {'identifier': 'joint_state_broadcaster'}
+[52.625945] (joint_trajectory_controller) JobSkipped: {'identifier': 'joint_trajectory_controller'}
+[52.626063] (mecanum_drive_controller) JobSkipped: {'identifier': 'mecanum_drive_controller'}
+[52.626170] (parallel_gripper_controller) JobSkipped: {'identifier': 'parallel_gripper_controller'}
+[52.626264] (pegasus_arm_commander) JobSkipped: {'identifier': 'pegasus_arm_commander'}
+[52.690896] (-) TimerEvent: {}
+[52.726421] (pid_controller) JobSkipped: {'identifier': 'pid_controller'}
+[52.760073] (pose_broadcaster) JobSkipped: {'identifier': 'pose_broadcaster'}
+[52.760260] (range_sensor_broadcaster) JobSkipped: {'identifier': 'range_sensor_broadcaster'}
+[52.760363] (ros2_controllers_test_nodes) JobSkipped: {'identifier': 'ros2_controllers_test_nodes'}
+[52.760456] (rqt_joint_trajectory_controller) JobSkipped: {'identifier': 'rqt_joint_trajectory_controller'}
+[52.760612] (tricycle_controller) JobSkipped: {'identifier': 'tricycle_controller'}
+[52.760708] (ackermann_steering_controller) JobSkipped: {'identifier': 'ackermann_steering_controller'}
+[52.760821] (bicycle_steering_controller) JobSkipped: {'identifier': 'bicycle_steering_controller'}
+[52.760912] (effort_controllers) JobSkipped: {'identifier': 'effort_controllers'}
+[52.761003] (pegasus_arm_moveit_config) JobSkipped: {'identifier': 'pegasus_arm_moveit_config'}
+[52.831746] (-) TimerEvent: {}
+[52.832349] (pegasus_assistant) JobSkipped: {'identifier': 'pegasus_assistant'}
+[52.832473] (position_controllers) JobSkipped: {'identifier': 'position_controllers'}
+[52.832570] (tricycle_steering_controller) JobSkipped: {'identifier': 'tricycle_steering_controller'}
+[52.832664] (velocity_controllers) JobSkipped: {'identifier': 'velocity_controllers'}
+[52.832755] (ros2_controllers) JobSkipped: {'identifier': 'ros2_controllers'}
+[52.863719] (-) EventReactorShutdown: {}

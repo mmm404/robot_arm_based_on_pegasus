@@ -1,0 +1,32 @@
+[0.000000] (-) TimerEvent: {}
+[0.000581] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000827] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000925] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.001187] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.001232] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.001281] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.001332] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.001361] (-) JobUnselected: {'identifier': 'gpio_controllers'}
+[0.001388] (-) JobUnselected: {'identifier': 'gps_sensor_broadcaster'}
+[0.001416] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.001445] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.001474] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.001501] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.001528] (-) JobUnselected: {'identifier': 'mecanum_drive_controller'}
+[0.001561] (-) JobUnselected: {'identifier': 'parallel_gripper_controller'}
+[0.001618] (-) JobUnselected: {'identifier': 'pegasus_arm_commander'}
+[0.001658] (-) JobUnselected: {'identifier': 'pegasus_arm_description'}
+[0.001696] (-) JobUnselected: {'identifier': 'pegasus_arm_moveit_config'}
+[0.001737] (-) JobUnselected: {'identifier': 'pegasus_assistant'}
+[0.001799] (-) JobUnselected: {'identifier': 'pid_controller'}
+[0.001893] (-) JobUnselected: {'identifier': 'pose_broadcaster'}
+[0.001955] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.002017] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.002067] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.002130] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.002184] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.002232] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.002317] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.002391] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.002422] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.002451] (-) EventReactorShutdown: {}

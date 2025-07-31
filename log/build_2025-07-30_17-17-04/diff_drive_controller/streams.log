@@ -1,0 +1,53 @@
+[0.027s] Invoking command in '/home/mmms/ros2-ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/diff_drive_controller -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/diff_drive_controller
+[0.797s] -- The C compiler identification is GNU 13.3.0
+[1.609s] -- The CXX compiler identification is GNU 13.3.0
+[1.861s] -- Detecting C compiler ABI info
+[2.496s] -- Detecting C compiler ABI info - done
+[2.547s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.548s] -- Detecting C compile features
+[2.553s] -- Detecting C compile features - done
+[2.602s] -- Detecting CXX compiler ABI info
+[3.271s] -- Detecting CXX compiler ABI info - done
+[3.330s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.330s] -- Detecting CXX compile features
+[3.330s] -- Detecting CXX compile features - done
+[3.335s] -- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)
+[3.335s] -- Compiler warnings enabled for GNU
+[3.336s] -- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)
+[3.366s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.043s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.839s] -- Found control_toolbox: 4.3.0 (/opt/ros/jazzy/share/control_toolbox/cmake)
+[5.215s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.295s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.383s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.494s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.145s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[6.218s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.847s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.982s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[7.087s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.720s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[10.767s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[10.771s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[11.873s] -- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[12.204s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[12.347s] -- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+[12.353s] -- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[13.084s] -- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+[13.093s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[13.112s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[13.115s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[13.357s] -- Configuring done (13.3s)
+[13.546s] -- Generating done (0.1s)
+[13.602s] -- Build files have been written to: /home/mmms/ros2-ws/build/diff_drive_controller
+[13.664s] Invoked command in '/home/mmms/ros2-ws/build/diff_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/diff_drive_controller -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/diff_drive_controller
+[13.667s] Invoking command in '/home/mmms/ros2-ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/diff_drive_controller -- -j4 -l4
+[14.015s] [  7%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller_parameter.yaml custom_validators.hpp`[0m
+[22.198s] [ 14%] [34m[1mCreating deprecated header file /home/mmms/ros2-ws/build/diff_drive_controller/include/diff_drive_controller_parameters.hpp[0m
+[22.352s] [ 14%] Built target diff_drive_controller_parameters
+[22.412s] [ 21%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o[0m
+[45.315s] gmake[2]: *** Deleting file 'gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o'
+[45.317s] gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:76: gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o] Interrupt
+[45.318s] gmake[1]: *** [CMakeFiles/Makefile2:288: gmock/CMakeFiles/gmock.dir/all] Interrupt
+[45.318s] gmake: *** [Makefile:146: all] Interrupt
+[47.775s] Invoked command in '/home/mmms/ros2-ws/build/diff_drive_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/diff_drive_controller -- -j4 -l4

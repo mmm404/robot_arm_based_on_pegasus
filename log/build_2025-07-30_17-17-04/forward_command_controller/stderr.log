@@ -1,0 +1,3 @@
+gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:90: gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:385: gmock/CMakeFiles/gmock.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,4 @@
+source;share/pegasus_assistant/local_setup.bash
+source;share/pegasus_assistant/local_setup.dsv
+source;share/pegasus_assistant/local_setup.sh
+source;share/pegasus_assistant/local_setup.zsh

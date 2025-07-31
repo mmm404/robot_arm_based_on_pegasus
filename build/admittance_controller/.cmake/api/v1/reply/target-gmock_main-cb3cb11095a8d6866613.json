@@ -1,0 +1,179 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "gmock/libgmock_main.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"set_compiler_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/jazzy/src/gmock_vendor/CMakeLists.txt",
+			"/opt/ros/jazzy/share/ros2_control_cmake/cmake/ros2_control.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 5,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 47,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 81,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=shadow"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=format"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Werror=missing-braces"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=range-loop-construct"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "TEST_FILES_DIRECTORY=\"/home/mmms/ros2-ws/src/ros2_controllers/admittance_controller/test\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/opt/ros/jazzy/src/gmock_vendor/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/opt/ros/jazzy/src/gmock_vendor/."
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/opt/ros/jazzy/src/gtest_vendor/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/opt/ros/jazzy/src/gtest_vendor"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "gmock_main::@0590522bda6a4df7f28a",
+	"name" : "gmock_main",
+	"nameOnDisk" : "libgmock_main.a",
+	"paths" : 
+	{
+		"build" : "gmock",
+		"source" : "/opt/ros/jazzy/src/gmock_vendor"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/opt/ros/jazzy/src/gmock_vendor/src/gmock_main.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

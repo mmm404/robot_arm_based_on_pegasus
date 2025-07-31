@@ -1,0 +1,55 @@
+[0.167s] Invoking command in '/home/mmms/ros2-ws/build/forward_command_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/forward_command_controller -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/forward_command_controller
+[4.073s] -- The C compiler identification is GNU 13.3.0
+[4.940s] -- The CXX compiler identification is GNU 13.3.0
+[5.140s] -- Detecting C compiler ABI info
+[5.678s] -- Detecting C compiler ABI info - done
+[5.755s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.755s] -- Detecting C compile features
+[5.759s] -- Detecting C compile features - done
+[5.872s] -- Detecting CXX compiler ABI info
+[6.517s] -- Detecting CXX compiler ABI info - done
+[6.554s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.557s] -- Detecting CXX compile features
+[6.560s] -- Detecting CXX compile features - done
+[6.582s] -- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)
+[6.600s] -- Compiler warnings enabled for GNU
+[6.601s] -- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)
+[6.645s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.371s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.075s] -- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[8.501s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.574s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.667s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.772s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.487s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[10.738s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[10.749s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[10.845s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.183s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[11.195s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.273s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[11.283s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.310s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.352s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[14.057s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[14.127s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[14.322s] -- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+[14.390s] -- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[15.114s] -- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+[15.151s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[15.248s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[15.262s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[16.282s] -- Configuring done (15.2s)
+[16.887s] -- Generating done (0.5s)
+[16.957s] -- Build files have been written to: /home/mmms/ros2-ws/build/forward_command_controller
+[17.023s] Invoked command in '/home/mmms/ros2-ws/build/forward_command_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/forward_command_controller -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/forward_command_controller
+[17.024s] Invoking command in '/home/mmms/ros2-ws/build/forward_command_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/forward_command_controller -- -j4 -l4
+[17.364s] [  4%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller/forward_command_controller_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller_parameters.yaml `[0m
+[21.073s] [  9%] [34m[1mCreating deprecated header file /home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller_parameters.hpp[0m
+[21.316s] [  9%] Built target forward_command_controller_parameters
+[21.394s] [ 14%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o[0m
+[47.385s] [ 19%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[48.598s] gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:90: gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o] Interrupt
+[48.615s] gmake[1]: *** [CMakeFiles/Makefile2:385: gmock/CMakeFiles/gmock.dir/all] Interrupt
+[48.616s] gmake: *** [Makefile:146: all] Interrupt
+[50.963s] Invoked command in '/home/mmms/ros2-ws/build/forward_command_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/forward_command_controller -- -j4 -l4

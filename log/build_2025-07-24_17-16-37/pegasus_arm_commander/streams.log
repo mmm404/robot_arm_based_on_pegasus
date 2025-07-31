@@ -1,0 +1,24 @@
+[2.878s] Invoking command in '/home/mmms/ros2-ws/src/pegasus_arm_commander': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mmms/ros2-ws/build/pegasus_arm_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pegasus_arm_commander build --build-base /home/mmms/ros2-ws/build/pegasus_arm_commander/build install --record /home/mmms/ros2-ws/build/pegasus_arm_commander/install.log --single-version-externally-managed install_data
+[3.400s] running egg_info
+[3.442s] writing ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/PKG-INFO
+[3.442s] writing dependency_links to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/dependency_links.txt
+[3.442s] writing entry points to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/entry_points.txt
+[3.443s] writing requirements to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/requires.txt
+[3.443s] writing top-level names to ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/top_level.txt
+[3.536s] reading manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'
+[3.552s] writing manifest file '../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info/SOURCES.txt'
+[3.552s] running build
+[3.553s] running build_py
+[3.553s] copying pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander
+[3.554s] running install
+[3.563s] running install_lib
+[3.622s] copying /home/mmms/ros2-ws/build/pegasus_arm_commander/build/lib/pegasus_arm_commander/pegasus_commander.py -> /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander
+[3.623s] byte-compiling /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander/pegasus_commander.py to pegasus_commander.cpython-312.pyc
+[3.656s] running install_data
+[3.657s] running install_egg_info
+[3.701s] removing '/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander-0.0.1-py3.12.egg-info' (and everything under it)
+[3.701s] Copying ../../build/pegasus_arm_commander/pegasus_arm_commander.egg-info to /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages/pegasus_arm_commander-0.0.1-py3.12.egg-info
+[3.710s] running install_scripts
+[3.945s] Installing pegasus_commander script to /home/mmms/ros2-ws/install/pegasus_arm_commander/lib/pegasus_arm_commander
+[3.945s] writing list of installed files to '/home/mmms/ros2-ws/build/pegasus_arm_commander/install.log'
+[4.005s] Invoked command in '/home/mmms/ros2-ws/src/pegasus_arm_commander' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mmms/ros2-ws/build/pegasus_arm_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mmms/ros2-ws/install/pegasus_arm_commander/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pegasus_arm_commander build --build-base /home/mmms/ros2-ws/build/pegasus_arm_commander/build install --record /home/mmms/ros2-ws/build/pegasus_arm_commander/install.log --single-version-externally-managed install_data

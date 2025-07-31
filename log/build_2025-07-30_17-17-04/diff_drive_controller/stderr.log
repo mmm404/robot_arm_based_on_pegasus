@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o'
+gmake[2]: *** [gmock/CMakeFiles/gmock.dir/build.make:76: gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:288: gmock/CMakeFiles/gmock.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

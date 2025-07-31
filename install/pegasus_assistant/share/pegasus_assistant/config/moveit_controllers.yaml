@@ -1,0 +1,31 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_controller
+#    - gripper_controller
+
+  arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+#  gripper_controller:
+#    type: GripperCommand
+#    joints:
+      
+#    action_ns: gripper_cmd
+#    default: true
+
+#added these planning pipelines during debugging
+
+#planning_pipelines:
+#  pipeline_names: [ompl, pilz_industrial_motion_planner]
+#ompl:
+#  planner_plugin: ompl_interface/OMPLPlanner

@@ -1,0 +1,46 @@
+[0.030s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_assistant': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_assistant -- -j4 -l4
+[0.123s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.046s] -- Configuring done (0.9s)
+[1.071s] -- Generating done (0.0s)
+[1.074s] -- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_assistant
+[1.111s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_assistant' returned '0': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_assistant -- -j4 -l4
+[1.125s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_assistant': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_assistant
+[1.136s] -- Install configuration: ""
+[1.137s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/package_run_dependencies/pegasus_assistant
+[1.137s] -- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/parent_prefix_path/pegasus_assistant
+[1.138s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/ament_prefix_path.sh
+[1.138s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/ament_prefix_path.dsv
+[1.138s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/path.sh
+[1.138s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/path.dsv
+[1.139s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.bash
+[1.139s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.sh
+[1.140s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.zsh
+[1.140s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.dsv
+[1.140s] -- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/package.dsv
+[1.140s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/packages/pegasus_assistant
+[1.141s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/cmake/pegasus_assistantConfig.cmake
+[1.141s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/cmake/pegasus_assistantConfig-version.cmake
+[1.141s] -- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/package.xml
+[1.141s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch
+[1.141s] -- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/demo.launch.py
+[1.142s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/rsp.launch.py
+[1.142s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/move_group.launch.py
+[1.142s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/static_virtual_joint_tfs.launch.py
+[1.142s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/spawn_controllers.launch.py
+[1.142s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/warehouse_db.launch.py
+[1.143s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/moveit_rviz.launch.py
+[1.143s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/setup_assistant.launch.py
+[1.143s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config
+[1.143s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/ros2_controllers.yaml
+[1.144s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/ompl_planning.yaml
+[1.144s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pilz_cartesian_limits.yaml
+[1.144s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/initial_positions.yaml
+[1.144s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.urdf.xacro
+[1.144s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/moveit_controllers.yaml
+[1.145s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/joint_limits.yaml
+[1.145s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.ros2_control.xacro
+[1.145s] -- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.srdf
+[1.146s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/kinematics.yaml
+[1.146s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/moveit.rviz
+[1.147s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/.setup_assistant
+[1.147s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_assistant' returned '0': CMAKE_PREFIX_PATH=/home/mmms/ros2-ws/install/pegasus_arm_description:/home/mmms/ros2-ws/install/pegasus_assistant:/home/mmms/ros2-ws/install/pegasus_arm_moveit_config:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_assistant

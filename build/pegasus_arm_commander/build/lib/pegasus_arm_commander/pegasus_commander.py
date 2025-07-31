@@ -22,7 +22,15 @@ import time
 import numpy as np
 from ament_index_python.packages import get_package_share_directory
 import logging
-import serial  # Add pyserial import
+import serial
+import subprocess
+import cv2
+from PIL import Image, ImageTk
+import threading
+
+#portname = '/tmp/virtual_arduino'  # Using virtual port and serial_bridge
+portname = '/tmp/virtual_arduino_sim' # Using virtual port for simulation
+
 
 # Define MoveIt error codes mapping
 MOVEIT_ERROR_CODES = {
@@ -61,6 +69,7 @@ class PegasusArmGUI:
         self.last_command_time = 0
         self.command_cooldown = 0.5
         self.lock = Lock()
+        self.error_dialog_active = False
 
         # Fix: Add moveit_enabled BooleanVar for settings tab
         self.moveit_enabled = tk.BooleanVar(value=self.commander_node.moveit_enabled)
@@ -171,6 +180,11 @@ class PegasusArmGUI:
         settings_tab = ttk.Frame(self.notebook)
         self.notebook.add(settings_tab, text="Settings")
         self.setup_settings_tab(settings_tab)
+
+        # Camera Tab
+        camera_tab = ttk.Frame(self.notebook)
+        self.notebook.add(camera_tab, text="Camera")
+        self.setup_camera_tab(camera_tab)
         
         # Timestamp
         self.timestamp_var = tk.StringVar(value="Timestamp: --:--:--")
@@ -320,6 +334,10 @@ class PegasusArmGUI:
         )
         velocity_dropdown.pack(side=tk.LEFT, padx=5)
 
+
+
+
+
     def setup_pose_display(self):
         self.pose_labels = {}
         for coord in ["X", "Y", "Z", "Roll", "Pitch", "Yaw"]:
@@ -426,6 +444,220 @@ class PegasusArmGUI:
         )
         moveit_toggle.pack(anchor="w", padx=5, pady=5)
 
+
+    def setup_camera_tab(self, parent_frame):
+        """Setup the camera tab with live feed and controls"""
+        self.camera_frame = ttk.Frame(parent_frame, padding="10")
+        self.camera_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Camera control frame
+        control_frame = ttk.Frame(self.camera_frame)
+        control_frame.pack(fill=tk.X, pady=5)
+        
+        # Start/Stop camera button
+        self.camera_active = False
+        self.start_camera_button = ttk.Button(
+            control_frame,
+            text="Start Live Feed",
+            style="Success.TButton",
+            command=self.toggle_camera_feed
+        )
+        self.start_camera_button.pack(side=tk.LEFT, padx=5)
+        
+        # Camera mode selection
+        ttk.Label(control_frame, text="Feed Mode:").pack(side=tk.LEFT, padx=(20, 5))
+        self.camera_mode = tk.StringVar(value="RGB")
+        mode_frame = ttk.Frame(control_frame)
+        mode_frame.pack(side=tk.LEFT, padx=5)
+        
+        # RGB, IR, Depth buttons
+        self.rgb_button = ttk.Radiobutton(
+            mode_frame, text="RGB", variable=self.camera_mode, 
+            value="RGB", command=self.change_camera_mode
+        )
+        self.rgb_button.pack(side=tk.LEFT, padx=2)
+        
+        self.ir_button = ttk.Radiobutton(
+            mode_frame, text="IR", variable=self.camera_mode, 
+            value="IR", command=self.change_camera_mode
+        )
+        self.ir_button.pack(side=tk.LEFT, padx=2)
+        
+        self.depth_button = ttk.Radiobutton(
+            mode_frame, text="Depth", variable=self.camera_mode, 
+            value="Depth", command=self.change_camera_mode
+        )
+        self.depth_button.pack(side=tk.LEFT, padx=2)
+        
+        # Camera display frame
+        display_frame = ttk.LabelFrame(self.camera_frame, text="Camera Feed", padding="10")
+        display_frame.pack(fill=tk.BOTH, expand=True, pady=10)
+        
+        # Camera display label
+        self.camera_display = ttk.Label(
+            display_frame, 
+            text="Camera feed will appear here\nClick 'Start Live Feed' to begin",
+            anchor="center",
+            font=("Helvetica", 12)
+        )
+        self.camera_display.pack(expand=True, fill=tk.BOTH)
+        
+        # Initialize camera variables
+        self.camera = None
+        self.camera_thread = None
+        self.camera_running = False
+
+    def toggle_camera_feed(self):
+        """Start or stop the camera feed"""
+        if not self.camera_active:
+            self.start_camera_feed()
+        else:
+            self.stop_camera_feed()
+
+    def start_camera_feed(self):
+        """Start the camera feed"""
+        try:
+            # Try to open camera (0 is usually the default webcam)
+            self.camera = cv2.VideoCapture(0)
+            if not self.camera.isOpened():
+                self.log_action("Failed to open camera")
+                messagebox.showerror("Error", "Could not open camera. Please check if camera is connected.")
+                return
+            
+            # Set camera properties for better performance
+            self.camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+            self.camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+            self.camera.set(cv2.CAP_PROP_FPS, 30)
+            
+            self.camera_active = True
+            self.camera_running = True
+            self.start_camera_button.config(text="Stop Live Feed", style="Danger.TButton")
+            
+            # Start camera thread
+            self.camera_thread = threading.Thread(target=self.camera_loop, daemon=True)
+            self.camera_thread.start()
+            
+            self.log_action("Camera feed started")
+            
+        except Exception as e:
+            self.log_action(f"Error starting camera: {str(e)}")
+            messagebox.showerror("Error", f"Failed to start camera: {str(e)}")
+
+    def stop_camera_feed(self):
+        """Stop the camera feed"""
+        try:
+            self.camera_running = False
+            self.camera_active = False
+            
+            if self.camera_thread and self.camera_thread.is_alive():
+                self.camera_thread.join(timeout=1.0)
+            
+            if self.camera:
+                self.camera.release()
+                self.camera = None
+            
+            self.start_camera_button.config(text="Start Live Feed", style="Success.TButton")
+            self.camera_display.config(
+                image="",
+                text="Camera feed stopped\nClick 'Start Live Feed' to restart"
+            )
+            
+            self.log_action("Camera feed stopped")
+            
+        except Exception as e:
+            self.log_action(f"Error stopping camera: {str(e)}")
+
+    def camera_loop(self):
+        """Main camera loop running in separate thread"""
+        while self.camera_running and self.camera:
+            try:
+                ret, frame = self.camera.read()
+                if not ret:
+                    self.log_action("Failed to read from camera")
+                    break
+                
+                # Process frame based on selected mode
+                processed_frame = self.process_camera_frame(frame)
+                
+                # Convert to PhotoImage for tkinter
+                if processed_frame is not None:
+                    # Resize frame to fit display
+                    height, width = processed_frame.shape[:2]
+                    max_width, max_height = 640, 480
+                    
+                    if width > max_width or height > max_height:
+                        scale = min(max_width/width, max_height/height)
+                        new_width = int(width * scale)
+                        new_height = int(height * scale)
+                        processed_frame = cv2.resize(processed_frame, (new_width, new_height))
+                    
+                    # Convert BGR to RGB for PIL
+                    if len(processed_frame.shape) == 3:
+                        rgb_frame = cv2.cvtColor(processed_frame, cv2.COLOR_BGR2RGB)
+                    else:
+                        rgb_frame = processed_frame
+                    
+                    # Convert to PIL Image and then to PhotoImage
+                    image = Image.fromarray(rgb_frame)
+                    photo = ImageTk.PhotoImage(image)
+                    
+                    # Update display in main thread
+                    self.root.after(0, self.update_camera_display, photo)
+                
+                # Control frame rate
+                time.sleep(1/30)  # ~30 FPS
+                
+            except Exception as e:
+                self.log_action(f"Camera loop error: {str(e)}")
+                break
+        
+        # Cleanup when loop ends
+        self.root.after(0, self.stop_camera_feed)
+
+    def process_camera_frame(self, frame):
+        """Process camera frame based on selected mode"""
+        try:
+            mode = self.camera_mode.get()
+            
+            if mode == "RGB":
+                return frame
+            elif mode == "IR":
+                # Convert to grayscale to simulate IR (since we're using webcam)
+                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                # Apply a color map to make it look more like IR
+                ir_frame = cv2.applyColorMap(gray, cv2.COLORMAP_HOT)
+                return ir_frame
+            elif mode == "Depth":
+                # Simulate depth using edge detection (since we're using webcam)
+                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                # Use Canny edge detection
+                edges = cv2.Canny(gray, 50, 150)
+                # Apply color map to edges
+                depth_frame = cv2.applyColorMap(edges, cv2.COLORMAP_JET)
+                return depth_frame
+            else:
+                return frame
+                
+        except Exception as e:
+            self.log_action(f"Frame processing error: {str(e)}")
+            return frame
+
+    def update_camera_display(self, photo):
+        """Update camera display with new photo"""
+        try:
+            self.camera_display.config(image=photo, text="")
+            self.camera_display.image = photo  # Keep a reference
+        except Exception as e:
+            self.log_action(f"Display update error: {str(e)}")
+
+    def change_camera_mode(self):
+        """Handle camera mode change"""
+        mode = self.camera_mode.get()
+        self.log_action(f"Camera mode changed to: {mode}")
+        
+        # Note: For actual depth cameras (like RealSense), you would
+        # initialize different streams here instead of simulating
+
     def setup_keyboard_shortcuts(self):
         self.root.bind("<Up>", lambda e: self.handle_key_press("up"))
         self.root.bind("<Down>", lambda e: self.handle_key_press("down"))
@@ -438,6 +670,10 @@ class PegasusArmGUI:
 
     def on_closing(self):
         if messagebox.askokcancel("Quit", "Do you want to quit?"):
+            # Stop camera feed if active
+            if hasattr(self, 'camera_active') and self.camera_active:
+                self.stop_camera_feed()
+            
             self.commander_node.cancel_current_goals()
             self.root.destroy()
             rclpy.shutdown()
@@ -451,6 +687,111 @@ class PegasusArmGUI:
         if line_count > 1000:
             self.log_text.delete('1.0', f"{line_count-500}.0")
         self.log_text.config(state=tk.DISABLED)
+
+    def show_temporary_error(self, message):
+        """Show a temporary error message that disappears after 2 seconds"""
+        # Prevent multiple error dialogs from showing simultaneously
+        if self.error_dialog_active:
+            return
+        
+        self.error_dialog_active = True
+        
+        # Create a temporary error window
+        error_window = tk.Toplevel(self.root)
+        error_window.title("Error")
+        error_window.geometry("400x150")
+        error_window.resizable(False, False)
+        
+        # Center the error window on the main window
+        self.root.update_idletasks()
+        x = self.root.winfo_x() + (self.root.winfo_width() // 2) - 200
+        y = self.root.winfo_y() + (self.root.winfo_height() // 2) - 75
+        error_window.geometry(f"400x150+{x}+{y}")
+        
+        # Make window visible first, then grab focus
+        error_window.transient(self.root)
+        error_window.focus_set()
+        
+        # Delay grab_set until window is fully visible
+        def set_grab():
+            try:
+                if error_window.winfo_exists():
+                    error_window.grab_set()
+            except Exception:
+                pass  # Ignore grab errors
+        
+        error_window.after(50, set_grab)  # Delay grab by 50ms
+        
+        # Error message
+        error_frame = ttk.Frame(error_window, padding="20")
+        error_frame.pack(fill=tk.BOTH, expand=True)
+        
+        error_label = ttk.Label(
+            error_frame, 
+            text=message, 
+            wraplength=350,
+            justify="center",
+            font=("Helvetica", 10),
+            foreground="red"
+        )
+        error_label.pack(expand=True, fill=tk.BOTH)
+        
+        # Countdown label
+        countdown_var = tk.StringVar(value="Auto-closing in 2 seconds...")
+        countdown_label = ttk.Label(
+            error_frame, 
+            textvariable=countdown_var,
+            font=("Helvetica", 9, "italic")
+        )
+        countdown_label.pack(pady=(10, 0))
+        
+        # Close button
+        close_button = ttk.Button(
+            error_frame,
+            text="Close",
+            command=lambda: self.close_error_window(error_window),
+            style="Rounded.TButton"
+        )
+        close_button.pack(pady=(10, 0))
+        
+        # Auto-close after 2 seconds with countdown
+        def countdown(seconds_left):
+            try:
+                if seconds_left > 0 and error_window.winfo_exists():
+                    countdown_var.set(f"Auto-closing in {seconds_left} second{'s' if seconds_left != 1 else ''}...")
+                    error_window.after(1000, lambda: countdown(seconds_left - 1))
+                elif error_window.winfo_exists():
+                    self.close_error_window(error_window)
+            except Exception:
+                pass  # Ignore any countdown errors
+        
+        # Start countdown
+        countdown(2)
+        
+        # Handle window close event
+        error_window.protocol("WM_DELETE_WINDOW", lambda: self.close_error_window(error_window))
+
+
+    def close_error_window(self, window):
+        """Close error window and reset flag"""
+        try:
+            if window and window.winfo_exists():
+                window.grab_release()  # Release grab first
+                window.destroy()
+        except Exception:
+            pass  # Ignore any closing errors
+        finally:
+            self.error_dialog_active = False
+
+    def close_error_window(self, window):
+        """Close error window and reset flag"""
+        try:
+            if window.winfo_exists():
+                window.destroy()
+        except:
+            pass
+        finally:
+            self.error_dialog_active = False
 
     def status_check(self):
         status = []
@@ -526,15 +867,189 @@ class PegasusArmGUI:
         joint_names = self.commander_node.get_joint_names()
         return joint_names.index(joint_name) if joint_name in joint_names else -1
 
+
+
+
+    def setup_joint_controls(self):
+        self.joint_labels = []
+        self.joint_values = []
+        self.joint_sliders = []
+        self.joint_vars = []
+        self.slider_active = [False] * len(self.commander_node.get_joint_names())
+
+        joint_values = self.commander_node.get_current_joint_values()
+        joint_names = self.commander_node.get_joint_names()
+        joint_limits = self.commander_node.get_joint_limits()
+        num_joints = len(joint_values)
+
+        for i in range(num_joints):
+            joint_row = ttk.Frame(self.joint_frame)
+            joint_row.pack(fill=tk.X, pady=5)
+
+            joint_name = joint_names[i]
+            joint_label = ttk.Label(joint_row, text=f"{joint_name}:", width=20, font=("Helvetica", 10))
+            joint_label.pack(side=tk.LEFT)
+
+            joint_value = ttk.Label(joint_row, text=f"{joint_values[i]:.3f}", width=10, font=("Helvetica", 10))
+            joint_value.pack(side=tk.LEFT)
+            self.joint_labels.append(joint_label)
+            self.joint_values.append(joint_value)
+
+            joint_var = tk.DoubleVar(value=joint_values[i])
+            self.joint_vars.append(joint_var)
+            min_limit, max_limit = joint_limits.get(joint_name, (-3.14, 3.14))
+            slider = ttk.Scale(
+                joint_row,
+                from_=min_limit,
+                to=max_limit,
+                variable=joint_var,
+                orient=tk.HORIZONTAL,
+                command=lambda v, idx=i: self.handle_slider_continuous(idx)
+            )
+            
+            # Bind press and release events for better slider control
+            slider.bind('<ButtonPress-1>', lambda e, idx=i: self.slider_pressed(idx))
+            slider.bind('<ButtonRelease-1>', lambda e, idx=i: self.slider_released(idx))
+            
+            slider.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=5)
+            self.joint_sliders.append(slider)
+
+    def slider_pressed(self, idx):
+        """Called when a slider is clicked"""
+        self.slider_active[idx] = True
+
+    def slider_released(self, idx):
+        """Called when a slider is released"""
+        self.slider_active[idx] = False
+
+    def handle_slider_continuous(self, joint_index):
+        """Handle continuous slider movement without blocking the GUI"""
+        # Only process if this slider is being actively moved
+        if not hasattr(self, 'slider_active') or not self.slider_active[joint_index]:
+            return
+            
+        try:
+            joint_goal = [var.get() for var in self.joint_vars]
+            joint_name = self.commander_node.get_joint_names()[joint_index]
+            joint_limits = self.commander_node.get_joint_limits()
+            min_limit, max_limit = joint_limits.get(joint_name, (-3.14, 3.14))
+            joint_goal[joint_index] = np.clip(joint_goal[joint_index], min_limit, max_limit)
+            
+            # Update the slider value immediately for GUI responsiveness
+            self.joint_vars[joint_index].set(joint_goal[joint_index])
+            
+            # Store positions
+            self.current_joint_positions = joint_goal.copy()
+            print(f"Joint positions: {[f'{val:.3f}' for val in joint_goal]}")
+            
+            # Send to Arduino without blocking GUI
+            if not self.moveit_enabled.get():
+                # Direct Arduino control - send in background thread
+                def send_to_arduino():
+                    try:
+                        self.commander_node.send_joints_to_arduino(joint_goal)
+                    except Exception as e:
+                        print(f"Arduino communication error: {e}")
+                
+                # Use daemon thread so it doesn't block program exit
+                threading.Thread(target=send_to_arduino, daemon=True).start()
+            else:
+                # MoveIt control - might want to throttle this to avoid overwhelming MoveIt
+                velocity = self.velocity_scale.get()
+                try:
+                    self.commander_node.move_to_joint_positions(joint_goal, velocity)
+                except Exception as e:
+                    print(f"MoveIt communication error: {e}")
+                    
+        except Exception as e:
+            print(f"Error in slider continuous update: {str(e)}")
+
+    # Also update your original handle_slider method to work with buttons:
+    def handle_slider(self, joint_index):
+        """Handle slider movement from button presses or other discrete actions"""
+        if self.movement_in_progress.is_set():
+            return
+        
+        # For button-triggered movements, use the original logic with locks
+        with self.lock:
+            if self.movement_in_progress.is_set():
+                return
+            self.movement_in_progress.set()
+        
+        try:
+            joint_goal = [var.get() for var in self.joint_vars]
+            joint_name = self.commander_node.get_joint_names()[joint_index]
+            joint_limits = self.commander_node.get_joint_limits()
+            min_limit, max_limit = joint_limits.get(joint_name, (-3.14, 3.14))
+            joint_goal[joint_index] = np.clip(joint_goal[joint_index], min_limit, max_limit)
+            
+            self.current_joint_positions = joint_goal.copy()
+            print(f"Joint positions: {[f'{val:.3f}' for val in joint_goal]}")
+            
+            # Update the variable to reflect any clipping
+            self.joint_vars[joint_index].set(joint_goal[joint_index])
+            
+            if self.moveit_enabled.get():
+                velocity = self.velocity_scale.get()
+                success, error_code = self.commander_node.move_to_joint_positions(joint_goal, velocity)
+            else:
+                success = self.commander_node.send_joints_to_arduino(joint_goal)
+                
+        except Exception as e:
+            print(f"Error during slider movement: {str(e)}")
+        finally:
+            self.movement_in_progress.clear()
+
+
+
+
+
+    def update_displays(self):
+        try:
+            if not self.movement_in_progress.is_set():
+                joint_values = self.commander_node.get_current_joint_values()
+                
+                # Update joint value labels
+                for i, value_label in enumerate(self.joint_values):
+                    if i < len(joint_values):
+                        value_label.config(text=f"{joint_values[i]:.3f}")
+                
+                # Only update slider positions if no slider is being dragged
+                if not any(self.slider_active[i] for i in range(len(self.joint_sliders))):
+                    for i, (var, value) in enumerate(zip(self.joint_vars, joint_values)):
+                        if i < len(joint_values):
+                            var.set(value)
+
+            if self.commander_node.tf_available:
+                pose = self.commander_node.get_current_pose()
+                if pose:
+                    for coord, value in zip(["X", "Y", "Z", "Roll", "Pitch", "Yaw"], pose):
+                        self.pose_labels[coord].config(text=f"{value:.3f}")
+                else:
+                    for coord in ["X", "Y", "Z", "Roll", "Pitch", "Yaw"]:
+                        self.pose_labels[coord].config(text="N/A")
+
+            self.timestamp_var.set(f"Timestamp: {time.strftime('%H:%M:%S')}")
+        except Exception as e:
+            print(f"Update error: {str(e)}")
+
+        update_interval = 1000 if self.movement_in_progress.is_set() else 500
+        self.root.after(update_interval, self.update_displays)
+
     def move_direction(self, direction):
         current_time = time.time()
         if current_time - self.last_command_time < self.command_cooldown:
-            self.log_action("Command too soon, please wait...")
+            print("Command too soon, please wait...")
             return
         if self.movement_in_progress.is_set():
-            self.log_action("Movement in progress, please wait...")
+            print("Movement in progress, please wait...")
             return
-        self.movement_in_progress.set()
+                
+        with self.lock:
+            if self.movement_in_progress.is_set():
+                return
+            self.movement_in_progress.set()
+            
         self.last_command_time = current_time
         try:
             joint_index = self.get_selected_joint_index()
@@ -543,8 +1058,7 @@ class PegasusArmGUI:
             joint_limits = self.commander_node.get_joint_limits()
             joint_name = self.commander_node.get_joint_names()[joint_index]
             if joint_index < 0 or joint_index >= len(joint_goal):
-                self.log_action(f"Invalid joint index: {joint_index}")
-                messagebox.showerror("Error", "Invalid joint selected")
+                print(f"Invalid joint index: {joint_index}")
                 return
             if direction in ["up", "right"]:
                 joint_goal[joint_index] += step
@@ -552,68 +1066,79 @@ class PegasusArmGUI:
                 joint_goal[joint_index] -= step
             min_limit, max_limit = joint_limits.get(joint_name, (-3.14, 3.14))
             joint_goal[joint_index] = np.clip(joint_goal[joint_index], min_limit, max_limit)
-            self.log_action(f"Moving {joint_name} {direction}...")
+            
+            # Store joint positions in a placeholder for later use
+            self.current_joint_positions = joint_goal.copy()
+            
+            # Print joint positions as a list
+            print(f"Joint positions: {[f'{val:.3f}' for val in joint_goal]}")
+            
             if self.moveit_enabled.get():
                 velocity = self.velocity_scale.get()
                 success, error_code = self.commander_node.move_to_joint_positions(joint_goal, velocity)
-                if success:
+                if success and not self.slider_active[joint_index]:
                     self.joint_vars[joint_index].set(joint_goal[joint_index])
-                    self.log_action(f"{joint_name} movement completed")
-                else:
-                    error_msg = MOVEIT_ERROR_CODES.get(error_code.val, "Unknown error")
-                    self.log_action(f"Movement failed: {error_msg}")
-                    messagebox.showerror("Error", f"Movement failed: {error_msg}")
             else:
-                success, _ = self.commander_node.move_to_joint_positions(joint_goal)
-                if success:
+                success = self.commander_node.send_joints_to_arduino(joint_goal)
+                if success and not self.slider_active[joint_index]:
                     self.joint_vars[joint_index].set(joint_goal[joint_index])
-                    self.log_action(f"{joint_name} sent to Arduino")
-                else:
-                    self.log_action("Failed to send joint values to Arduino")
-                    messagebox.showerror("Error", "Failed to send joint values to Arduino")
         except Exception as e:
-            self.log_action(f"Error during movement: {str(e)}")
-            messagebox.showerror("Error", f"Movement error: {str(e)}")
+            print(f"Error during movement: {str(e)}")
         finally:
             self.movement_in_progress.clear()
 
-
-    def handle_slider(self, joint_index):
+    def go_to_home(self):
         if self.movement_in_progress.is_set():
+            print("Movement in progress, please wait...")
             return
+
         self.movement_in_progress.set()
         self.last_command_time = time.time()
+
         try:
-            joint_goal = self.commander_node.get_current_joint_values()
-            joint_name = self.commander_node.get_joint_names()[joint_index]
-            joint_goal[joint_index] = self.joint_vars[joint_index].get()
-            joint_limits = self.commander_node.get_joint_limits()
-            min_limit, max_limit = joint_limits.get(joint_name, (-3.14, 3.14))
-            joint_goal[joint_index] = np.clip(joint_goal[joint_index], min_limit, max_limit)
-            self.log_action(f"Moving {joint_name} via slider...")
-            if self.moveit_enabled.get():
-                velocity = self.velocity_scale.get()
-                success, error_code = self.commander_node.move_to_joint_positions(joint_goal, velocity)
-                if success:
-                    self.log_action(f"{joint_name} slider movement completed")
-                else:
-                    error_msg = MOVEIT_ERROR_CODES.get(error_code.val, "Unknown error")
-                    self.log_action(f"Slider movement failed: {error_msg}")
-                    messagebox.showerror("Error", f"Slider movement failed: {error_msg}")
-            else:
-                success, _ = self.commander_node.move_to_joint_positions(joint_goal)
-                if success:
-                    self.joint_vars[joint_index].set(joint_goal[joint_index])
-                    self.log_action(f"{joint_name} slider value sent to Arduino")
-                else:
-                    self.log_action("Failed to send joint values to Arduino")
-                    messagebox.showerror("Error", "Failed to send joint values to Arduino")
+            success, error_code = self.commander_node.move_to_named_target("home", self.velocity_scale.get())
+            if success:
+                joint_values = self.commander_node.get_current_joint_values()
+                # Store joint positions in a placeholder for later use
+                self.current_joint_positions = joint_values.copy()
+                # Print joint positions as a list
+                print(f"Joint positions: {[f'{val:.3f}' for val in joint_values]}")
+                # Update sliders only if not being manipulated
+                for i, (var, value) in enumerate(zip(self.joint_vars, joint_values)):
+                    if not self.slider_active[i]:
+                        var.set(value)
         except Exception as e:
-            self.log_action(f"Error during slider movement: {str(e)}")
-            messagebox.showerror("Error", f"Slider movement error: {str(e)}")
+            print(f"Error moving to home: {str(e)}")
         finally:
             self.movement_in_progress.clear()
-            
+
+    def go_to_zero(self):
+        if self.movement_in_progress.is_set():
+            print("Movement in progress, please wait...")
+            return
+
+        self.movement_in_progress.set()
+        self.last_command_time = time.time()
+
+        try:
+            zero_position = [0.0] * len(self.commander_node.get_joint_names())
+            velocity = self.velocity_scale.get()
+            success, error_code = self.commander_node.move_to_joint_positions(zero_position, velocity)
+            if success:
+                # Store joint positions in a placeholder for later use
+                self.current_joint_positions = zero_position.copy()
+                # Print joint positions as a list
+                print(f"Joint positions: {[f'{val:.3f}' for val in zero_position]}")
+                # Update sliders only if not being manipulated
+                for i, (var, value) in enumerate(zip(self.joint_vars, zero_position)):
+                    if not self.slider_active[i]:
+                        var.set(value)
+        except Exception as e:
+            print(f"Error moving to zero: {str(e)}")
+        finally:
+            self.movement_in_progress.clear()
+
+
     def move_cartesian(self, direction):
         if self.movement_in_progress.is_set():
             self.log_action("Movement in progress, please wait...")
@@ -642,37 +1167,13 @@ class PegasusArmGUI:
             else:
                 error_msg = MOVEIT_ERROR_CODES.get(error_code, "Unknown error")
                 self.log_action(f"Cartesian movement failed: {error_msg}")
-                messagebox.showerror("Error", f"Cartesian movement failed: {error_msg}")
+                self.show_temporary_error(f"Cartesian movement failed: {error_msg}")
         except Exception as e:
             self.log_action(f"Error during Cartesian movement: {str(e)}")
-            messagebox.showerror("Error", f"Cartesian movement error: {str(e)}")
+            self.show_temporary_error(f"Cartesian movement error: {str(e)}")
         finally:
             self.movement_in_progress.clear()
 
-    def update_displays(self):
-        try:
-            if not self.movement_in_progress.is_set():
-                joint_values = self.commander_node.get_current_joint_values()
-                for i, (value_label, var) in enumerate(zip(self.joint_values, self.joint_vars)):
-                    if i < len(joint_values):
-                        value_label.config(text=f"{joint_values[i]:.3f}")
-                        var.set(joint_values[i])
-
-                if self.commander_node.tf_available:
-                    pose = self.commander_node.get_current_pose()
-                    if pose:
-                        for coord, value in zip(["X", "Y", "Z", "Roll", "Pitch", "Yaw"], pose):
-                            self.pose_labels[coord].config(text=f"{value:.3f}")
-                    else:
-                        for coord in ["X", "Y", "Z", "Roll", "Pitch", "Yaw"]:
-                            self.pose_labels[coord].config(text="N/A")
-
-            self.timestamp_var.set(f"Timestamp: {time.strftime('%H:%M:%S')}")
-        except Exception as e:
-            self.log_action(f"Update error: {str(e)}")
-
-        update_interval = 1000 if self.movement_in_progress.is_set() else 500
-        self.root.after(update_interval, self.update_displays)
 
     def handle_button_press(self, direction):
         button = self.buttons.get(direction)
@@ -690,53 +1191,7 @@ class PegasusArmGUI:
         self.move_direction(direction)
         self.root.after(100, lambda: button.state(['!pressed']) if button else None)
 
-    def go_to_home(self):
-        if self.movement_in_progress.is_set():
-            self.log_action("Movement in progress, please wait...")
-            return
 
-        self.movement_in_progress.set()
-        self.last_command_time = time.time()
-
-        try:
-            self.log_action("Moving to home position...")
-            success, error_code = self.commander_node.move_to_named_target("home", self.velocity_scale.get())
-            if success:
-                self.log_action("Moved to home position")
-            else:
-                error_msg = MOVEIT_ERROR_CODES.get(error_code, "Unknown error")
-                self.log_action(f"Failed to move to home: {error_msg}")
-                messagebox.showerror("Error", f"Failed to move to home: {error_msg}")
-        except Exception as e:
-            self.log_action(f"Error moving to home: {str(e)}")
-            messagebox.showerror("Error", f"Home movement error: {str(e)}")
-        finally:
-            self.movement_in_progress.clear()
-
-    def go_to_zero(self):
-        if self.movement_in_progress.is_set():
-            self.log_action("Movement in progress, please wait...")
-            return
-
-        self.movement_in_progress.set()
-        self.last_command_time = time.time()
-
-        try:
-            self.log_action("Moving to zero position...")
-            zero_position = [0.0] * len(self.commander_node.get_joint_names())
-            velocity = self.velocity_scale.get()
-            success, error_code = self.commander_node.move_to_joint_positions(zero_position, velocity)
-            if success:
-                self.log_action("Moved to zero position")
-            else:
-                error_msg = MOVEIT_ERROR_CODES.get(error_code, "Unknown error")
-                self.log_action(f"Failed to move to zero: {error_msg}")
-                messagebox.showerror("Error", f"Failed to move to zero: {error_msg}")
-        except Exception as e:
-            self.log_action(f"Error moving to zero: {str(e)}")
-            messagebox.showerror("Error", f"Zero movement error: {str(e)}")
-        finally:
-            self.movement_in_progress.clear()
 
     def emergency_stop(self):
         self.log_action("EMERGENCY STOP ACTIVATED")
@@ -788,8 +1243,9 @@ class PegasusCommander(Node):
 
         # Arduino serial setup
         self.arduino_serial = None
-        self.arduino_port = '/dev/ttyUSB0'
-        self.arduino_baudrate = 115200
+        # Set Arduino port directly; user will handle socat/putty manually if needed
+        self.arduino_port = portname  # portname is set at the top of the file
+        self.arduino_baudrate = 9600
         self._setup_arduino_serial()
 
         self.initialize_services_and_topics()
@@ -823,19 +1279,53 @@ class PegasusCommander(Node):
             self.logger.info("Using fallback joint limits")
 
     def _setup_arduino_serial(self):
-        try:
-            self.arduino_serial = serial.Serial(self.arduino_port, self.arduino_baudrate, timeout=1)
-            time.sleep(2)  # Wait for Arduino to initialize
-            response = self.arduino_serial.readline().decode('utf-8').strip()
-            if response == "READY":
-                self.get_logger().info(f"Connected to Arduino on {self.arduino_port}")
-            else:
-                self.get_logger().warn(f"Arduino not ready: {response}")
-                self.arduino_serial.close()
-                self.arduino_serial = None
-        except Exception as e:
-            self.get_logger().warn(f"Could not connect to Arduino: {str(e)}")
-            self.arduino_serial = None
+        """Modified version for testing without real Arduino"""
+        max_retries = 3
+        retry_delay = 1
+        
+        for attempt in range(max_retries):
+            try:
+                # Check if virtual port exists
+                if not os.path.exists(self.arduino_port):
+                    self.get_logger().warn(f"Test port {self.arduino_port} not found. Make sure test script is running.")
+                    time.sleep(retry_delay)
+                    continue
+                    
+                self.arduino_serial = serial.Serial(
+                    self.arduino_port, 
+                    self.arduino_baudrate, 
+                    timeout=1,  # Shorter timeout for testing
+                    write_timeout=1
+                )
+                
+                self.get_logger().info(f"Connected to test port: {self.arduino_port}")
+                time.sleep(1)
+                
+                # Clear buffers
+                self.arduino_serial.flushInput()
+                self.arduino_serial.flushOutput()
+                
+                # Test with ping (only for simulator)
+                if "sim" in self.arduino_port:
+                    try:
+                        self.arduino_serial.write(b"PING\n")
+                        response = self.arduino_serial.readline().decode('utf-8').strip()
+                        self.get_logger().info(f"Test response: {response}")
+                    except Exception:
+                        pass
+                
+                self.get_logger().info("Test connection established successfully!")
+                return
+                        
+            except Exception as e:
+                self.get_logger().warn(f"Test connection attempt {attempt + 1} failed: {str(e)}")
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay)
+        
+        self.get_logger().error("Failed to connect to test port")
+        self.arduino_serial = None
+
+
 
     def set_moveit_enabled(self, enabled):
         self.moveit_enabled = enabled
@@ -865,7 +1355,7 @@ class PegasusCommander(Node):
             return False
 
     def initialize_services_and_topics(self):
-        max_retries = 15
+        max_retries = 5
         timeout_sec = 10.0
         for attempt in range(max_retries):
             if self.wait_for_service('/controller_manager/list_controllers', timeout_sec):
@@ -906,7 +1396,7 @@ class PegasusCommander(Node):
         return client.wait_for_service(timeout_sec=timeout_sec)
 
     def check_tf_availability(self, level_check=False):
-        max_retries = 10
+        max_retries = 3  # Changed from 10 to 3
         retry_delay = 2.0
         for attempt in range(max_retries):
             try:
@@ -1112,11 +1602,12 @@ class PegasusCommander(Node):
 
     def move_to_joint_positions(self, joint_positions, velocity_scaling=0.3):
         if not self.moveit_enabled:
+            # Fix: always return a tuple (success, error_code) where error_code is int
             return self.send_joints_to_arduino(joint_positions), 0  # 0 for success
 
         if not self.controller_available or not self.trajectory_topic_available:
             self.logger.error(f"Cannot move: {self.controller_name} not active or trajectory topic unavailable.")
-            return False, MoveItErrorCodes.CONTROL_FAILED.val
+            return False, MoveItErrorCodes.CONTROL_FAILED 
 
         max_wait = 10.0
         start_time = time.time()
@@ -1140,7 +1631,7 @@ class PegasusCommander(Node):
                 self.logger.info(f"Sending joint trajectory: {joint_positions}")
                 self.trajectory_pub.publish(traj_msg)
                 time.sleep(0.5)
-                return True, MoveItErrorCodes.SUCCESS.val
+                return True, MoveItErrorCodes.SUCCESS 
             except Exception as e:
                 self.logger.error(f"Error sending trajectory: {str(e)}")
                 return self.move_to_joint_positions_action(joint_positions, velocity_scaling)
@@ -1148,7 +1639,9 @@ class PegasusCommander(Node):
     def move_to_joint_positions_action(self, joint_positions, velocity_scaling=0.3):
         if not self.traj_action_client.wait_for_server(timeout_sec=5.0):
             self.logger.error(f"Action server /{self.controller_name}/follow_joint_trajectory not available")
-            return False, MoveItErrorCodes.CONTROL_FAILED.val
+            return False, MoveItErrorCodes.FAILURE
+
+
 
         goal_msg = FollowJointTrajectory.Goal()
         traj = JointTrajectory()
@@ -1165,21 +1658,21 @@ class PegasusCommander(Node):
         rclpy.spin_until_future_complete(self, future)
         if future.result() is None or not future.result().accepted:
             self.logger.error("Trajectory goal rejected")
-            return False, MoveItErrorCodes.FAILURE.val
+            return False, MoveItErrorCodes.FAILURE
 
         result_future = future.result().get_result_async()
         rclpy.spin_until_future_complete(self, result_future)
         result = result_future.result().result
         if result.error_code == 0:
             self.logger.info("Trajectory action completed successfully")
-            return True, MoveItErrorCodes.SUCCESS.val
+            return True, MoveItErrorCodes.SUCCESS
         self.logger.error(f"Trajectory action failed: {result.error_string}")
-        return False, MoveItErrorCodes.CONTROL_FAILED.val
+        return False, MoveItErrorCodes.CONTROL_FAILED
 
     def move_to_named_target(self, target_name, velocity_scaling=0.3):
         if not self.action_server_available:
             self.logger.error(f"Cannot move to named target '{target_name}': Action server not available")
-            return False, MoveItErrorCodes.CONTROL_FAILED.val
+            return False, MoveItErrorCodes.FAILED.val
 
         max_retries = 5
         for attempt in range(max_retries):
@@ -1224,11 +1717,11 @@ class PegasusCommander(Node):
     def move_cartesian(self, delta, is_rotation, velocity_scaling=0.3):
         if not self.action_server_available:
             self.logger.error("Cannot move Cartesian: Action server not available")
-            return False, MoveItErrorCodes.CONTROL_FAILED.val
+            return False, MoveItErrorCodes.CONTROL_FAILED
 
         if not self.tf_available:
             self.logger.error("Cannot move Cartesian: TF unavailable")
-            return False, MoveItErrorCodes.FRAME_TRANSFORM_FAILURE.val
+            return False, MoveItErrorCodes.FRAME_TRANSFORM_FAILURE
 
         max_retries = 3
         for attempt in range(max_retries):
@@ -1236,7 +1729,7 @@ class PegasusCommander(Node):
                 current_pose = self.get_current_pose()
                 if current_pose is None:
                     self.logger.error("Failed to get current pose for Cartesian motion")
-                    return False, MoveItErrorCodes.FRAME_TRANSFORM_FAILURE.val
+                    return False, MoveItErrorCodes.FRAME_TRANSFORM_FAILURE
 
                 goal_pose = PoseStamped()
                 goal_pose.header.frame_id = self.base_frame
@@ -1290,9 +1783,9 @@ class PegasusCommander(Node):
             except Exception as e:
                 self.logger.error(f"Error in Cartesian motion: {str(e)}")
                 if attempt == max_retries - 1:
-                    return False, MoveItErrorCodes.FAILURE.val
+                    return False, MoveItErrorCodes.FAILURE
                 time.sleep(0.5)
-        return False, MoveItErrorCodes.FAILURE.val
+        return False, MoveItErrorCodes.FAILURE
 
     def _store_goal_handle(self, future):
         try:
@@ -1331,7 +1824,6 @@ def ros_spin(node):
         node.get_logger().error(f"ROS spin error: {str(e)}")
 
 def main(args=None):
-    # Configure logging
     logging.basicConfig(level=logging.INFO)
     rclpy.init(args=args)
     commander_node = PegasusCommander()
@@ -1353,6 +1845,8 @@ def main(args=None):
         rclpy.shutdown()
         if ros_thread.is_alive():
             ros_thread.join(timeout=2.0)
+
+
 
 if __name__ == '__main__':
     main()

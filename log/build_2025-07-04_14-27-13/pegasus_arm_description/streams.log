@@ -1,0 +1,111 @@
+[0.062s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_description -- -j4 -l4
+[0.667s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.369s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.625s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.675s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.767s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.077s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.087s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.364s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.592s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[2.721s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[3.442s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.636s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.680s] -- Found rclcpp_lifecycle: 28.1.9 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[3.813s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[4.027s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.534s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[4.642s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[4.711s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[4.805s] -- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+[4.829s] -- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[5.315s] -- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+[5.606s] -- Configuring done (5.2s)
+[5.705s] -- Generating done (0.1s)
+[5.726s] -- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_arm_description
+[5.792s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/pegasus_arm_description -- -j4 -l4
+[5.830s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_description
+[5.844s] -- Install configuration: ""
+[5.856s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf
+[5.858s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.urdf.xacro
+[5.858s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/urdf/pegasus_arm.ros2_control.xacro
+[5.858s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF
+[5.859s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm_new.urdf.xacro
+[5.859s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf.xacro
+[5.859s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode
+[5.859s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/c_cpp_properties.json
+[5.872s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/.vscode/settings.json
+[5.873s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/my_robot.urdf
+[5.873s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/URDF/pegasus_arm.urdf
+[5.874s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf
+[5.874s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/srdf/pegasus_arm.srdf
+[5.875s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config
+[5.876s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit.yaml
+[5.876s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers.yaml
+[5.876s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ompl_planning.yaml
+[5.876s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planners.yaml
+[5.877s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_commander_params.yaml
+[5.877s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_planning.yaml
+[5.877s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/pegasus_arm.srdf
+[5.878s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/moveit_controllers.yaml
+[5.878s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/ros2_controllers1.yaml
+[5.878s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/controllers.yaml
+[5.878s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/config/kinematics.yaml
+[5.878s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz
+[5.879s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/minimal.rviz
+[5.879s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/rviz/moveit.rviz
+[5.879s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch
+[5.887s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/demo.launch.py
+[5.887s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install
+[5.900s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.bash
+[5.901s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.sh
+[5.901s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.ps1
+[5.902s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_sh.py
+[5.903s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.bash
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/.colcon_install_layout
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.sh
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/COLCON_IGNORE
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.ps1
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/setup.zsh
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/local_setup.zsh
+[5.904s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/install/_local_setup_util_ps1.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display_minimal.launch.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_display.launch.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/rsp.launch.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/move_group.launch.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/static_virtual_joint_tfs.launch.py
+[5.905s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode
+[5.905s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/c_cpp_properties.json
+[5.912s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/.vscode/settings.json
+[5.913s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log
+[5.914s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/COLCON_IGNORE
+[5.914s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest
+[5.914s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01
+[5.915s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/events.log
+[5.915s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/build_2025-05-07_15-53-01/logger_all.log
+[5.915s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/log/latest_build
+[5.915s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/spawn_controllers.launch.py
+[5.916s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/warehouse_db.launch.py
+[5.916s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/moveit_rviz.launch.py
+[5.916s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/setup_assistant.launch.py
+[5.916s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/display.launch.py
+[5.916s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build
+[5.916s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/COLCON_IGNORE
+[5.917s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/launch/build/.built_by
+[5.917s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/package_run_dependencies/pegasus_arm_description
+[5.917s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/parent_prefix_path/pegasus_arm_description
+[5.917s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.sh
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/ament_prefix_path.dsv
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.sh
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/environment/path.dsv
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.bash
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.sh
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.zsh
+[5.918s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/local_setup.dsv
+[5.919s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.dsv
+[5.919s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/ament_index/resource_index/packages/pegasus_arm_description
+[5.919s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig.cmake
+[5.919s] -- Installing: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/cmake/pegasus_arm_descriptionConfig-version.cmake
+[5.919s] -- Up-to-date: /home/mmms/ros2-ws/install/pegasus_arm_description/share/pegasus_arm_description/package.xml
+[5.922s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/pegasus_arm_description

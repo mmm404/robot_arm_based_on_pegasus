@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="pegasus">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import pegasus urdf file -->
+    <xacro:include filename="$(find pegasus_arm_description)/URDF/pegasus_arm.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="pegasus.ros2_control.xacro" />
+
+    <!-- Removed FakeSystem to prevent duplicate interface errors -->
+    <!-- <xacro:pegasus_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/> -->
+
+</robot>

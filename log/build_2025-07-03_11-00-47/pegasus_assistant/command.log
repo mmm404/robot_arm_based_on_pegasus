@@ -1,0 +1,2 @@
+Invoking command in '/home/mmms/ros2-ws/build/pegasus_assistant': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_assistant -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_assistant
+Invoked command in '/home/mmms/ros2-ws/build/pegasus_assistant' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_assistant -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_assistant

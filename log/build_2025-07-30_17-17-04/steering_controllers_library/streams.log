@@ -1,0 +1,69 @@
+[0.147s] Invoking command in '/home/mmms/ros2-ws/build/steering_controllers_library': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/steering_controllers_library -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/steering_controllers_library
+[3.993s] -- The C compiler identification is GNU 13.3.0
+[4.862s] -- The CXX compiler identification is GNU 13.3.0
+[5.081s] -- Detecting C compiler ABI info
+[5.738s] -- Detecting C compiler ABI info - done
+[5.776s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.776s] -- Detecting C compile features
+[5.777s] -- Detecting C compile features - done
+[5.806s] -- Detecting CXX compiler ABI info
+[6.436s] -- Detecting CXX compiler ABI info - done
+[6.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.470s] -- Detecting CXX compile features
+[6.471s] -- Detecting CXX compile features - done
+[6.504s] -- Found ros2_control_cmake: 0.1.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)
+[6.529s] -- Compiler warnings enabled for GNU
+[6.530s] -- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)
+[6.567s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.336s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.970s] -- Found control_msgs: 5.4.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[8.418s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.492s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.583s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.696s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.149s] -- Found controller_interface: 4.29.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[10.417s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[10.785s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[10.810s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[11.161s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.469s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[11.524s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.604s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[11.616s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.670s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[11.706s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[14.121s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[14.126s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[14.274s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[14.586s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[14.771s] -- Found tf2: 0.36.11 (/opt/ros/jazzy/share/tf2/cmake)
+[14.798s] -- Found tf2_msgs: 0.36.11 (/opt/ros/jazzy/share/tf2_msgs/cmake)
+[15.037s] -- Found tf2_geometry_msgs: 0.36.11 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[15.067s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[15.087s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[15.088s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.390s] -- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+[15.401s] -- Found controller_manager: 4.29.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[15.880s] -- Found ros2_control_test_assets: 4.29.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+[15.899s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[15.942s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[15.959s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[15.992s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[15.992s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[16.001s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[16.395s] -- Configuring done (15.4s)
+[16.787s] -- Generating done (0.4s)
+[16.832s] -- Build files have been written to: /home/mmms/ros2-ws/build/steering_controllers_library
+[16.894s] Invoked command in '/home/mmms/ros2-ws/build/steering_controllers_library' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/ros2_controllers/steering_controllers_library -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/steering_controllers_library
+[16.908s] Invoking command in '/home/mmms/ros2-ws/build/steering_controllers_library': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/steering_controllers_library -- -j4 -l4
+[17.188s] [  7%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/mmms/ros2-ws/build/steering_controllers_library/include/steering_controllers_library/steering_controllers_library_parameters.hpp /home/mmms/ros2-ws/src/ros2_controllers/steering_controllers_library/src/steering_controllers_library.yaml `[0m
+[22.912s] [ 14%] [34m[1mCreating deprecated header file /home/mmms/ros2-ws/build/steering_controllers_library/include/steering_controllers_library_parameters.hpp[0m
+[23.151s] [ 14%] Built target steering_controllers_library_parameters
+[23.241s] [ 21%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[31.089s] [ 28%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[31.323s] [ 28%] Built target gmock_main
+[31.413s] [ 35%] [32mBuilding CXX object CMakeFiles/steering_controllers_library.dir/src/steering_controllers_library.cpp.o[0m
+[48.350s] gmake[2]: *** [CMakeFiles/steering_controllers_library.dir/build.make:76: CMakeFiles/steering_controllers_library.dir/src/steering_controllers_library.cpp.o] Interrupt
+[48.508s] gmake[1]: *** [CMakeFiles/Makefile2:206: CMakeFiles/steering_controllers_library.dir/all] Interrupt
+[48.508s] gmake: *** [Makefile:146: all] Interrupt
+[51.153s] Invoked command in '/home/mmms/ros2-ws/build/steering_controllers_library' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mmms/ros2-ws/install/pegasus_arm_commander:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/steering_controllers_library -- -j4 -l4

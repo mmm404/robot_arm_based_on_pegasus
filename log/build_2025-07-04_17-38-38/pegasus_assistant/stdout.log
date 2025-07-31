@@ -1,0 +1,41 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/mmms/ros2-ws/build/pegasus_assistant
+-- Install configuration: ""
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/package_run_dependencies/pegasus_assistant
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/parent_prefix_path/pegasus_assistant
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/path.sh
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/environment/path.dsv
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.bash
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.sh
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.zsh
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/local_setup.dsv
+-- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/package.dsv
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/ament_index/resource_index/packages/pegasus_assistant
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/cmake/pegasus_assistantConfig.cmake
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/cmake/pegasus_assistantConfig-version.cmake
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/package.xml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch
+-- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/demo.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/rsp.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/move_group.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/static_virtual_joint_tfs.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/spawn_controllers.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/warehouse_db.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/moveit_rviz.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/launch/setup_assistant.launch.py
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config
+-- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/ros2_controllers.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pilz_cartesian_limits.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/initial_positions.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.urdf.xacro
+-- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/moveit_controllers.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/joint_limits.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.ros2_control.xacro
+-- Installing: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/pegasus.srdf
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/kinematics.yaml
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/config/moveit.rviz
+-- Up-to-date: /home/mmms/ros2-ws/install/pegasus_assistant/share/pegasus_assistant/.setup_assistant

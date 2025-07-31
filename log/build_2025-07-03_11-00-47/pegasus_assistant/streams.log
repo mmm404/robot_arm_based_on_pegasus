@@ -1,0 +1,46 @@
+[0.225s] Invoking command in '/home/mmms/ros2-ws/build/pegasus_assistant': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_assistant -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_assistant
+[3.078s] -- The C compiler identification is GNU 13.3.0
+[5.257s] -- The CXX compiler identification is GNU 13.3.0
+[7.117s] -- Detecting C compiler ABI info
+[12.747s] -- Detecting C compiler ABI info - done
+[12.970s] -- Check for working C compiler: /usr/bin/cc - skipped
+[12.996s] -- Detecting C compile features
+[13.029s] -- Detecting C compile features - done
+[13.421s] -- Detecting CXX compiler ABI info
+[16.998s] -- Detecting CXX compiler ABI info - done
+[17.220s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[17.230s] -- Detecting CXX compile features
+[17.231s] -- Detecting CXX compile features - done
+[17.833s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[21.734s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[28.031s] Error parsing '/home/mmms/ros2-ws/src/pegasus_assistant/package.xml':
+[137.567s] Traceback (most recent call last):
+[137.650s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[137.650s]     main()
+[137.651s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[137.652s]     raise e
+[137.659s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[137.660s]     package = parse_package_string(
+[137.661s]               ^^^^^^^^^^^^^^^^^^^^^
+[137.662s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[137.663s]     pkg.validate(warnings=warnings)
+[137.664s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[137.665s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[137.673s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/mmms/ros2-ws/src/pegasus_assistant/package.xml':
+[137.674s] Invalid email "" for person ""
+[137.675s] Maintainers must have an email address
+[137.675s] Invalid email "" for person ""
+[138.411s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[138.432s]   execute_process(/usr/bin/python3
+[138.446s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[138.459s]   /home/mmms/ros2-ws/src/pegasus_assistant/package.xml
+[138.460s]   /home/mmms/ros2-ws/build/pegasus_assistant/ament_cmake_core/package.cmake)
+[138.493s]   returned error code 1
+[138.494s] Call Stack (most recent call first):
+[138.506s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[138.506s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[138.541s]   CMakeLists.txt:6 (ament_package)
+[138.556s] 
+[138.590s] [0m
+[138.591s] -- Configuring incomplete, errors occurred!
+[138.963s] Invoked command in '/home/mmms/ros2-ws/build/pegasus_assistant' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmms/ros2-ws/src/pegasus_assistant -DCMAKE_INSTALL_PREFIX=/home/mmms/ros2-ws/install/pegasus_assistant

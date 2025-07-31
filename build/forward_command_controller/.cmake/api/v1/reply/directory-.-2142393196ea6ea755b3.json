@@ -1,0 +1,636 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"generate_parameter_library",
+			"pluginlib_export_plugin_description_file",
+			"ament_environment_hooks",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_targets",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/jazzy/share/generate_parameter_library/cmake/generate_parameter_library.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/jazzy/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_export_targets/cmake/ament_export_targets.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/jazzy/share/pluginlib/cmake/pluginlib_package_hook.cmake",
+			"/opt/ros/jazzy/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 89,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 94,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 98,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 59,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 25,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 70,
+				"parent" : 11
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 87,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 66,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 15
+			},
+			{
+				"file" : 7,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 29,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 105,
+				"parent" : 19
+			},
+			{
+				"command" : 11,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 43,
+				"parent" : 21
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 105,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 15
+			},
+			{
+				"file" : 10,
+				"parent" : 24
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 20,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 70,
+				"parent" : 26
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 87,
+				"parent" : 26
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 70,
+				"parent" : 26
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 87,
+				"parent" : 26
+			},
+			{
+				"command" : 12,
+				"file" : 10,
+				"line" : 26,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 91,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 91,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 91,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 107,
+				"parent" : 31
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 120,
+				"parent" : 31
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 15
+			},
+			{
+				"file" : 13,
+				"parent" : 37
+			},
+			{
+				"command" : 13,
+				"file" : 13,
+				"line" : 16,
+				"parent" : 38
+			},
+			{
+				"command" : 6,
+				"file" : 12,
+				"line" : 29,
+				"parent" : 39
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 105,
+				"parent" : 40
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 15
+			},
+			{
+				"file" : 14,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 14,
+				"line" : 22,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 105,
+				"parent" : 44
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 48,
+				"parent" : 15
+			},
+			{
+				"file" : 15,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 15,
+				"line" : 28,
+				"parent" : 47
+			},
+			{
+				"command" : 14,
+				"file" : 9,
+				"line" : 68,
+				"parent" : 14
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 122,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 122,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 150,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 157,
+				"parent" : 49
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/include/forward_command_controller"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"forward_command_plugin.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "include/forward_command_controller",
+			"paths" : 
+			[
+				{
+					"from" : "include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libforward_command_controller.so"
+			],
+			"targetId" : "forward_command_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/forward_command_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/forward_command_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/environment",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_index/share/ament_index/resource_index/packages/forward_command_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/controller_interface__pluginlib__plugin",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/forward_command_controller"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/cmake",
+			"exportName" : "export_forward_command_controller",
+			"exportTargets" : 
+			[
+				{
+					"id" : "forward_command_controller::@6890427a1f51a3e7e1df",
+					"index" : 0
+				},
+				{
+					"id" : "forward_command_controller_parameters::@6890427a1f51a3e7e1df",
+					"index" : 1
+				},
+				{
+					"id" : "multi_interface_forward_command_controller_parameters::@6890427a1f51a3e7e1df",
+					"index" : 7
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/c5241717a67e118aa6f37470f649976a/export_forward_command_controllerExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/cmake",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/cmake",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller/cmake",
+			"paths" : 
+			[
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_core/forward_command_controllerConfig.cmake",
+				"/home/mmms/ros2-ws/build/forward_command_controller/ament_cmake_core/forward_command_controllerConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "Unspecified",
+			"destination" : "share/forward_command_controller",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

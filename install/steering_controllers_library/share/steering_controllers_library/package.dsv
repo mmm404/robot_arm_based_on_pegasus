@@ -1,0 +1,5 @@
+source;share/steering_controllers_library/local_setup.bash
+source;share/steering_controllers_library/local_setup.dsv
+source;share/steering_controllers_library/local_setup.ps1
+source;share/steering_controllers_library/local_setup.sh
+source;share/steering_controllers_library/local_setup.zsh

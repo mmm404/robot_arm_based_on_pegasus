@@ -11,6 +11,9 @@
         <cylinder radius="0.15" length="0.12"/>
       </geometry>
       <origin xyz="0 0 0.06" rpy="0 0 0"/>
+      <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
@@ -30,6 +33,9 @@
     <visual>
       <geometry><box size="0.12 0.12 0.08"/></geometry>
       <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.12 0.12 0.08"/></geometry>
@@ -47,6 +53,9 @@
     <visual>
       <geometry><box size="0.25 0.08 0.06"/></geometry>
       <origin xyz="0.125 0 0" rpy="0 0 0"/>
+      <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.25 0.08 0.06"/></geometry>
@@ -64,6 +73,9 @@
     <visual>
       <geometry><box size="0.22 0.06 0.05"/></geometry>
       <origin xyz="0.11 0 0" rpy="0 0 0"/>
+      <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.22 0.06 0.05"/></geometry>
@@ -81,6 +93,9 @@
     <visual>
       <geometry><box size="0.18 0.05 0.04"/></geometry>
       <origin xyz="0.09 0 0" rpy="0 0 0"/>
+      <material name="orange">
+        <color rgba="1.0 0.5 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.18 0.05 0.04"/></geometry>
@@ -98,6 +113,9 @@
     <visual>
       <geometry><cylinder radius="0.03" length="0.08"/></geometry>
       <origin xyz="0.04 0 0" rpy="0 1.5708 0"/>
+      <material name="purple">
+        <color rgba="0.5 0.0 1.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><cylinder radius="0.03" length="0.08"/></geometry>
@@ -115,6 +133,9 @@
     <visual>
       <geometry><box size="0.06 0.08 0.02"/></geometry>
       <origin xyz="0.03 0 0" rpy="0 0 0"/>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.06 0.08 0.02"/></geometry>
@@ -132,6 +153,9 @@
     <visual>
       <geometry><box size="0.04 0.06 0.08"/></geometry>
       <origin xyz="0.02 0 0.04" rpy="0 0 0"/>
+      <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry><box size="0.04 0.06 0.08"/></geometry>
@@ -151,7 +175,7 @@
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
-  <!-- Joint 1 - Base rotation (360° rotation) -->
+  <!-- Joint 1 - Base rotation (360° rotation) - Start at 0 (no change) -->
   <joint name="joint1" type="revolute">
     <parent link="base_link"/>
     <child link="link1"/>
@@ -160,62 +184,42 @@
     <limit lower="-6.28" upper="6.28" velocity="1.0" effort="111.0"/>
     <safety_controller k_velocity="0.1" k_position="0.1"/>
     <dynamics damping="0.2" friction="0.3"/>
-    <hardware_interface>
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </hardware_interface>
   </joint>
 
-  <!-- Joint 2 - Shoulder joint (35° range) -->
+  <!-- Joint 2 - Shoulder joint (35° range) - Start at -15° to lift arm up -->
   <joint name="joint2" type="revolute">
     <parent link="link1"/>
     <child link="link2"/>
-    <origin xyz="0 0 0.08" rpy="0 0 0"/>
+    <origin xyz="0 0 0.08" rpy="0 -0.26 0"/>  <!-- -15° initial position -->
     <axis xyz="0 1 0"/>
     <limit lower="-0.61" upper="0.61" velocity="1.0" effort="60.0"/>
     <safety_controller k_velocity="0.1" k_position="0.1"/>
     <dynamics damping="0.15" friction="0.2"/>
-    <hardware_interface>
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </hardware_interface>
   </joint>
 
-  <!-- Joint 3 - Elbow joint (100° range) -->
+  <!-- Joint 3 - Elbow joint (100° range) - Start at -45° to bend elbow -->
   <joint name="joint3" type="revolute">
     <parent link="link2"/>
     <child link="link3"/>
-    <origin xyz="0.25 0 0" rpy="0 0 0"/>
+    <origin xyz="0.25 0 0" rpy="0 -0.785 0"/>  <!-- -45° initial position -->
     <axis xyz="0 1 0"/>
     <limit lower="-1.75" upper="1.75" velocity="1.0" effort="30.0"/>
     <safety_controller k_velocity="0.1" k_position="0.1"/>
     <dynamics damping="0.1" friction="0.15"/>
-    <hardware_interface>
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </hardware_interface>
   </joint>
 
-  <!-- Joint 4 - Forearm joint (75° range) -->
+  <!-- Joint 4 - Forearm joint (75° range) - Start at -30° to continue bend -->
   <joint name="joint4" type="revolute">
     <parent link="link3"/>
     <child link="link4"/>
-    <origin xyz="0.22 0 0" rpy="0 0 0"/>
+    <origin xyz="0.22 0 0" rpy="0 -1.31 0"/><!-- -210° initial position -->
     <axis xyz="0 1 0"/>
     <limit lower="-1.31" upper="1.31" velocity="1.0" effort="30.0"/>
     <safety_controller k_velocity="0.1" k_position="0.1"/>
     <dynamics damping="0.1" friction="0.1"/>
-    <hardware_interface>
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </hardware_interface>
   </joint>
 
-  <!-- Joint 5 - Wrist rotation (360° rotation) -->
+  <!-- Joint 5 - Wrist rotation (360° rotation) - Start at 0 (no change) -->
   <joint name="joint5" type="revolute">
     <parent link="link4"/>
     <child link="link5"/>
@@ -224,11 +228,6 @@
     <limit lower="-6.28" upper="6.28" velocity="1.0" effort="30.0"/>
     <safety_controller k_velocity="0.1" k_position="0.1"/>
     <dynamics damping="0.05" friction="0.05"/>
-    <hardware_interface>
-      <command_interface name="position"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </hardware_interface>
   </joint>
 
   <!-- Joint 6 - Gripper mounting (fixed) -->
@@ -249,12 +248,11 @@
   <ros2_control name="PegasusArm" type="system">
     <hardware>
       <plugin>mock_components/GenericSystem</plugin>
-      <param name="example_param">example_value</param>
     </hardware>
     <joint name="joint1">
       <command_interface name="position">
         <param name="min">-6.28</param>
-        <param name="max"> 6.28</param>
+        <param name="max">6.28</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -262,7 +260,7 @@
     <joint name="joint2">
       <command_interface name="position">
         <param name="min">-0.61</param>
-        <param name="max"> 0.61</param>
+        <param name="max">0.61</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -270,7 +268,7 @@
     <joint name="joint3">
       <command_interface name="position">
         <param name="min">-1.75</param>
-        <param name="max"> 1.75</param>
+        <param name="max">1.75</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -278,7 +276,7 @@
     <joint name="joint4">
       <command_interface name="position">
         <param name="min">-1.31</param>
-        <param name="max"> 1.31</param>
+        <param name="max">1.31</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -286,7 +284,7 @@
     <joint name="joint5">
       <command_interface name="position">
         <param name="min">-6.28</param>
-        <param name="max"> 6.28</param>
+        <param name="max">6.28</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -300,55 +298,53 @@
     </plugin>
   </gazebo>
 
-  <!-- Transmissions for ros2_control -->
-  <transmission name="joint1_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint1">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="joint1_motor">
-      <mechanicalReduction>3.7</mechanicalReduction>
-    </actuator>
-  </transmission>
-  
-  <transmission name="joint2_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint2">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="joint2_motor">
-      <mechanicalReduction>2.0</mechanicalReduction>
-    </actuator>
-  </transmission>
-  
-  <transmission name="joint3_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint3">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="joint3_motor">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  
-  <transmission name="joint4_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint4">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="joint4_motor">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  
-  <transmission name="joint5_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint5">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="joint5_motor">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+  <!-- Gazebo material properties for better visualization -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link1">
+    <material>Gazebo/Red</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link2">
+    <material>Gazebo/Green</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link3">
+    <material>Gazebo/Yellow</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link4">
+    <material>Gazebo/Orange</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link5">
+    <material>Gazebo/Purple</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="link6">
+    <material>Gazebo/Grey</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <gazebo reference="end_effector_link">
+    <material>Gazebo/Black</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
 
 </robot>

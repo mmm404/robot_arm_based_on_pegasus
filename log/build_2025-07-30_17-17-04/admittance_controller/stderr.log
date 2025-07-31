@@ -1,0 +1,7 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:287: gmock/CMakeFiles/gmock.dir/all] Error 2
+gmake: *** wait: No child processes.  Stop.
+gmake: *** Waiting for unfinished jobs....
+gmake: *** wait: No child processes.  Stop.
