@@ -90,24 +90,23 @@ ros2 launch moveit_setup_assistant setup_assistant.launch.py
 ### ROS2 and Scripts
 
 **Issues:**
-- Joint state publisher and arm commanders not initializing  
-- MoveIt fails to plan  
-- Hardware interface unconfigured  
-- Interactive GUI failure  
+unlinked GAZEBO
 <img width="811" height="506" alt="Screenshot from 2025-07-31 14-27-43" src="https://github.com/user-attachments/assets/59db9698-a1a7-486c-9e7a-b432f8ae10a8" />
 <img width="1331" height="204" alt="Screenshot from 2025-07-31 14-29-17" src="https://github.com/user-attachments/assets/e17fa68a-cd88-4e28-9e24-ab41763fb573" />
 
 **Achievements:**
 - URDF loads correctly in RViz  
 - Commanders functional  
-- GUI works (not yet linked to hardware)  
-- Partial hardware interface success  
+- GUI works 
+- Partial hardware interface success
+- Hardware interface works
+- Simulator Interface(without a real arduino) works
+- GUI connected to the hardware and simulator interface
+- 
 
 **Next Steps:**
-- Finalize hardware interface integration  
-- Sync GUI with real-time control  
-- Debug MoveIt planning  
-- Test full launch file sequence  
+- Debug MoveIt with GAZEBO
+- Test full launch file sequence  with hardware
 
 ---<img width="806" height="736" alt="Scr<img width="806" height="736" alt="Screenshot from 2025-07-31 14-30-32" src="https://github.com/user-attachments/assets/db72662c-74d7-4439-a9d1-42ecab60dec7" />
 eenshot from 2025-07-31 14-30-52" src="https://github.com/user-attachments/assets/d02fb238-2df1-421f-9991-92946165b056" />
@@ -125,7 +124,8 @@ eenshot from 2025-07-31 14-30-52" src="https://github.com/user-attachments/asset
 **Achievements:**
 - Bearing holders repositioned  
 - Electrical module included  
-- Spur gear now fits  
+- Spur gear now fits
+- base entirely designed
 
 **Next Steps:**
 - Center arm and optimize symmetry  
