@@ -56,7 +56,7 @@ screen /tmp/virtual_monitor_sim 9600
 ### Starting the Serial Bridge
 
 ```bash
-ros2-ws/scripts/serial_bridge.sh
+./ros2-ws/scripts/run_full_stack.sh
 ```
 
 ### Starting PuTTY Using Screen
