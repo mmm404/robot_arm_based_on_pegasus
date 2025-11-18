@@ -1,0 +1,47 @@
+[0.073s] Invoking command in '/home/mmms/ros2-ws/build/update_pegasus_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/update_pegasus_description -- -j4 -l4
+[0.193s] Invoked command in '/home/mmms/ros2-ws/build/update_pegasus_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mmms/ros2-ws/build/update_pegasus_description -- -j4 -l4
+[0.214s] Invoking command in '/home/mmms/ros2-ws/build/update_pegasus_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/update_pegasus_description
+[0.230s] -- Install configuration: ""
+[0.231s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/ament_index/resource_index/package_run_dependencies/update_pegasus_description
+[0.231s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/ament_index/resource_index/parent_prefix_path/update_pegasus_description
+[0.231s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/environment/ament_prefix_path.sh
+[0.232s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/environment/ament_prefix_path.dsv
+[0.232s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/environment/path.sh
+[0.233s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/environment/path.dsv
+[0.233s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/local_setup.bash
+[0.233s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/local_setup.sh
+[0.234s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/local_setup.zsh
+[0.234s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/local_setup.dsv
+[0.234s] -- Installing: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/package.dsv
+[0.235s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/ament_index/resource_index/packages/update_pegasus_description
+[0.235s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/cmake/update_pegasus_descriptionConfig.cmake
+[0.235s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/cmake/update_pegasus_descriptionConfig-version.cmake
+[0.235s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/package.xml
+[0.236s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch
+[0.236s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/demo.launch.py
+[0.236s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/tester.launch.py
+[0.236s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/spawn.launch.py
+[0.237s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/rsp.launch.py
+[0.237s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/move_group.launch.py
+[0.238s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/pegasus.launch.py
+[0.239s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/static_virtual_joint_tfs.launch.py
+[0.241s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/spawn_controllers.launch.py
+[0.242s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/warehouse_db.launch.py
+[0.243s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/moveit_rviz.launch.py
+[0.244s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/setup_assistant.launch.py
+[0.244s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/launch/display.launch.py
+[0.245s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config
+[0.245s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/ros2_controllers.yaml
+[0.246s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/pilz_cartesian_limits.yaml
+[0.246s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/initial_positions.yaml
+[0.247s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/pegasus.urdf.xacro
+[0.248s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/moveit_controllers.yaml
+[0.249s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/joint_limits.yaml
+[0.249s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/pegasus.ros2_control.xacro
+[0.250s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/pegasus.srdf
+[0.251s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/kinematics.yaml
+[0.251s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/config/moveit.rviz
+[0.251s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/share/update_pegasus_description/.setup_assistant
+[0.252s] -- Up-to-date: /home/mmms/ros2-ws/install/update_pegasus_description/lib/update_pegasus_description/pegasus_commander.py
+[0.253s] -- Installing: /home/mmms/ros2-ws/install/update_pegasus_description/lib/update_pegasus_description/planned_path_listener.py
+[0.253s] Invoked command in '/home/mmms/ros2-ws/build/update_pegasus_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mmms/ros2-ws/build/update_pegasus_description
