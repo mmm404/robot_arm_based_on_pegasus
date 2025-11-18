@@ -1,7 +1,8 @@
 # Pegasus Robot Arm Bridge System
 
 
-<img width="1366" height="768" alt="Screenshot from 2025-11-17 19-36-28" src="https://github.com/user-attachments/assets/c64068a1-bf7b-4c79-9da2-2515620fe84a" />
+![FYRobot](https://github.com/user-attachments/assets/37473287-e853-4a17-bd1c-745ef53172a1)
+
 
 
 <img width="1366" height="768" alt="Screenshot from 2025-11-17 19-36-39" src="https://github.com/user-attachments/assets/8e4c958e-4c92-4c56-8dd4-44f5211f464a" />
@@ -21,8 +22,6 @@ This project provides a complete software stack for controlling a Pegasus roboti
 
 ## System Architecture
 
-
-![FYRobot](https://github.com/user-attachments/assets/37473287-e853-4a17-bd1c-745ef53172a1)
 
 
 
