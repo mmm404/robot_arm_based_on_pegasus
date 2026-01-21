@@ -4,6 +4,9 @@ SMS_STS sms_sts;
 #define SERVO_NUM 6
 uint8_t IDs[SERVO_NUM] = {0, 1, 2, 3, 4, 5};
 
+
+
+
 // HOME pose
 uint16_t homePos[SERVO_NUM] = {
   0,     // Base 0°
